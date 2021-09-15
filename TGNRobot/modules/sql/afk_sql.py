@@ -1,6 +1,6 @@
 import threading
 
-from LaylaRobot.modules.sql import BASE, SESSION
+from TGNRobot.modules.sql import BASE, SESSION
 from sqlalchemy import Boolean, Column, Integer, UnicodeText
 
 
