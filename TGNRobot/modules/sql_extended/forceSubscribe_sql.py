@@ -1,5 +1,5 @@
 from sqlalchemy import Column, String, Numeric, Boolean
-from LaylaRobot.modules.sql import BASE, SESSION
+from TGNRobot.modules.sql import BASE, SESSION
 
 
 class forceSubscribe(BASE):
