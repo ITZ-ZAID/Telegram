@@ -6,18 +6,18 @@ from telegram.error import BadRequest
 from telegram.ext import CommandHandler, MessageHandler, Filters, run_async
 from telegram.utils.helpers import mention_html
 
-import LaylaRobot.modules.sql.blacklist_sql as sql
-from LaylaRobot import dispatcher, LOGGER
-from LaylaRobot.modules.disable import DisableAbleCommandHandler
-from LaylaRobot.modules.helper_funcs.chat_status import user_admin, user_not_admin
-from LaylaRobot.modules.helper_funcs.extraction import extract_text
-from LaylaRobot.modules.helper_funcs.misc import split_message
-from LaylaRobot.modules.log_channel import loggable
-from LaylaRobot.modules.warns import warn
-from LaylaRobot.modules.helper_funcs.string_handling import extract_time
-from LaylaRobot.modules.connection import connected
-from LaylaRobot.modules.sql.approve_sql import is_approved
-from LaylaRobot.modules.helper_funcs.alternate import send_message, typing_action
+import TGNRobot.modules.sql.blacklist_sql as sql
+from TGNRobot import dispatcher, LOGGER
+from TGNRobot.modules.disable import DisableAbleCommandHandler
+from TGNRobot.modules.helper_funcs.chat_status import user_admin, user_not_admin
+from TGNRobot.modules.helper_funcs.extraction import extract_text
+from TGNRobot.modules.helper_funcs.misc import split_message
+from TGNRobot.modules.log_channel import loggable
+from TGNRobot.modules.warns import warn
+from TGNRobot.modules.helper_funcs.string_handling import extract_time
+from TGNRobot.modules.connection import connected
+from TGNRobot.modules.sql.approve_sql import is_approved
+from TGNRobot.modules.helper_funcs.alternate import send_message, typing_action
 
 BLACKLIST_GROUP = 11
 
