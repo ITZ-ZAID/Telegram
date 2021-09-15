@@ -331,7 +331,7 @@ async def inuka(client, message):
     # Kang with the credits bitches @InukaASiTH
     test = test.replace("layla", "Aco")
     test = test.replace("layla", "Aco")
-    URL = f"https://api.affiliateplus.xyz/api/chatbot?message={test}&botname=@LaylaRobot&ownername=@A_viyu"
+    URL = f"https://api.affiliateplus.xyz/api/chatbot?message={test}&botname=@TGN_X_Robot&ownername=@Timesisnotwaiting"
     try:
         r = requests.request("GET", url=URL)
     except:
