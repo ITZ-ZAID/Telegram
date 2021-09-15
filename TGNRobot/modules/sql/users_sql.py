@@ -1,7 +1,7 @@
 import threading
 
-from LaylaRobot import dispatcher
-from LaylaRobot.modules.sql import BASE, SESSION
+from TGNRobot import dispatcher
+from TGNRobot.modules.sql import BASE, SESSION
 from sqlalchemy import (
     Column,
     ForeignKey,
