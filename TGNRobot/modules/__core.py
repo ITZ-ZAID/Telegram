@@ -1,13 +1,13 @@
-from LaylaRobot import telethn as tbot
-from LaylaRobot.events import register
+from TGNRobot import telethn as tbot
+from TGNRobot.events import register
 import os
 import asyncio
 import os
 import time
 from datetime import datetime
-from LaylaRobot import OWNER_ID, DEV_USERS
-from LaylaRobot import TEMP_DOWNLOAD_DIRECTORY as path
-from LaylaRobot import TEMP_DOWNLOAD_DIRECTORY
+from TGNRobot import OWNER_ID, DEV_USERS
+from TGNRobot import TEMP_DOWNLOAD_DIRECTORY as path
+from TGNRobot import TEMP_DOWNLOAD_DIRECTORY
 from datetime import datetime
 water = './LaylaRobot/resources/yone.jpg'
 client = tbot
