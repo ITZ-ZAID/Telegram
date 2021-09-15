@@ -15,25 +15,25 @@ from telegram.ext import (
 )
 from telegram.utils.helpers import mention_html, escape_markdown
 
-from LaylaRobot import dispatcher, LOGGER, DRAGONS
-from LaylaRobot.modules.disable import DisableAbleCommandHandler
-from LaylaRobot.modules.helper_funcs.handlers import MessageHandlerChecker
-from LaylaRobot.modules.helper_funcs.chat_status import user_admin
-from LaylaRobot.modules.helper_funcs.extraction import extract_text
-from LaylaRobot.modules.helper_funcs.filters import CustomFilters
-from LaylaRobot.modules.helper_funcs.misc import build_keyboard_parser
-from LaylaRobot.modules.helper_funcs.msg_types import get_filter_type
-from LaylaRobot.modules.helper_funcs.string_handling import (
+from TGNRobot import dispatcher, LOGGER, DRAGONS
+from TGNRobot.modules.disable import DisableAbleCommandHandler
+from TGNRobot.modules.helper_funcs.handlers import MessageHandlerChecker
+from TGNRobot.modules.helper_funcs.chat_status import user_admin
+from TGNRobot.modules.helper_funcs.extraction import extract_text
+from TGNRobot.modules.helper_funcs.filters import CustomFilters
+from TGNRobot.modules.helper_funcs.misc import build_keyboard_parser
+from TGNRobot.modules.helper_funcs.msg_types import get_filter_type
+from TGNRobot.modules.helper_funcs.string_handling import (
     split_quotes,
     button_markdown_parser,
     escape_invalid_curly_brackets,
     markdown_to_html,
 )
-from LaylaRobot.modules.sql import cust_filters_sql as sql
+from TGNRobot.modules.sql import cust_filters_sql as sql
 
-from LaylaRobot.modules.connection import connected
+from TGNRobot.modules.connection import connected
 
-from LaylaRobot.modules.helper_funcs.alternate import send_message, typing_action
+from TGNRobot.modules.helper_funcs.alternate import send_message, typing_action
 
 HANDLER_GROUP = 10
 
