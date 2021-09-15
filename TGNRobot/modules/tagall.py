@@ -9,8 +9,8 @@
 
 from pyrogram import filters
 
-from LaylaRobot.pyrogramee.pluginshelper import admins_only, get_text
-from LaylaRobot import pbot
+from TGNRobot.pyrogramee.pluginshelper import admins_only, get_text
+from TGNRobot import pbot
 
 
 @pbot.on_message(filters.command("tagall") & ~filters.edited & ~filters.bot)
