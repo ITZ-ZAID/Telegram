@@ -5,8 +5,8 @@ import time
 from functools import partial
 from contextlib import suppress
 
-import LaylaRobot.modules.sql.welcome_sql as sql
-import LaylaRobot
+import TGNRobot.modules.sql.welcome_sql as sql
+import TGNRobot
 from LaylaRobot import (
     DEV_USERS,
     LOGGER,
@@ -19,18 +19,18 @@ from LaylaRobot import (
     dispatcher,
     JOIN_LOGGER
 )
-from LaylaRobot.modules.helper_funcs.chat_status import (
+from TGNRobot.modules.helper_funcs.chat_status import (
     is_user_ban_protected,
     user_admin,
 )
-from LaylaRobot.modules.helper_funcs.misc import build_keyboard, revert_buttons
-from LaylaRobot.modules.helper_funcs.msg_types import get_welcome_type
-from LaylaRobot.modules.helper_funcs.string_handling import (
+from TGNRobot.modules.helper_funcs.misc import build_keyboard, revert_buttons
+from TGNRobot.modules.helper_funcs.msg_types import get_welcome_type
+from TGNRobot.modules.helper_funcs.string_handling import (
     escape_invalid_curly_brackets,
     markdown_parser,
 )
-from LaylaRobot.modules.log_channel import loggable
-from LaylaRobot.modules.sql.global_bans_sql import is_user_gbanned
+from TGNRobot.modules.log_channel import loggable
+from TGNRobot.modules.sql.global_bans_sql import is_user_gbanned
 from telegram import (
     ChatPermissions,
     InlineKeyboardButton,
