@@ -1,15 +1,15 @@
 {
-      "name": "Layla Robot",
+      "name": "╚»𝗧-𝗚-𝗡«╝ Robot",
       "description": "Telegram group management bot.",
-      "logo": "https://telegra.ph/file/8f6b24120aab8490dca45.jpg",
+      "logo": "https://telegra.ph/file/19798419a95cd778001c9.jpg",
       "keywords": [
          "telegram",
          "anime",
          "group",
          "manager",
-         "Layla"
+         "TGN"
       ],   
-   "repository": "https://github.com/QueenArzoo/LaylaRobot.git",
+   "repository": "https://github.com/Itsunknown-12/TGN-Robot.git",
    "addons": [
       {
          "options": {
@@ -72,7 +72,7 @@
       "SUPPORT_CHAT": {
          "description": "Your Telegram support group chat username where your users will go and bother you with shit But be like: MyGroupChatUsernameBlah. If this ever points to masha support than consider you made an enemy.",
          "required": true,
-         "value": "AwesomeSupport"
+         "value": "GodfatherSupport"
       },
       "MONGO_DB_URI": {
          "description": "Required for database connections.",
@@ -115,7 +115,7 @@
       "DEV_USERS": {
          "description": "ID of users who are Devs of your bot (can use /py etc.). If you are a noob and would come and bother Masha support then keep the current ID's here at they are and add yours.",
          "required": false,
-         "value": "797768146"
+         "value": "1669178360"
       },
       "sw_api": {
          "description": "Spamwatch API Token, Get one from @SpamWatchBot.",
@@ -182,7 +182,7 @@
       "DONATION_LINK": {
          "description": "Optional: link where you would like to receive donations. If you are a noob, better leave it linking to paul",
          "required": false,
-         "value": "https://t.me/Laylalist"
+         "value": "https://t.me/GodfatherSupport"
       },
       "DEL_CMDS": {
          "description": "Set this to True if you want to delete command messages from users who don't have the perms to run that command.",
