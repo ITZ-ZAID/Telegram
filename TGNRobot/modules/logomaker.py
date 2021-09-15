@@ -1,6 +1,6 @@
-from LaylaRobot.events import register
-from LaylaRobot import OWNER_ID
-from LaylaRobot import telethn as tbot
+from TGNRobot.events import register
+from TGNRobot import OWNER_ID
+from TGNRobot import telethn as tbot
 import os 
 from PIL import Image, ImageDraw, ImageFont
 import shutil 
