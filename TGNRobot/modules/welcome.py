@@ -7,7 +7,7 @@ from contextlib import suppress
 
 import TGNRobot.modules.sql.welcome_sql as sql
 import TGNRobot
-from LaylaRobot import (
+from TGNRobot import (
     DEV_USERS,
     LOGGER,
     OWNER_ID,
