@@ -12,8 +12,8 @@ from pyrogram import Client
 from pyrogram.errors import FloodWait, MessageNotModified
 from pyrogram.types import Chat, Message, User
 
-from LaylaRobot  import OWNER_ID, SUPPORT_CHAT
-from LaylaRobot import pbot
+from TGNRobot  import OWNER_ID, SUPPORT_CHAT
+from TGNRobot import pbot
 
 
 def get_user(message: Message, text: str) -> [int, str, None]:
