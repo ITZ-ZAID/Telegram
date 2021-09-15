@@ -265,7 +265,7 @@ def new_member(update: Update, context: CallbackContext):
             # Welcome yourself
             elif new_mem.id == bot.id:
                 creator = None
-                if not LaylaRobot.ALLOW_CHATS:
+                if not TGNRobot.ALLOW_CHATS:
                     with suppress(BadRequest):
                          update.effective_message.reply_text(f"Groups are disabled for {bot.first_name}, I'm outta here.")
                     bot.leave_chat(update.effective_chat.id)
