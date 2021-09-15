@@ -1,4 +1,4 @@
-from LaylaRobot.mongo import client as db_x
+from TGNRobot.mongo import client as db_x
 
 lydia = db_x["CAHTBOT"]
 
