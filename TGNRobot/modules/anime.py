@@ -5,8 +5,8 @@ import textwrap
 import bs4
 import jikanpy
 import requests
-from LaylaRobot import DEV_USERS, OWNER_ID, DRAGONS, dispatcher
-from LaylaRobot.modules.disable import DisableAbleCommandHandler
+from TGNRobot import DEV_USERS, OWNER_ID, DRAGONS, dispatcher
+from TGNRobot.modules.disable import DisableAbleCommandHandler
 from telegram import (InlineKeyboardButton, InlineKeyboardMarkup, ParseMode,
                       Update)
 from telegram.ext import CallbackContext, CallbackQueryHandler, run_async
