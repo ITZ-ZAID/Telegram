@@ -11,10 +11,10 @@ import aiohttp
 from google_trans_new import google_translator
 from pyrogram import filters
 
-from LaylaRobot import BOT_ID
-from LaylaRobot.helper_extra.aichat import add_chat, get_session, remove_chat
-from LaylaRobot.pyrogramee.pluginshelper import admins_only, edit_or_reply
-from LaylaRobot import pbot as layla
+from TGNRobot import BOT_ID
+from TGNRobot.helper_extra.aichat import add_chat, get_session, remove_chat
+from TGNRobot.pyrogramee.pluginshelper import admins_only, edit_or_reply
+from TGNRobot import pbot as layla
 
 translator = google_translator()
 import requests
@@ -59,20 +59,20 @@ async def hmm(_, message):
         lel = await edit_or_reply(message, "`Processing...`")
         lol = add_chat(int(message.chat.id))
         if not lol:
-            await lel.edit("layla AI Already Activated In This Chat")
+            await lel.edit("TGN AI Already Activated In This Chat")
             return
         await lel.edit(
-            f"layla AI Successfully Added For Users In The Chat {message.chat.id}"
+            f"TGN AI Successfully Added For Users In The Chat {message.chat.id}"
         )
 
     elif status == "OFF" or status == "off" or status == "Off":
         lel = await edit_or_reply(message, "`Processing...`")
         Escobar = remove_chat(int(message.chat.id))
         if not Escobar:
-            await lel.edit("Layla AI Was Not Activated In This Chat")
+            await lel.edit("TGN AI Was Not Activated In This Chat")
             return
         await lel.edit(
-            f"layla AI Successfully Deactivated For Users In The Chat {message.chat.id}"
+            f"TGN AI Successfully Deactivated For Users In The Chat {message.chat.id}"
         )
 
     elif status == "EN" or status == "en" or status == "english":
@@ -251,8 +251,8 @@ async def inuka(client, message):
     # test = emoji.demojize(test.strip())
 
     # Kang with the credits bitches @InukaASiTH
-    test = test.replace("layla", "Aco")
-    test = test.replace("layla", "Aco")
+    test = test.replace("tgn", "Aco")
+    test = test.replace("tgn", "Aco")
     URL = f"https://api.affiliateplus.xyz/api/chatbot?message={test}&botname=@LaylaRobot&ownername=@HEROGAMERS1"
     try:
         r = requests.request("GET", url=URL)
