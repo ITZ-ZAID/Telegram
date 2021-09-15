@@ -84,13 +84,13 @@ async def lego(event):
  await event.reply('Creating your logo...wait!')
  try:
     text = event.pattern_match.group(1)
-    img = Image.open('./LaylaRobot/resources/blackbg.jpg')
+    img = Image.open('./TGNRobot/resources/blackbg.jpg')
     draw = ImageDraw.Draw(img)
     image_widthz, image_heightz = img.size
     pointsize = 500
     fillcolor = "gold"
     shadowcolor = "blue"
-    font = ImageFont.truetype("./LaylaRobot/resources/Chopsic.otf", 330)
+    font = ImageFont.truetype("./TGNRobot/resources/Chopsic.otf", 330)
     w, h = draw.textsize(text, font=font)
     h += int(h*0.21)
     image_width, image_height = img.size
@@ -100,11 +100,11 @@ async def lego(event):
     draw.text((x, y), text, font=font, fill="black", stroke_width=25, stroke_fill="yellow")
     fname2 = "LogoByLayla.png"
     img.save(fname2, "png")
-    await tbot.send_file(event.chat_id, fname2, caption="Made By @LaylaList Support @AwesomeSupport")
+    await tbot.send_file(event.chat_id, fname2, caption="Made By @Zaid_Updates Support @GodfatherSupport")
     if os.path.exists(fname2):
             os.remove(fname2)
  except Exception as e:
-   await event.reply(f'Error Report @AwesomeSupport, {e}')
+   await event.reply(f'Error Report @GoDFatherSupport, {e}')
 
 
 
@@ -138,9 +138,9 @@ async def lego(event):
     x = (image_widthz-w)/2
     y= ((image_heightz-h)/2+6)
     draw.text((x, y), text, font=font, fill="white", stroke_width=0, stroke_fill="white")
-    fname2 = "LogoByLyala.png"
+    fname2 = "LogoByTGN.png"
     img.save(fname2, "png")
-    await tbot.send_file(event.chat_id, fname2, caption="Made By @LaylaRobot")
+    await tbot.send_file(event.chat_id, fname2, caption="Made By @TGN_Robot")
     if os.path.exists(fname2):
             os.remove(fname2)
  except Exception as e:
