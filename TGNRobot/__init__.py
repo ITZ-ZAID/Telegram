@@ -100,7 +100,7 @@ if ENV:
         raise Exception("Your blacklisted chats list does not contain valid integers.")
 
 else:
-    from LaylaRobot.config import Development as Config
+    from TGNRobot.config import Development as Config
 
     TOKEN = Config.TOKEN
 
@@ -190,7 +190,7 @@ else:
 
 updater = tg.Updater(TOKEN, workers=WORKERS, use_context=True)
 telethn = TelegramClient("layla", API_ID, API_HASH)
-pbot = Client("laylapbot", api_id=API_ID, api_hash=API_HASH, bot_token=TOKEN)
+pbot = Client("robot", api_id=API_ID, api_hash=API_HASH, bot_token=TOKEN)
 dispatcher = updater.dispatcher
 
 DRAGONS = list(DRAGONS) + list(DEV_USERS)
@@ -200,7 +200,7 @@ DEMONS = list(DEMONS)
 TIGERS = list(TIGERS)
 
 # Load at end to ensure all prev variables have been set
-from LaylaRobot.modules.helper_funcs.handlers import (
+from TGNRobot.modules.helper_funcs.handlers import (
     CustomCommandHandler,
     CustomMessageHandler,
     CustomRegexHandler,
