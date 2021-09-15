@@ -628,7 +628,7 @@ def devlist(update: Update, context: CallbackContext):
 #  ❍ /gbanlist*:* Outputs a list of gbanned users
 
 # *Global Blue Text*
-#  ❍ /gignoreblue*:* <word>*:* Globally ignorea bluetext cleaning of saved word across LaylaRobot.
+#  ❍ /gignoreblue*:* <word>*:* Globally ignorea bluetext cleaning of saved word across TGN Robot.
 #  ❍ /ungignoreblue*:* <word>*:* Remove said command from global cleaning list
 
 # *Layla Core*
