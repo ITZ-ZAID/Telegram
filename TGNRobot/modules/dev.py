@@ -5,10 +5,10 @@ import sys
 from contextlib import suppress
 from time import sleep
 
-import LaylaRobot
+import TGNRobot
 
-from LaylaRobot import dispatcher
-from LaylaRobot.modules.helper_funcs.chat_status import dev_plus
+from TGNRobot import dispatcher
+from TGNRobot.modules.helper_funcs.chat_status import dev_plus
 from telegram import TelegramError, Update
 from telegram.error import Unauthorized
 from telegram.ext import CallbackContext, CommandHandler, run_async
