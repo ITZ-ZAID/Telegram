@@ -1,7 +1,7 @@
 import subprocess
 
-from LaylaRobot import LOGGER, dispatcher
-from LaylaRobot.modules.helper_funcs.chat_status import dev_plus
+from TGNRobot import LOGGER, dispatcher
+from TGNRobot.modules.helper_funcs.chat_status import dev_plus
 from telegram import ParseMode, Update
 from telegram.ext import CallbackContext, CommandHandler
 from telegram.ext.dispatcher import run_async
