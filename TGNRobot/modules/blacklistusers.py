@@ -1,7 +1,7 @@
 # Module to blacklist users and prevent them from using commands by @TheRealPhoenix
 import html
-import LaylaRobot.modules.sql.blacklistusers_sql as sql
-from LaylaRobot import (
+import TGNRobot.modules.sql.blacklistusers_sql as sql
+from TGNRobot import (
     DEV_USERS,
     OWNER_ID,
     DRAGONS,
@@ -10,12 +10,12 @@ from LaylaRobot import (
     WOLVES,
     dispatcher,
 )
-from LaylaRobot.modules.helper_funcs.chat_status import dev_plus
-from LaylaRobot.modules.helper_funcs.extraction import (
+from TGNRobot.modules.helper_funcs.chat_status import dev_plus
+from TGNRobot.modules.helper_funcs.extraction import (
     extract_user,
     extract_user_and_text,
 )
-from LaylaRobot.modules.log_channel import gloggable
+from TGNRobot.modules.log_channel import gloggable
 from telegram import ParseMode, Update
 from telegram.error import BadRequest
 from telegram.ext import CallbackContext, CommandHandler, run_async
