@@ -1,6 +1,6 @@
-from LaylaRobot import telethn as tbot
+from TGNRobot import telethn as tbot
 import os
-from LaylaRobot.events import register
+from TGNRobot.events import register
 import secureme
 
 @register(pattern="^/encrypt ?(.*)")
