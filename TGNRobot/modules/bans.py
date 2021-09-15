@@ -5,7 +5,7 @@ from telegram.error import BadRequest
 from telegram.ext import CallbackContext, CommandHandler, Filters, run_async
 from telegram.utils.helpers import mention_html
 
-from LaylaRobot import (
+from TGNRobot import (
     DEV_USERS,
     LOGGER,
     OWNER_ID,
@@ -15,8 +15,8 @@ from LaylaRobot import (
     WOLVES,
     dispatcher,
 )
-from LaylaRobot.modules.disable import DisableAbleCommandHandler
-from LaylaRobot.modules.helper_funcs.chat_status import (
+from TGNRobot.modules.disable import DisableAbleCommandHandler
+from TGNRobot.modules.helper_funcs.chat_status import (
     bot_admin,
     can_restrict,
     connection_status,
@@ -27,9 +27,9 @@ from LaylaRobot.modules.helper_funcs.chat_status import (
     user_can_ban,
     can_delete,
 )
-from LaylaRobot.modules.helper_funcs.extraction import extract_user_and_text
-from LaylaRobot.modules.helper_funcs.string_handling import extract_time
-from LaylaRobot.modules.log_channel import gloggable, loggable
+from TGNRobot.modules.helper_funcs.extraction import extract_user_and_text
+from TGNRobot.modules.helper_funcs.string_handling import extract_time
+from TGNRobot.modules.log_channel import gloggable, loggable
 
 
 @run_async
