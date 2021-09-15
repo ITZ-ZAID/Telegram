@@ -3,7 +3,7 @@ import json
 import os
 from typing import Optional
 
-from LaylaRobot import (
+from TGNRobot import (
     DEV_USERS,
     OWNER_ID,
     DRAGONS,
@@ -13,13 +13,13 @@ from LaylaRobot import (
     WOLVES,
     dispatcher,
 )
-from LaylaRobot.modules.helper_funcs.chat_status import (
+from TGNRobot.modules.helper_funcs.chat_status import (
     dev_plus,
     sudo_plus,
     whitelist_plus,
 )
-from LaylaRobot.modules.helper_funcs.extraction import extract_user
-from LaylaRobot.modules.log_channel import gloggable
+from TGNRobot.modules.helper_funcs.extraction import extract_user
+from TGNRobot.modules.log_channel import gloggable
 from telegram import ParseMode, TelegramError, Update
 from telegram.ext import CallbackContext, CommandHandler, run_async
 from telegram.utils.helpers import mention_html
