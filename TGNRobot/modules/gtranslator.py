@@ -3,8 +3,8 @@ from google_trans_new import LANGUAGES, google_translator
 from telegram import ParseMode, Update
 from telegram.ext import CallbackContext, run_async
 
-from LaylaRobot import dispatcher
-from LaylaRobot.modules.disable import DisableAbleCommandHandler
+from TGNRobot import dispatcher
+from TGNRobot.modules.disable import DisableAbleCommandHandler
 
 
 @run_async
