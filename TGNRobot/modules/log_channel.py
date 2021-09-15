@@ -13,9 +13,9 @@ if is_module_loaded(FILENAME):
     from telegram.ext import CommandHandler, JobQueue, run_async
     from telegram.utils.helpers import escape_markdown
 
-    from LaylaRobot import EVENT_LOGS, LOGGER, dispatcher
-    from LaylaRobot.modules.helper_funcs.chat_status import user_admin
-    from LaylaRobot.modules.sql import log_channel_sql as sql
+    from TGNRobot import EVENT_LOGS, LOGGER, dispatcher
+    from TGNRobot.modules.helper_funcs.chat_status import user_admin
+    from TGNRobot.modules.sql import log_channel_sql as sql
 
     def loggable(func):
         @wraps(func)
