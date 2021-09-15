@@ -368,7 +368,7 @@ def layla_about_callback(update, context):
                  \n❍ Awesome Bots @LaylaList
                  \n❍ Support Group @AwesomeSupport
                  \n❍ Assistant @LaylaAssistant.
-                 \nHere is the [💾Repository](https://github.com/QueenArzoo/LaylaRobot).
+                 \nHere is the [💾Repository](https://github.com/Itsunknown-12/TGN-Robot).
                  \n\nIf you have any question about Layla, let us know at .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
