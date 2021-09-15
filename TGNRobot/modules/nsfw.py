@@ -4,14 +4,14 @@ import nekos
 import requests
 from PIL import Image
 from telegram import ParseMode
-from LaylaRobot import dispatcher, updater
-import LaylaRobot.modules.sql.nsfw_sql as sql
-from LaylaRobot.modules.log_channel import gloggable
+from TGNRobot import dispatcher, updater
+import TGNRobot.modules.sql.nsfw_sql as sql
+from TGNRobot.modules.log_channel import gloggable
 from telegram import Message, Chat, Update, Bot, MessageEntity
 from telegram.error import BadRequest, RetryAfter, Unauthorized
 from telegram.ext import CommandHandler, run_async, CallbackContext
-from LaylaRobot.modules.helper_funcs.filters import CustomFilters
-from LaylaRobot.modules.helper_funcs.chat_status import user_admin
+from TGNRobot.modules.helper_funcs.filters import CustomFilters
+from TGNRobot.modules.helper_funcs.chat_status import user_admin
 from telegram.utils.helpers import mention_html, mention_markdown, escape_markdown
 
 @run_async
