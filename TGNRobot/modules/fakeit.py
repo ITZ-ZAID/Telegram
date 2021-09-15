@@ -5,8 +5,8 @@ from faker import Faker
 from faker.providers import internet
 from telethon import events
 
-from LaylaRobot.pyrogramee.telethonbasics import is_admin
-from LaylaRobot import telethn as tbot
+from TGNRobot.pyrogramee.telethonbasics import is_admin
+from TGNRobot import telethn as tbot
 
 @tbot.on(events.NewMessage(pattern="/fakegen$"))
 async def hi(event):
@@ -44,7 +44,7 @@ async def _(event):
             with open("FRIDAYOT.jpg", "wb") as f:
                 f.write(response.content)
 
-        captin = f"Fake Image powered by @AwesomeSupport."
+        captin = f"Fake Image powered by @GodFatherSupport."
         fole = "FRIDAYOT.jpg"
         await tbot.send_file(event.chat_id, fole, caption=captin)
         await event.delete()
