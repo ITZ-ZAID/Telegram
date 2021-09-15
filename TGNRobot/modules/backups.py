@@ -5,23 +5,23 @@ from telegram import ParseMode, Message
 from telegram.error import BadRequest
 from telegram.ext import CommandHandler, run_async
 
-import LaylaRobot.modules.sql.notes_sql as sql
-from LaylaRobot import dispatcher, LOGGER, OWNER_ID, JOIN_LOGGER, SUPPORT_CHAT
-from LaylaRobot.__main__ import DATA_IMPORT
-from LaylaRobot.modules.helper_funcs.chat_status import user_admin
-from LaylaRobot.modules.helper_funcs.alternate import typing_action
+import TGNRobot.modules.sql.notes_sql as sql
+from TGNRobot import dispatcher, LOGGER, OWNER_ID, JOIN_LOGGER, SUPPORT_CHAT
+from TGNRobot.__main__ import DATA_IMPORT
+from TGNRobot.modules.helper_funcs.chat_status import user_admin
+from TGNRobot.modules.helper_funcs.alternate import typing_action
 
-# from LaylaRobot.modules.rules import get_rules
-import LaylaRobot.modules.sql.rules_sql as rulessql
+# from TGNRobot.modules.rules import get_rules
+import TGNRobot.modules.sql.rules_sql as rulessql
 
-# from LaylaRobot.modules.sql import warns_sql as warnssql
-import LaylaRobot.modules.sql.blacklist_sql as blacklistsql
-from LaylaRobot.modules.sql import disable_sql as disabledsql
+# from TGNRobot.modules.sql import warns_sql as warnssql
+import TGNRobot.modules.sql.blacklist_sql as blacklistsql
+from TGNRobot.modules.sql import disable_sql as disabledsql
 
-# from LaylaRobot.modules.sql import cust_filters_sql as filtersql
-# import LaylaRobot.modules.sql.welcome_sql as welcsql
-import LaylaRobot.modules.sql.locks_sql as locksql
-from LaylaRobot.modules.connection import connected
+# from TGNRobot.modules.sql import cust_filters_sql as filtersql
+# import TGNRobot.modules.sql.welcome_sql as welcsql
+import TGNRobot.modules.sql.locks_sql as locksql
+from TGNRobot.modules.connection import connected
 
 
 @run_async
