@@ -24,15 +24,15 @@ from LaylaRobot import (
     dispatcher,
     sw,
 )
-from LaylaRobot.__main__ import STATS, TOKEN, USER_INFO
-import LaylaRobot.modules.sql.userinfo_sql as sql
-from LaylaRobot.modules.disable import DisableAbleCommandHandler
-from LaylaRobot.modules.sql.global_bans_sql import is_user_gbanned
-from LaylaRobot.modules.sql.afk_sql import is_afk, check_afk_status
-from LaylaRobot.modules.sql.users_sql import get_user_num_chats
-from LaylaRobot.modules.helper_funcs.chat_status import sudo_plus
-from LaylaRobot.modules.helper_funcs.extraction import extract_user
-from LaylaRobot import telethn as YoneTelethonClient, TIGERS, DRAGONS, DEMONS
+from TGNRobot.__main__ import STATS, TOKEN, USER_INFO
+import TGNRobot.modules.sql.userinfo_sql as sql
+from TGNRobot.modules.disable import DisableAbleCommandHandler
+from TGNRobot.modules.sql.global_bans_sql import is_user_gbanned
+from TGNRobot.modules.sql.afk_sql import is_afk, check_afk_status
+from TGNRobot.modules.sql.users_sql import get_user_num_chats
+from TGNRobot.modules.helper_funcs.chat_status import sudo_plus
+from TGNRobot.modules.helper_funcs.extraction import extract_user
+from TGNRobot import telethn as YoneTelethonClient, TIGERS, DRAGONS, DEMONS
 
 
 def no_by_per(totalhp, percentage):
