@@ -14,9 +14,9 @@ from telegram.ext import (
 )
 from telegram.utils.helpers import mention_html
 
-import LaylaRobot.modules.sql.global_bans_sql as sql
-from LaylaRobot.modules.sql.users_sql import get_user_com_chats
-from LaylaRobot import (
+import TGNRobot.modules.sql.global_bans_sql as sql
+from TGNRobot.modules.sql.users_sql import get_user_com_chats
+from TGNRobot import (
     DEV_USERS,
     EVENT_LOGS,
     OWNER_ID,
@@ -30,16 +30,16 @@ from LaylaRobot import (
     sw,
     dispatcher,
 )
-from LaylaRobot.modules.helper_funcs.chat_status import (
+from TGNRobot.modules.helper_funcs.chat_status import (
     is_user_admin,
     support_plus,
     user_admin,
 )
-from LaylaRobot.modules.helper_funcs.extraction import (
+from TGNRobot.modules.helper_funcs.extraction import (
     extract_user,
     extract_user_and_text,
 )
-from LaylaRobot.modules.helper_funcs.misc import send_to_list
+from TGNRobot.modules.helper_funcs.misc import send_to_list
 
 GBAN_ENFORCE_GROUP = 6
 
