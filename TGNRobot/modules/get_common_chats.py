@@ -1,9 +1,9 @@
 import os
 from time import sleep
 
-from LaylaRobot import OWNER_ID, dispatcher
-from LaylaRobot.modules.helper_funcs.extraction import extract_user
-from LaylaRobot.modules.sql.users_sql import get_user_com_chats
+from TGNRobot import OWNER_ID, dispatcher
+from TGNRobot.modules.helper_funcs.extraction import extract_user
+from TGNRobot.modules.sql.users_sql import get_user_com_chats
 from telegram import Update
 from telegram.error import BadRequest, RetryAfter, Unauthorized
 from telegram.ext import CallbackContext, CommandHandler, Filters
