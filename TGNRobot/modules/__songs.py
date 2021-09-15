@@ -44,7 +44,7 @@ import os
 import aiofiles
 import aiohttp
 from pyrogram import filters
-from LaylaRobot import pbot as Layla
+from TGNRobot import pbot as Layla
 
 ARQ = "https://thearq.tech/"
 
@@ -98,7 +98,7 @@ import os
 import aiofiles
 import aiohttp
 from pyrogram import filters
-from LaylaRobot import pbot as ASUNA
+from TGNRobot import pbot as ASUNA
 
 ARQ = "https://thearq.tech/"
 
