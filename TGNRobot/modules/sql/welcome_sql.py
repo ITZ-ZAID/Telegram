@@ -2,8 +2,8 @@ import random
 import threading
 from typing import Union
 
-from LaylaRobot.modules.helper_funcs.msg_types import Types
-from LaylaRobot.modules.sql import BASE, SESSION
+from TGNRobot.modules.helper_funcs.msg_types import Types
+from TGNRobot.modules.sql import BASE, SESSION
 from sqlalchemy import BigInteger, Boolean, Column, Integer, String, UnicodeText
 
 DEFAULT_WELCOME = "Hey {first}, how are you?"
