@@ -1,6 +1,6 @@
-from LaylaRobot.modules.helper_funcs.chat_status import user_admin
-from LaylaRobot.modules.disable import DisableAbleCommandHandler
-from LaylaRobot import dispatcher
+from TGNRobot.modules.helper_funcs.chat_status import user_admin
+from TGNRobot.modules.disable import DisableAbleCommandHandler
+from TGNRobot import dispatcher
 
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup
 from telegram import ParseMode, Update
