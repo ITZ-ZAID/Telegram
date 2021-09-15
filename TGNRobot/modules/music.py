@@ -12,9 +12,9 @@ from tswift import Song
 from youtube_dl import YoutubeDL
 from youtubesearchpython import SearchVideos
 
-from LaylaRobot.conf import get_str_key
-from LaylaRobot.pyrogramee.pluginshelper import get_text, progress
-from LaylaRobot import pbot
+from TGNRobot.conf import get_str_key
+from TGNRobot.pyrogramee.pluginshelper import get_text, progress
+from TGNRobot import pbot
 
 GENIUS = get_str_key("GENIUS_API_TOKEN", None)
 
