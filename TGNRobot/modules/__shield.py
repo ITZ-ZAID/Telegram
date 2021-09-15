@@ -33,7 +33,7 @@ from TGNRobot.pyrogramee.telethonbasics import is_admin
 from TGNRobot.events import register
 from TGNRobot import MONGO_DB_URI 
 from pymongo import MongoClient
-from LaylaRobot.modules.sql_extended.nsfw_watch_sql import (
+from TGNRobot.modules.sql_extended.nsfw_watch_sql import (
     add_nsfwatch,
     get_all_nsfw_enabled_chat,
     is_nsfwatch_indb,
