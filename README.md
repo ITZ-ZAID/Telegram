@@ -5,15 +5,15 @@
 
 ```
 Thanks To:
-> @Timesisnotwaiting
+> @Timesisnotwaiting :-ᴢᴀɪᴅ
 
-> @Shubhanshutya
+> @Shubhanshutya :-ꜱᴜᴘᴘᴏʀᴛᴇʀ
 
-> @godfatherakki
+> @godfatherakki :-ʙᴏᴛ ᴏᴡɴᴇʀ
 
 
 ```
 
 
 
-The Support group can be reached out to at [TG Network](https://t.me/The_Godfather_Network), where you can ask for help about [TGN Robot](https://t.me/TGN_Ro_Bot), discover/request new features, report bugs, and stay in the loop whenever a new update is available. 
+ᴛʜᴇ ꜱᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ ᴄᴀɴ ʙᴇ ʀᴇᴀᴄʜᴇᴅ ᴏᴜᴛ ᴛᴏ ᴀᴛ [TG Network](https://t.me/The_Godfather_Network), ᴡʜᴇʀᴇ ʏᴏᴜ ᴄᴀɴ ᴀꜱᴋ ꜰᴏʀ ʜᴇʟᴘ ᴀʙᴏᴜᴛ [TGN Robot](https://t.me/TGN_Ro_Bot), ᴅɪꜱᴄᴏᴠᴇʀ/ʀᴇQᴜᴇꜱᴛ ɴᴇᴡ ꜰᴇᴀᴛᴜʀᴇꜱ, ʀᴇᴘᴏʀᴛ ʙᴜɢꜱ, ᴀɴᴅ ꜱᴛᴀʏ ɪɴ ᴛʜᴇ ʟᴏᴏᴘ ᴡʜᴇɴᴇᴠᴇʀ ᴀ ɴᴇᴡ ᴜᴘᴅᴀᴛᴇ ɪꜱ ᴀᴠᴀɪʟᴀʙʟᴇ. 
