@@ -76,7 +76,7 @@ def get_readable_time(seconds: int) -> str:
 PM_START_TEXT = """
 ʜᴏɪ, ɪ ᴍ ᴛɢɴ ʀᴏʙᴏᴛ
 `ɪ'ᴍ ʜᴇʀᴇ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ ᴛᴏ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘꜱ ᴏʀ ɪ ᴄᴀɴ ᴘʀᴏᴛᴇᴄᴛ ᴜʀ ɢʀᴏᴜᴘ ᴀɴᴅ ꜱᴀꜰᴇ ꜰʀᴏᴍ ꜱᴄᴀᴍᴍᴇʀꜱ ! ʜɪᴛ` /help
-ᴘᴏᴡᴇʀᴇᴅ ʙʏ @The\_Godfather\_Network) [❤](https://telegra.ph/file/655ab2c4cbbe99d503864.jpg)
+ᴘᴏᴡᴇʀᴇᴅ ʙʏ @The\_Godfather\_Network [❤](https://telegra.ph/file/655ab2c4cbbe99d503864.jpg)
 """
 
 buttons = [
@@ -85,7 +85,7 @@ buttons = [
             text="ᴀᴅᴅ ᴛɢɴ ʀᴏʙᴏᴛ ᴛᴏ ᴜʀ ᴄʜᴀᴛ", url="t.me/TGN_Ro_bot?startgroup=true"),
     ],
     [
-        InlineKeyboardButton(text="ᴀʙᴏᴜᴛ", callback_data="layla_"),
+        InlineKeyboardButton(text="ᴛɢ ɴᴇᴛᴡᴏʀᴋ", url=f"https://t.me/The_Godfather_Network"),
         InlineKeyboardButton(
             text="ꜱᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{SUPPORT_CHAT}"
         ),
@@ -105,7 +105,7 @@ buttons = [
 HELP_STRINGS = """
 `ʜᴏɪ, ɪ ᴍ` ᴛɢɴ ʀᴏʙᴏᴛ
 `ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʙᴜᴛᴛᴏɴꜱ ʙᴇʟᴏᴡ ᴛᴏ ɢᴇᴛ ᴛʜᴇ ɪɴꜰᴏʀᴍᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ꜱᴘᴇᴄɪꜰɪᴄ ᴄᴍᴅꜱ ᴀɴᴅ ᴍᴏᴅᴜʟᴇꜱ...`
-ᴘᴏᴡᴇʀᴇᴅ ʙʏ :- **@The\_Godfather\_Network**"""
+ᴘᴏᴡᴇʀᴇᴅ ʙʏ :- **@The\_Godfather\_Network** [❤️](https://telegra.ph/file/fde36758414c15fb21436.jpg)"""
 
 layla_IMG = "https://telegra.ph/file/cc83751e23d42cd9e1883.jpg"
 
