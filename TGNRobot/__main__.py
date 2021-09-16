@@ -74,9 +74,9 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-Hello, I'M TGNRobot
-`ɪ'ᴍ ʜᴇʀᴇ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘꜱ! ʜɪᴛ` /help
-Maintained by @Timesisnotwaiting ❤
+ʜᴏɪ, ɪ ᴍ ᴛɢɴ ʀᴏʙᴏᴛ
+`ɪ'ᴍ ʜᴇʀᴇ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ ᴛᴏ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘꜱ ᴏʀ ɪ ᴄᴀɴ ᴘʀᴏᴛᴇᴄᴛ ᴜʀ ɢʀᴏᴜᴘ ᴀɴᴅ ꜱᴀꜰᴇ ꜰʀᴏᴍ ꜱᴄᴀᴍᴍᴇʀꜱ ! ʜɪᴛ` /help
+ᴘᴏᴡᴇʀᴇᴅ ʙʏ @The_Godfather_Network [❤](https://telegra.ph/file/655ab2c4cbbe99d503864.jpg)
 """
 
 buttons = [
@@ -107,7 +107,7 @@ HELP_STRINGS = """
 `**ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʙᴜᴛᴛᴏɴꜱ ʙᴇʟᴏᴡ ᴛᴏ ɢᴇᴛ ᴛʜᴇ ɪɴꜰᴏʀᴍᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ꜱᴘᴇᴄɪꜰɪᴄ ᴄᴍᴅꜱ ᴀɴᴅ ᴍᴏᴅᴜʟᴇꜱ**...`
 ᴘᴏᴡᴇʀᴇᴅ ʙʏ :- **@The_Godfather_Network**"""
 
-layla_IMG = "https://telegra.ph/file/655ab2c4cbbe99d503864.jpg"
+layla_IMG = "https://telegra.ph/file/47056b38765870e48fa52.mp4"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
  You can support the project [Akki](t.me/godfatherakki) \
@@ -364,12 +364,12 @@ def layla_about_callback(update, context):
                  \n❍ I can warn users until they reach max warns, with each predefined actions such as ban, mute, kick, etc.
                  \n❍ I have a note keeping system, blacklists, and even predetermined replies on certain keywords.
                  \n❍ I check for admins' permissions before executing any command and more stuffs
-                 \n\n_Layla's licensed under the GNU General Public License v3.0_
+                 \n\n_TGN's licensed under the GNU General Public License v3.0_
                  \n❍ TGN  @The_Godfather_Network
                  \n❍ Support Group @Godfathersupport
                  \n❍ Assistant @TGN_Assistant.
                  \nHere is the [💾Repository](https://github.com/Itsunknown-12/TGN-Robot).
-                 \n\nIf you have any question about Layla, let us know at .""",
+                 \n\nIf you have any question about bot, let us know at .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
