@@ -1,7 +1,12 @@
 # 🅣🅖🅝 🅡🅞🅑🅞🅣
 
 [![ᴅᴇᴘʟᴏʏ](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Itsunknown-12/TGN-Robot)
-#### Creator Info/Credits
+
+## 🅡🅔🅟🅞 🅢🅣🅐🅣🅢
+![github card](https://github-readme-stats.vercel.app/api/pin/?username=Itsunknown-12&repo=TGN-Robot&theme=dark)
+
+
+#### 🅒🅡🅔🅐🅓🅘🅣🅢 🅐🅝🅓 🅞🅦🅝🅔🅡🅢
 
 ```
 Thanks To:
