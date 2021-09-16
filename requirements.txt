@@ -50,7 +50,7 @@ youtube_search_python
 youtube_search
 asyncio
 dateparser==1.0.0
-pymongo==3.11.0
+pymongo
 dnspython
 secureme
 apscheduler
