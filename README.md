@@ -25,9 +25,6 @@
 
 
 ## Configuration 
-
-<h3 align = "justify">Create a new <u>config.py</u> or rename <u>sample_config.py</u> to <u>config.py</u> file in same dir and import, then extend this class.</h3>
-
 - `TOKEN`                  : Your [bot Token](https://t.me/BotFather), As a string
 - `API_ID & API_HASH`      : Get API_ID & API_HASH from my.telegram.org, used for telethon based modules.
 - `DATABASE_URI`: Your database URL
@@ -58,9 +55,9 @@
  
 
 ## Support
-[![HITECH](https://img.shields.io/badge/LKHITECH-Channel-red?style=for-the-badge&logo=telegram)](https://telegram.dog/lkhitech)</br></br>
-[![HITECH](https://img.shields.io/badge/LKHITECH-Group-red?style=for-the-badge&logo=telegram)](https://telegram.dog/hitechlkgroup)</br></br>
-[![CONTACT ME](https://img.shields.io/badge/Telegram-Contact%20Me-informational)](https://t.me/kavinduaj)
+[![Zaid](https://img.shields.io/badge/Zaid-Channel-red?style=for-the-badge&logo=telegram)](https://t.me/OnlineHangama)</br></br>
+[![Zaid](https://img.shields.io/badge/Superior-Group-red?style=for-the-badge&logo=telegram)](https://t.me/SUPERIOR_BOTS)</br></br>
+[![CONTACT ME](https://img.shields.io/badge/Telegram-Contact%20Me-informational)](https://t.me/Timesisnotwaiting)
 
 ## Credits
 
