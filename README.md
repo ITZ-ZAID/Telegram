@@ -31,32 +31,6 @@
 [![MRJOKER](https://img.shields.io/github/forks/kjeymax/MR-JOKER_BOT?color=Red%20&label=Github%20Fork&style=for-the-badge)](https://github.com/kjeymax/MR-JOKER_BOT)
 [![MRJOKER](https://img.shields.io/github/watchers/kjeymax/MR-JOKER_BOT?color=red&style=for-the-badge)](https://github.com/kjeymax/MR-JOKER_BOT)
 
-<h1 align ="center"> 𝍖𝍖𝍖𐒄Ɽ.ʝⰙƘƸⱤ𝍖𝍖𝍖</h1>
-<h1 align = "center">Yo,🤡♂️I'm Alive..I'm a super bot 🔥...🚴‍♂️Speed 1 THz..Memory 1 Zettabyte.🕺</center></h1>
-
-<p><h3 align = "justify">A modular telegram Python bot running on python3 with an sqlalchemy database.</br></br></h3>
-  
-<h3 align = "justify">Originally a simple group management bot with multiple admin features, it has evolved into becoming a basis for modular bots aiming to provide simple plugin expansion via a simple drag and drop.</h3></p>
-
-
-## Deploy
-[![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/kjeymax/MR-JOKER_BOT)
-
-[![Deploy To Railway](https://railway.app/button.svg)](https://railway.app)
-
-[![Deploy to Qovery](https://img.shields.io/badge/Deploy-Qovery-6EC0D9.svg)](https://qovery.com)
-
-
-
-## Starting the bot
-
-<h3 align = "justify">Once you've setup your database and your configuration (see below) is complete, simply run:</h3>
-
-```
-
-python3 -m mrjoker
-
-```
 
 ## Configuration 
 
