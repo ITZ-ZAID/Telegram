@@ -24,14 +24,6 @@
 </a>
 
 
-<p align="Center">
-<a href="https://github.com/Itsunknown-12/Zaid-Robot/discussions" alt="Zaid"> <img src="https://img.shields.io/badge/%F0%9F%A4%A1-Mr%20Joker%20Discussions-9cf" /> </a>
-
-
-[![MRJOKER](https://img.shields.io/github/forks/kjeymax/MR-JOKER_BOT?color=Red%20&label=Github%20Fork&style=for-the-badge)](https://github.com/Itsunknown-12/Zaid-Robot)
-[![MRJOKER](https://img.shields.io/github/watchers/kjeymax/MR-JOKER_BOT?color=red&style=for-the-badge)](https://github.com/Itsunknown-12/Zaid-Robot)
-https://github.com/kjeymax/MR-JOKER_BOT
-
 ## Configuration 
 
 <h3 align = "justify">Create a new <u>config.py</u> or rename <u>sample_config.py</u> to <u>config.py</u> file in same dir and import, then extend this class.</h3>
@@ -56,15 +48,12 @@ https://github.com/kjeymax/MR-JOKER_BOT
 -   `ENV`                  : Setting this to ANYTHING will enable environment variables. Leave it as it is
 -   `WEBHOOK`              : Setting this to ANYTHING will enable webhooks. If you dont know how this works leave it as it is
 -   `PORT`                 : Port to use for your webhooks. Better leave this as it is on heroku
--   `URL`                  : The Heroku App URL :-  `https://<appname>.herokuapp.com`
--   `No_LOAD`              : Dont load these modules cause they shit, space separation
 -   `BL_CHATS`             : List of chats you want blacklisted.
 -   `ALLOW_EXCL`           : Set this to True if you want ! to be a command prefix along with /. Recommended is True
 -   `DEL_CMDS`             : Set this to True if you want to delete command messages from users who don't have the perms to run that command.
 -   `AI_API_KEY`           : Make your bot talk using Intellivoid's chatbot API, [Get your key from](https://coffeehouse.intellivoid.net/)
 -   `BAN_STICKER`          : ID of the sticker you want to use when banning people
 -   `WALL_API`             : Required for wallpaper. [Get your's from](https://wall.alphacoders.com/)  
--   `ARQ_API_URL`          : https://thearq.tech/ 👈 Fill in this way
 -   `ARQ_API_KEY`          : Start this boat https://t.me/ARQRobot. Get the key
  
 
@@ -73,10 +62,6 @@ https://github.com/kjeymax/MR-JOKER_BOT
 [![HITECH](https://img.shields.io/badge/LKHITECH-Group-red?style=for-the-badge&logo=telegram)](https://telegram.dog/hitechlkgroup)</br></br>
 [![CONTACT ME](https://img.shields.io/badge/Telegram-Contact%20Me-informational)](https://t.me/kavinduaj)
 
-## Discussions
-<p align="left">
-<a href="https://github.com/kjeymax/MR-JOKER_BOT/discussions" alt="Mr Joker"> <img src="https://img.shields.io/badge/%F0%9F%A4%A1-Mr%20Joker%20Discussions-9cf" /> </a>
-
 ## Credits
 
  - [Utah](https://github.com/minatouzuki/utah).
@@ -84,7 +69,4 @@ https://github.com/kjeymax/MR-JOKER_BOT
  - [Alita_Robot](https://github.com/DivideProjects/Alita_Robot/)
  - [Saitama Robot](https://github.com/AnimeKaizoku/SaitamaRobot)
 
-<h3 align = "justify">Don't forget to star this repo if you liked it.</br></br>
-
-Enjoy Your Bot! 💝</h3> 
 
