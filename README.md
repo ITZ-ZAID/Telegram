@@ -1,8 +1,3 @@
-# 🅣🅖🅝 🅡🅞🅑🅞🅣
-
-[![ᴅᴇᴘʟᴏʏ](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Itsunknown-12/TGN-Robot)
-
-
 <h1 align = "center"> ❝𝐓𝐡𝐞 𝐌𝐨𝐬𝐭 𝐏𝐨𝐰𝐞𝐫𝐟𝐮𝐥𝐥 𝐆𝐫𝐨𝐮𝐩 𝐌𝐚𝐧𝐚𝐠𝐞𝐦𝐞𝐧𝐭 𝐁𝐨𝐭❞ </h1>
 
 
@@ -23,6 +18,8 @@
 ## 🅡🅔🅟🅞 🅢🅣🅐🅣🅢
 ![github card](https://github-readme-stats.vercel.app/api/pin/?username=Itsunknown-12&repo=Zaid-Robot&theme=dark)
 
+## Deploy
+[![ᴅᴇᴘʟᴏʏ](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Itsunknown-12/TGN-Robot)
 
 
 ## Configuration 
