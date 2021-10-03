@@ -103,15 +103,14 @@ buttons = [
 
 
 HELP_STRINGS = """
-`ʜᴏɪ, ɪ ᴍ` ᴛɢɴ ʀᴏʙᴏᴛ
-`ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʙᴜᴛᴛᴏɴꜱ ʙᴇʟᴏᴡ ᴛᴏ ɢᴇᴛ ᴛʜᴇ ɪɴꜰᴏʀᴍᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ꜱᴘᴇᴄɪꜰɪᴄ ᴄᴍᴅꜱ ᴀɴᴅ ᴍᴏᴅᴜʟᴇꜱ...`
-ᴘᴏᴡᴇʀᴇᴅ ʙʏ :- **@The\_Godfather\_Network** [❤️](https://telegra.ph/file/fde36758414c15fb21436.jpg)"""
+`ʏᴏᴜ ᴄᴀɴ ᴄʜᴏᴏꜱᴇ ᴀɴ ᴏᴘᴛɪᴏɴ ʙᴇʟᴏᴡ, ʙʏ ᴄʟɪᴄᴋɪɴɢ ᴀ ʙᴜᴛᴛᴏɴ..`
+ᴀʟꜱᴏ ʏᴏᴜ ᴄᴀɴ ᴀꜱᴋ ᴀɴʏᴛʜɪɴɢ ɪɴ ꜱᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ [❤️](https://telegra.ph/file/069815d65bf8b00759ba7.jpg)"""
 
-layla_IMG = "https://telegra.ph/file/cc83751e23d42cd9e1883.jpg"
+START_IMG = "https://telegra.ph/file/3615a884c77b3fed6b838.mp4"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
- You can support the project [Akki](t.me/godfatherakki) \
- Supporting isnt always financial! [ᴛɢɴ ɴᴇᴛᴡᴏʀᴋ](https://t.me/The_Godfather_Network) \
+ You can support the project [Lucifer](t.me/detctective_de) \
+ Supporting isnt always financial! [ ɴᴇᴛᴡᴏʀᴋ](https://t.me/Zaid_Updates) \
  Those who cannot provide monetary support are welcome to help us develop the bot at ."""
 
 IMPORTED = {}
@@ -214,16 +213,19 @@ def start(update: Update, context: CallbackContext):
                 IMPORTED["rules"].send_rules(update, args[0], from_pm=True)
 
         else:
+            first_name = update.effective_user.first_name
             update.effective_message.reply_text(
-                PM_START_TEXT,
+                PM_START_TEXT.format(
+                    escape_markdown(first_name),
+                    escape_markdown(context.bot.first_name)),
                 reply_markup=InlineKeyboardMarkup(buttons),
                 parse_mode=ParseMode.MARKDOWN,
                 timeout=60,
             )
     else:
-        update.effective_message.reply_text(
-            "I'm awake already!\n<b>Haven't slept since:</b> <code>{}</code>".format(
-                uptime
+        update.effective_message.reply_video(
+            START_IMG, caption= "<code>Sophia is Here For You❤\nI am Awake Since</code>: <code>{}</code>".format(
+                uptime            
             ),
             parse_mode=ParseMode.HTML,
         )
@@ -367,7 +369,7 @@ def layla_about_callback(update, context):
                  \n\n_TGN's licensed under the GNU General Public License v3.0_
                  \n❍ TGN  @The_Godfather_Network
                  \n❍ Support Group @Godfathersupport
-                 \n❍ Assistant @TGN_Assistant.
+                 \n❍ Assistant @TGN\_Assistant.
                  \nHere is the [💾Repository](https://github.com/Itsunknown-12/TGN-Robot).
                  \n\nIf you have any question about bot, let us know at .""",
             parse_mode=ParseMode.MARKDOWN,
