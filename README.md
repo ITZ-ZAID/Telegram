@@ -32,7 +32,7 @@
 
 ## 🆃🅷🅰🅽🅺🆂 🅵🅾🆁 🅲🅾🅳🅴🆂...
 
- - [Saitama Robot](https://github.com/AnimeKaizoku/SaitamaRobot)
- - [Layla Bot](https://github.com/QueenArzoo/LaylaRobot) For Help Modules🙄
+ - Saitama Robot - for Modules
+ - Layla Bot - for Some Help modules
 
 
