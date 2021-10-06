@@ -6,11 +6,11 @@ import requests
 import wget
 from pyrogram import filters
 
-from TGNRobot import pbot as Jebot
+from TGNRobot import pbot as zaid
 from TGNRobot.pyrogramee.dark import get_arg
 
 
-@Jebot.on_message(filters.command("saavn"))
+@zaid.on_message(filters.command("saavn"))
 async def song(client, message):
     message.chat.id
     message.from_user["id"]
