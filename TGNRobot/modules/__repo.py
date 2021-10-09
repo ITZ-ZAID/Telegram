@@ -2,7 +2,7 @@ import os
 from pyrogram import Client, filters
 from pyrogram.types import *
 
-from TGNRobot.config import get_str_key
+from TGNRobot.conf import get_str_key
 from TGNRobot import zaid
 
 REPO_TEXT = "**A Powerful [BOT](https://telegra.ph/file/cab6825dea9263d347831.jpg) to Make Your Groups Secured and Organized ! \n\n↼ Øwñêr ⇀ : 『 [Akki](t.me/godfatherakki) 』\n╭──────────────\n┣─ » Python ~ 3.8.6\n┣─ » Update ~ Recently\n╰──────────────\n\n»»» @The\_Godfather\_Network «««"
