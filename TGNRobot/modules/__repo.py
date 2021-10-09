@@ -3,7 +3,7 @@ from pyrogram import Client, filters
 from pyrogram.types import *
 
 from TGNRobot.conf import get_str_key
-from TGNRobot import zaid
+from TGNRobot import pbot
 
 REPO_TEXT = "**A Powerful [BOT](https://telegra.ph/file/cab6825dea9263d347831.jpg) to Make Your Groups Secured and Organized ! \n\n↼ Øwñêr ⇀ : 『 [Akki](t.me/godfatherakki) 』\n╭──────────────\n┣─ » Python ~ 3.8.6\n┣─ » Update ~ Recently\n╰──────────────\n\n»»» @The\_Godfather\_Network «««"
   
@@ -21,7 +21,7 @@ BUTTONS = InlineKeyboardMarkup(
     )
   
   
-@zaid.on_message(filters.command(["repo"]))
+@pbot.on_message(filters.command(["repo"]))
 async def repo(pbot, update):
     await update.reply_text(
         text=REPO_TEXT,
