@@ -4,10 +4,16 @@ lxml
 wget
 gtts
 faker
+arq
+odmantic
+redis
+pykeyboard
 beautifulsoup4
+python-arq==6.0.3
 requests==2.20.0
 python-telegram-bot==12.8
 sqlalchemy==1.3.20
+httpx[http2]>=0.18.1,<1.0.0
 psycopg2-binary
 feedparser
 hachoir
@@ -69,3 +75,4 @@ better_profanity
 nudepy
 motor
 cloudscraper
+gpytranslate
