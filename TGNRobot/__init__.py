@@ -6,6 +6,7 @@ import spamwatch
 
 import telegram.ext as tg
 from pyrogram import Client, errors
+from aiohttp import ClientSession
 from telethon import TelegramClient
 
 StartTime = time.time()
