@@ -203,6 +203,12 @@ else:
 
 
 updater = tg.Updater(TOKEN, workers=WORKERS, use_context=True)
+pgram = Client(
+    session_name,
+    api_id=API_ID,
+    api_hash=API_HASH,
+    bot_token=TOKEN,
+)
 telethn = TelegramClient("zaid", API_ID, API_HASH)
 aiohttpsession = ClientSession()
 # ARQ Client
