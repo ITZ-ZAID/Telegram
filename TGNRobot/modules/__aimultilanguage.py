@@ -3,7 +3,7 @@ import re
 import os
 import html
 import requests
-import TGNRobot.modules.sql.chatbot_sql as sql
+import TGNRobot.modules.sql.kuki_sql as sql
 
 from time import sleep
 from telegram import ParseMode
@@ -43,7 +43,7 @@ def kukirm(update: Update, context: CallbackContext) -> str:
             )
         else:
             update.effective_message.edit_text(
-                "Chatbot disable by {}.".format(mention_html(user.id, user.first_name)),
+                " Chatbot disable by {}.".format(mention_html(user.id, user.first_name)),
                 parse_mode=ParseMode.HTML,
             )
 
@@ -68,7 +68,7 @@ def kukiadd(update: Update, context: CallbackContext) -> str:
             )
         else:
             update.effective_message.edit_text(
-                "Chatbot enable by {}.".format(mention_html(user.id, user.first_name)),
+                "Sophia Chatbot enable by {}.".format(mention_html(user.id, user.first_name)),
                 parse_mode=ParseMode.HTML,
             )
 
@@ -118,7 +118,7 @@ def chatbot(update: Update, context: CallbackContext):
             return
         Message = message.text
         bot.send_chat_action(chat_id, action="typing")
-        kukiurl = requests.get('https://www.kuki-api.tk/api/Kuki/MoeZilla/message='+Message)
+        kukiurl = requests.get('https://www.kukiapi.xyz/api/apikey=KUKIg76Fg4EIo/botname/owner/message='+Message)
         Kuki = json.loads(kukiurl.text)
         kuki = Kuki['reply']
         sleep(0.3)
@@ -139,12 +139,11 @@ def list_all_chats(update: Update, context: CallbackContext):
     update.effective_message.reply_text(text, parse_mode="HTML")
 
 __help__ = """
-Chatbot utilizes the Kuki's api which allows Sophia to talk and provide a more interactive group chat experience.
+Chatbot utilizes the TGN's api which allows Kuki to talk and provide a more interactive group chat experience.
 *Admins only Commands*:
-  ➢ `/Chatbot`*:* Shows chatbot control panel
+ • `/Chatbot`*:* Shows chatbot control panel
   
- Reports bugs at Kuki-api.tk
-*Powered by ItelAi* (https://github/itelai) from @KukiUpdates
+*Powered by ItelAi*
 """
 
 __mod_name__ = "ChatBot"
