@@ -29,7 +29,7 @@
 - Smart Ai System
 - Easy To Use
 
-Can be found on Telegram as [𝐀𝐋𝐈𝐓𝐀 💞](https://t.me/Alita_Gbot)</br>
+Can be found on Telegram as [TGN 💞](https://t.me/TGN_RO_BOT)</br>
 
 
 ## 🅡🅔🅟🅞 🅢🅣🅐🅣🅢
