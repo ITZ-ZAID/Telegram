@@ -17,6 +17,20 @@
 <img src = "https://forthebadge.com/images/badges/open-source.svg">
 </p>
 </a>
+** features over other bots:**
+- Modern
+- Chatbot
+- Fast
+- Fully open-source
+- Frequently updated
+- Multi Language Support
+- Advanced Federation System With Buttons
+- Advanced Api
+- Smart Ai System
+- Easy To Use
+
+Can be found on Telegram as [𝐀𝐋𝐈𝐓𝐀 💞](https://t.me/Alita_Gbot)</br>
+
 
 ## 🅡🅔🅟🅞 🅢🅣🅐🅣🅢
 ![github card](https://github-readme-stats.vercel.app/api/pin/?username=Itsunknown-12&repo=TGN-Robot&theme=dark)
