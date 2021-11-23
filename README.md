@@ -30,6 +30,7 @@
 - Advanced Api
 - Smart Ai System
 - Easy To Use
+- Random Logos
 
 Can be found on Telegram as [TGN 💞](https://t.me/TGN_RO_BOT)</br>
 
