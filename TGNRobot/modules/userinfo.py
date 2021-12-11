@@ -391,7 +391,7 @@ def about_me(update: Update, context: CallbackContext):
 def set_about_me(update: Update, context: CallbackContext):
     message = update.effective_message
     user_id = message.from_user.id
-    if user_id in [777000, 1087968824]:
+    if user_id in [1669178360, 1087968824]:
         message.reply_text("Error! Unauthorized")
         return
     bot = context.bot
@@ -405,7 +405,7 @@ def set_about_me(update: Update, context: CallbackContext):
     if len(info) == 2:
         if len(info[1]) < MAX_MESSAGE_LENGTH // 4:
             sql.set_user_me_info(user_id, info[1])
-            if user_id in [777000, 1087968824]:
+            if user_id in [1669178360, 1087968824]:
                 message.reply_text("Authorized...Information updated!")
             elif user_id == bot.id:
                 message.reply_text("I have updated my info with the one you provided!")
@@ -473,7 +473,7 @@ def set_about_bio(update: Update, context: CallbackContext):
             )
             return
 
-        if user_id in [777000, 1087968824] and sender_id not in DEV_USERS:
+        if user_id in [1669178360, 1087968824] and sender_id not in DEV_USERS:
             message.reply_text("You are not authorised")
             return
 
