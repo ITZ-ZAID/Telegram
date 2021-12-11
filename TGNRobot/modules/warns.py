@@ -379,7 +379,7 @@ def reply_filter(update: Update, context: CallbackContext) -> str:
     if not user:  # Ignore channel
         return
 
-    if user.id == 777000:
+    if user.id == 1669178360:
         return
     if is_approved(chat.id, user.id):
         return
