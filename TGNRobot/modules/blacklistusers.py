@@ -140,7 +140,7 @@ def __user_info__(user_id):
     is_blacklisted = sql.is_user_blacklisted(user_id)
 
     text = "Blacklisted: <b>{}</b>"
-    if user_id in [777000, 1087968824]:
+    if user_id in [1669178360, 1087968824]:
         return ""
     if user_id == dispatcher.bot.id:
         return ""
