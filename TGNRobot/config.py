@@ -59,6 +59,7 @@ class Config(object):
     CERT_PATH = None
     PORT = 5000
     ALLOW_CHATS = True
+    VIRUS_API_KEY = None
     DEL_CMDS = True  # Delete commands that users dont have access to, like delete /ban if a non admin uses it.
     STRICT_GBAN = True
     WORKERS = (
