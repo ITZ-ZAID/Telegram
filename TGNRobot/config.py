@@ -9,9 +9,9 @@ class Config(object):
     TOKEN = ""
     OWNER_ID = "1669178360"
     OWNER_USERNAME = "Timesisnotwaiting"
-    MONGO_DB_URI = ""
-    MONGO_DB = "ZaidRobot"
-    SUPPORT_CHAT = "Superior_Support"
+    MONGO_DB_URI = "mongodb+srv://TGN:TGN@cluster0.c4yk3.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+    MONGO_DB = "TGNRobot"
+    SUPPORT_CHAT = "GodfatherSupport"
     JOIN_LOGGER = "-1001565570457"
     EVENT_LOGS = "-1001565570457"
 
