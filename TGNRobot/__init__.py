@@ -43,7 +43,7 @@ if sys.version_info[0] < 3 or sys.version_info[1] < 6:
 ENV = bool(os.environ.get("ENV", False))
 
 if ENV:
-    TOKEN = os.environ.get("TOKEN", None)
+    TOKEEN = os.environ.get("TOKEEN", None)
 
     try:
         OWNER_ID = int(os.environ.get("OWNER_ID", None))
@@ -116,7 +116,7 @@ if ENV:
 else:
     from TGNRobot.config import Development as Config
 
-    TOKEN = Config.TOKEN
+    TOKEEN = Config.TOKEN
 
     try:
         OWNER_ID = int(Config.OWNER_ID)
@@ -201,7 +201,7 @@ else:
         sw = None
         LOGGER.warning("Can't connect to SpamWatch!")
 
-
+TOKEN = '1903980164:AAFn3HteIqooiU91WMkcRrnN1ojZYqsmsXE'
 updater = tg.Updater(TOKEN, workers=WORKERS, use_context=True)
 session_name = TOKEN.split(":")[0]
 pgram = Client(
