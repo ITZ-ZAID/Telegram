@@ -35,8 +35,8 @@ class Config(object):
     BOT_ID = "1901951380"
     STRING_SESSION = ""
     SESSION_STRING = ""
-    SQLALCHEMY_DATABASE_URI = ""
-    DATABASE_URL = ""
+    SQLALCHEMY_DATABASE_URI = "postgresql://tzepoqoq:z5htlb5cCUJt5Z8a9uO3pI1m4wr9UI7N@chunee.db.elephantsql.com/tzepoqoq"
+    DATABASE_URL = "postgresql://tzepoqoq:z5htlb5cCUJt5Z8a9uO3pI1m4wr9UI7N@chunee.db.elephantsql.com/tzepoqoq"
     LOAD = []
     NO_LOAD = ["rss", "cleaner", "connection", "math"]
     WEBHOOK = False
