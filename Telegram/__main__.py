@@ -163,7 +163,7 @@ def start(update: Update, context: CallbackContext):  # sourcery no-metrics
                         [
                             InlineKeyboardButton(
                                 text=gs(chat.id, "support_chat_link_btn"),
-                                url='https://t.me/AniebotSupports',
+                                url='https://t.me/Superior_Support',
                             ),
                             InlineKeyboardButton(
                                 text="Help",
@@ -171,7 +171,7 @@ def start(update: Update, context: CallbackContext):  # sourcery no-metrics
                             ),
                             InlineKeyboardButton(
                                 text=gs(chat.id, "updates_channel_link_btn"),
-                                url="https://t.me/AnieBots",
+                                url="https://t.me/Superior_Bots",
                             ),
                         ],
                     ]
@@ -256,7 +256,7 @@ def start(update: Update, context: CallbackContext):  # sourcery no-metrics
                         [
                             InlineKeyboardButton(
                                 text=gs(chat.id, "support_chat_link_btn"),
-                                url='https://t.me/AniebotSupports',
+                                url='https://t.me/Superior_Support',
                             ),
                             InlineKeyboardButton(
                                 text="Help",
@@ -264,7 +264,7 @@ def start(update: Update, context: CallbackContext):  # sourcery no-metrics
                             ),
                             InlineKeyboardButton(
                                 text=gs(chat.id, "updates_channel_link_btn"),
-                                url="https://t.me/AnieBots",
+                                url="https://t.me/Superior_Bots",
                             ),
                         ],
                     ]
