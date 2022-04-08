@@ -147,7 +147,9 @@ def start(update: Update, context: CallbackContext):  # sourcery no-metrics
                         [
                             InlineKeyboardButton(
                                 text=gs(chat.id, "add_bot_to_group_btn"),
-                                url='https://t.me/AniebotSupports',
+                                url="t.me/{}?startgroup=true".format(
+                                    context.bot.username
+                                ),
                             ),
                         ],
                         [
@@ -240,7 +242,9 @@ def start(update: Update, context: CallbackContext):  # sourcery no-metrics
                         [
                             InlineKeyboardButton(
                                 text=gs(chat.id, "add_bot_to_group_btn"),
-                                url='https://t.me/AniebotSupports',
+                                url="t.me/{}?startgroup=true".format(
+                                    context.bot.username
+                                ),
                             ),
                         ],
                         [
