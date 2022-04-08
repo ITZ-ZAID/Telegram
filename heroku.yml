@@ -2,4 +2,4 @@ build:
   docker:
     worker: Dockerfile
 run:
-  worker: python3 -m TGNRobot
+  worker: python3 -m Telegram
