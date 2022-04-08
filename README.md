@@ -41,8 +41,11 @@ Can be found on Telegram as [Anie 💞](https://t.me/Anierobot_bot)</br>
 ## 🅓🅔🅟🅛🅞🅨
 Fill all The Requirements Before Hosting [ᴄᴏɴꜰɪɢᴜʀᴀᴛɪᴏɴ](https://github.com/ITZ-ZAID/Telegram/blob/main/config.ini)
 
-[![ᴅᴇᴘʟᴏʏ](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/ITZ-ZAID/Telegram)
+To be safe fork this repo and then press deploy button from the forked repo 
 
+Fork Deploy is highly recommended
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
 ## 🆅🅴🆁🅸🅰🅱🅻🅴🆂
 [ᴄᴏɴꜰɪɢᴜʀᴀᴛɪᴏɴ](https://github.com/ITZ-ZAID/Telegram/blob/main/config.ini)
