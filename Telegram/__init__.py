@@ -31,7 +31,7 @@ def get_user_list(key):
 fileConfig('logging.ini')
 
 #print(flag)
-log = logging.getLogger('[Enterprise]')
+log = logging.getLogger('[Telethon]')
 logging.getLogger('ptbcontrib.postgres_persistence.postgrespersistence').setLevel(logging.WARNING)
 log.info("[TELEGRAM] Bot is starting. | An Telethon Project. | Licensed under GPLv3.")
 log.info("[TELEGRAM] Not affiliated to Azur Lane or Yostar in any way whatsoever.")
