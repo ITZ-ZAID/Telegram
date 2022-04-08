@@ -30,7 +30,7 @@
       "Config": {
          "description": "Before Hosting Plz Fill Your All Vars In config.ini.",
          "required": false,
-         "value": ""
+         "value": "Suggestions- Use Europe Server"
 
       }
       
