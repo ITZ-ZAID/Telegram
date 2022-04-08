@@ -1,0 +1,38 @@
+{
+      "name": "Anie Robot",
+      "description": "Telegram group management bot.",
+      "logo": "https://telegra.ph/file/399929e64a3266aad29bd.jpg",
+      "keywords": [
+         "telegram",
+         "anime",
+         "group",
+         "manager",
+         "TGN"
+      ],   
+   "repository": "https://github.com/ITZ-ZAID/Telegram",
+   "addons": [
+      {
+         "options": {
+            "version": "12"
+         },
+         "plan": "heroku-postgresql"
+      }
+   ],	
+   "buildpacks": [
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+    },
+    {
+      "url": "heroku/python"
+    }     
+  ],  
+   "env": {
+      "Config": {
+         "description": "Before Hosting Plz Fill Your All Vars In config.ini.",
+         "required": false,
+         "value": ""
+
+      }
+      
+   }
+}
