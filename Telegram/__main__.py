@@ -159,7 +159,7 @@ def start(update: Update, context: CallbackContext):  # sourcery no-metrics
                             ),
                             InlineKeyboardButton(
                                 text=gs(chat.id, "source_btn"),
-                                url="https://github.com/ITZ-ZAID/TGN-Robot",
+                                url="https://github.com/ITZ-ZAID/Telegram",
                             ),
                         ],
                         [
@@ -254,7 +254,7 @@ def start(update: Update, context: CallbackContext):  # sourcery no-metrics
                             ),
                             InlineKeyboardButton(
                                 text=gs(chat.id, "source_btn"),
-                                url="https://github.com/ITZ-ZAID/TGN-Robot",
+                                url="https://github.com/ITZ-ZAID/Telegram",
                             ),
                         ],
                         [
