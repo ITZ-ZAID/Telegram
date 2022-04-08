@@ -1,42 +1,21 @@
-<h1 align = "center"> ❝𝐓𝐡𝐞 𝐌𝐨𝐬𝐭 𝐏𝐨𝐰𝐞𝐫𝐟𝐮𝐥𝐥 𝐆𝐫𝐨𝐮𝐩 𝐌𝐚𝐧𝐚𝐠𝐞𝐦𝐞𝐧𝐭 𝐁𝐨𝐭❞ </h1>
-
-### 🎖 History
-
-[![Mentioned in Awesome Python](https://awesome.re/mentioned-badge.svg)](https://github.com/ITZ-ZAID/Telegram)
-
-<p align = "center"><a herf = "https://t.me/Zaid2_Ro_bot" alt = "Zaid"><img src = "https://telegra.ph/file/399929e64a3266aad29bd.jpg" width = "900"></a></p>
-
-<p align = "center">
-<a href = "https://python.org">
-<img src = "https://forthebadge.com/images/badges/made-with-python.svg">
+<p align="center">
+    <a href="https://github.com/ITZ-ZAID/Telegram/stargazers"><img src="https://img.shields.io/github/stars/ITZ-ZAID/Telegram?label=Stars&style=flat-square&logo=github&color=F10070" alt="Stars" /></a>
 </p>
-</a>
-
-<p align = "center">
-<a href = "https://github.com/ITZ-ZAID/Telegram">
-<img src = "https://forthebadge.com/images/badges/open-source.svg">
+<p align="center">
+    <a href="https://app.codacy.com/manual/H1M4N5HU0P/AliciaRobot/dashboard"> <img src="https://img.shields.io/codacy/grade/4d58f2a402b54aed8a7d95f7add45a81?color=brightgreen&logo=codacy&logoColor=green&style=for-the-badge" alt="Codacy" /></a>
+    <a href="https://github.com/H1M4N5HU0P/AliciaRobot"> <img src="https://img.shields.io/github/repo-size/ITZ-ZAID/Telegram?color=orange&logo=github&logoColor=green&style=for-the-badge" /></a>
+    <a href="https://github.com/H1M4N5HU0P/AliciaRobot/commits/prince"> <img src="https://img.shields.io/github/last-commit/ITZ-ZAID/Telegram?color=blue&logo=github&logoColor=green&style=for-the-badge" /></a>
+    <a href="https://github.com/ITZ-ZAID/Telegram/issues"> <img src="https://img.shields.io/github/issues/ITZ-ZAID/Telegram?color=blueviolet&logo=github&logoColor=green&style=for-the-badge" /></a>
+    <a href="https://github.com/ITZ-ZAID/Telegram/network/members"> <img src="https://img.shields.io/github/forks/ITZ-ZAID/Telegram?color=red&logo=github&logoColor=green&style=for-the-badge" /></a>  
+    <a href="https://pypi.org/project/Telethon/"> <img src="https://img.shields.io/pypi/v/telethon?color=yellow&label=telethon&logo=python&logoColor=green&style=for-the-badge" /></a>
 </p>
-</a>
 
-###
-** features over other bots:**
-- Modern
-- Chatbot
-- Fast
-- Fully open-source
-- Frequently updated
-- Multi Language Support
-- Advanced Federation System With Buttons
-- Advanced Api
-- Smart Ai System
-- Easy To Use
-- Random Logos
+<p align="center">
+  <img src="https://telegra.ph/file/399929e64a3266aad29bd.jpg">
+</p>
 
-Can be found on Telegram as [Anie 💞](https://t.me/Anierobot_bot)</br>
-
-
-## 🅡🅔🅟🅞 🅢🅣🅐🅣🅢
-![github card](https://github-readme-stats.vercel.app/api/pin/?username=ITZ-ZAID&repo=Telegram&theme=dark)
+# Telegram
+Me On Telegram [✨ Anie✨](https://t.me/Anierobot_bot)
 
 ## 🅓🅔🅟🅛🅞🅨
 Fill all The Requirements Before Hosting [ᴄᴏɴꜰɪɢᴜʀᴀᴛɪᴏɴ](https://github.com/ITZ-ZAID/Telegram/blob/main/config.ini)
@@ -47,15 +26,10 @@ Fork Deploy is highly recommended
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
-## 🆅🅴🆁🅸🅰🅱🅻🅴🆂
-[ᴄᴏɴꜰɪɢᴜʀᴀᴛɪᴏɴ](https://github.com/ITZ-ZAID/Telegram/blob/main/config.ini)
+🆃🅷🅰🅽🅺🆂 🅵🅾🆁 🅲🅾🅳🅴🆂...
+```
+❤️ Kigyo for Base
+🔥 Zaid Robot For Some Modules
 
-## 🆂🆄🅿🅿🅾🆁🆃
-[![Zaid](https://img.shields.io/badge/Zaid-Channel-red?style=for-the-badge&logo=telegram)](https://t.me/SUPERIOR_BOTS)</br></br>
-[![Zaid](https://img.shields.io/badge/Superior-Group-red?style=for-the-badge&logo=telegram)](https://t.me/SUPERIOR_SUPPORT)</br></br>
-[![CONTACT ME](https://img.shields.io/badge/Telegram-Contact%20Me-informational)](https://t.me/Timesisnotwaiting)
 
-## 🆃🅷🅰🅽🅺🆂 🅵🅾🆁 🅲🅾🅳🅴🆂...
-
-- Kigyo for Base
-- Zaid Robot For Some Modules
+```
