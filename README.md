@@ -21,6 +21,20 @@ Fork Deploy is highly recommended
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
+## Local Deployment 📡
+
+```sh
+sudo apt update && apt upgrade -y
+sudo apt install git curl python3-pip ffmpeg -y
+pip3 install -U pip
+git clone https://github.com/ITZ-ZAID/Telegram # clone the repo.(Before Cloning Make Sure uh have Filled Your Vars in config.ini
+cd Telegram
+pip3 install -U -r requirements.txt
+nano config.ini # use vim to edit ENVs
+vim .env # fill up the ENVs (Steps: press i to enter in insert mode then edit the file. Press Esc to exit the editing mode then type :wq! and press Enter key to save the file).
+python3 -m Telegram # run the bot.
+```
+
 🆃🅷🅰🅽🅺🆂 🅵🅾🆁 🅲🅾🅳🅴🆂...
 ```
 ❤️ Kigyo for Base
