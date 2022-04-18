@@ -25,7 +25,7 @@ Fork Deploy is highly recommended
 
 ```sh
 sudo apt update && apt upgrade -y
-sudo apt install git curl python3-pip ffmpeg -y
+apt-get -y install git gcc python3-dev
 pip3 install -U pip
 git clone https://github.com/ITZ-ZAID/Telegram # clone the repo.(Before Cloning Make Sure uh have Filled Your Vars in config.ini
 cd Telegram
