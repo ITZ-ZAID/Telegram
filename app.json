@@ -1,36 +1,30 @@
 {
-      "name": "Anie Robot",
-      "description": "Telegram group management bot.",
-      "logo": "https://telegra.ph/file/399929e64a3266aad29bd.jpg",
-      "keywords": [
-         "telegram",
-         "anime",
-         "group",
-         "manager",
-         "TGN"
-      ],   
-   "repository": "https://github.com/ITZ-ZAID/Telegram",
-   "addons": [
-      {
-         "options": {
-            "version": "12"
-         },
-         "plan": "heroku-postgresql"
-      }
-   ],	
-   "buildpacks": [
-    {
-      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
-    },
-    {
-      "url": "heroku/python"
-    }     
-  ],  
-   "env": {
-      "REPO_URL": {
-         "description": "Enter Your Repo Url Where You Have Filled Your Vars.",
-         "value": ""
-      },
-      
-   }
+  "name": "Telegram Bot",
+  "description": "A Telegram Management Bot Based On Telethon",
+  "keywords": [
+    "telegram",
+    "open",
+    "source",
+    "multi",
+    "godfather",
+    "anie",
+    "management"
+  ],
+  "env": {
+    "REPO_URL": {
+      "description": "URL of the REPO, Where You Have Filled Your Vars..",
+      "value": "https://github.com/ITZ-ZAID/Telegram"
+    }
+  },
+  "addons": [
+  ],
+  "buildpacks": [{
+    "url": "heroku/python"
+  }],
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "free"
+    }
+  }
 }
