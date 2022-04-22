@@ -27,12 +27,10 @@
     }     
   ],  
    "env": {
-      "Config": {
-         "description": "Before Hosting Plz Fill Your All Vars In config.ini. refer on repo",
-         "required": false,
-         "value": "Suggestions- Use Europe Server"
-
-      }
+    "REPO_URL": {
+      "description": "Enter Your Repo Url Where You Have Filled Your Vars.",
+      "value": ""
+    },
       
    }
 }
