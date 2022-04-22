@@ -19,6 +19,7 @@ class Config(object):
     GBAN_LOGS = getenv("GBAN_LOGS", "-1001509525202")
     SYS_ADMIN = getenv("SYS_ADMIN", "1669178360")
     DEV_USERS = getenv("DEV_USERS", "1669178360")
+    SUDO_USERS = list(map(int, getenv("SUDO_USERS", "1669178360")
     LOAD = getenv("LOAD")
     NO_LOAD = None
     WEBHOOK = False
