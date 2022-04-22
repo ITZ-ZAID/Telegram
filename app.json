@@ -18,9 +18,14 @@
   },
   "addons": [
   ],
-  "buildpacks": [{
-    "url": "heroku/python"
-  }],
+  "buildpacks": [
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-python"
+    },
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+    }
+  ],
   "formation": {
     "worker": {
       "quantity": 1,
