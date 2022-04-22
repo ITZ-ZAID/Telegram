@@ -9,7 +9,7 @@ set_chat_lang: "Great, {} it is from now on!"
 
 
 pm_start_text: |
-   ────「 [Anie-Robot] 」────
+   ────「 [{dispatcher.bot.first_name}] 」────
    ʜᴇʏ! {}
    ɪ ᴀᴍ ᴀɴ ᴀɴɪᴍᴇ ᴛʜᴇᴍᴇᴅ ᴀᴅᴠᴀɴᴄᴇ ɢʀᴏᴜp ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ ᴡɪᴛʜ ᴀ ʟᴏᴛ ᴏғ sᴘᴇᴄɪᴀʟɪᴛʏ.
    ➖➖➖➖➖➖➖➖➖➖➖➖➖
@@ -24,7 +24,7 @@ pm_start_text: |
    ➖➖➖➖➖➖➖➖➖➖➖➖➖
    ➛ᴛʀʏ ᴛʜᴇ /help ʙᴜᴛᴛᴏɴs ʙᴇʟᴏᴡ ᴛᴏ ᴋɴᴏᴡ ᴍʏ ᴀʙɪʟɪᴛɪᴇs ××
    
-grp_start_text: "Hi, Anie Is Here."
+grp_start_text: "Hi, {dispatcher.bot.first_name} Is Here."
 
 pm_help_text: |
     • /start: Starts me, can be used to check I'm alive or not.
@@ -32,7 +32,7 @@ pm_help_text: |
     • /donate: Get Details about Donating which help to improve bots speeds and more.
     Click on the buttons below to get documentation about specific modules!
 
-add_bot_to_group_btn: "Add Anie"
+add_bot_to_group_btn: "Add {dispatcher.bot.first_name}"
 support_chat_link_btn: "Support"
 updates_channel_link_btn: "Updates"
 source_btn: "Source code"
