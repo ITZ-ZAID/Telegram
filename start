@@ -1,0 +1,9 @@
+#!/bin/bash
+    
+apt update && apt upgrade -y
+apt install git -y
+pip3 install -U pip
+git clone $REPO_URL Zaid
+cd Zaid
+pip3 install -U -r requirements.txt
+python3 -m Telegram
