@@ -1,1 +1,1 @@
-worker: python3 -m Telegram
+worker: bash start
