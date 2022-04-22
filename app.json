@@ -50,7 +50,7 @@
     "STRING_SESSION": {
       "description": "A Telethon String Session Of Dummy Account @StarkStringGenBot..",
       "value": ""
-    },
+    }
 
   },
   "addons": [
