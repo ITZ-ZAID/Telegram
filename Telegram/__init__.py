@@ -13,7 +13,7 @@ from logging.config import fileConfig
 from telethon import TelegramClient
 from telethon.sessions import StringSession
 from telethon.sessions import MemorySession
-
+from config import Config
 
 StartTime = time.time()
 
@@ -90,8 +90,8 @@ class AnieINIT:
         self.BOT_API_FILE_URL: str = self.parser.get('BOT_API_FILE_URL', "https://api.telegram.org/file/bot")
 
 
-    def init_sw(self):
-        if self.spamwatch_api is None:
+    def init_sw():
+        if Config.spamwatch_api is None:
             log.warning("SpamWatch API key is missing! Check your config.ini")
             return None
         else:
@@ -104,8 +104,8 @@ class AnieINIT:
                 return sw
 
 
-ZInit = AnieINIT(parser=zconfig)
-
+ZInit = Config
+ZZInit = AnieINIT
 ZAID_USER = 1669178360
 SYS_ADMIN = ZInit.SYS_ADMIN
 OWNER_ID = ZInit.OWNER_ID
@@ -141,7 +141,7 @@ LASTFM_API_KEY = ZInit.LASTFM_API_KEY
 CF_API_KEY = ZInit.CF_API_KEY
 
 # SpamWatch
-sw = ZInit.init_sw()
+sw = ZZInit.init_sw()
 
 API_HASH = '4e984ea35f854762dcde906dce426c2d'
 API_ID = '6435225'
