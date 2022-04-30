@@ -1,0 +1,29 @@
+version: "1.0"
+services:
+  worker:
+    build: .
+    environment:
+      APP_ID: $API_ID
+      API_HASH: $API_HASH
+      TOKEN: $TOKEN
+      OWNER_ID: $OWNER_ID
+      STRING_SESSION: $STRING_SESSION
+      OWNER_USERNAME: $OWNER_USERNAME
+      DB_URI: $DATABASE_URL
+      MESSAGE_DUMP: $MESSAGE_DUMP
+      GBAN_LOGS: $GBAN_LOGS
+      SYS_ADMIN: $SYS_ADMIN
+      DEV_USERS: $DEV_USERS
+      LOAD: $LOAD
+      BAN_STICKER: $BAN_STICKER
+      CASH_API_KEY: $CASH_API_KEY
+      TIME_API_KEY: $TIME_API_KEY
+      WALL_API: $WALL_API
+      spamwatch_api: $spamwatch_api
+      SPAMMERS: $SPAMMERS
+      LASTFM_API_KEY: $LASTFM_API_KEY
+      CF_API_KEY: $CF_API_KEY
+      BOT_API_URL: $BOT_API_URL
+      BOT_API_FILE_URL: $BOT_API_FILE_URL
+      SUDO_USERS: $SUDO_USERS
+      ZAID_USER: $ZAID_USER
