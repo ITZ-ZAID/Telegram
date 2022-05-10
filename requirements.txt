@@ -29,3 +29,4 @@ pycryptodome
 base58
 pytimeparse
 git+https://github.com/Itz-fork/py-trans.git
+python-dotenv 
