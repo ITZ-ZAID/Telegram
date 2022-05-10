@@ -1,4 +1,4 @@
-<p align="center"><a href="https://github.com/ITZ-ZAID/Telegram"><img src="https://img.shields.io/badge/𝐀𝐧𝐢𝐞%20𝐑𝐨𝐛𝐨𝐭-blue?&style=flat-square?&logo=github" width=600px></a></p>
+<p align="center"><a href="https://github.com/ITZ-ZAID/Telegram"><img src="https://img.shields.io/badge/𝐀𝐧𝐢𝐞%20𝐑𝐨𝐛𝐨𝐭-red?&style=flat-square?&logo=github" width=600px></a></p>
 <p align="center"><a href="https://github.com/ITZ-ZAID/Telegram"><img src="https://telegra.ph/file/c05d22bcb94fb92b354db.jpg"></a></p>
 
 #
