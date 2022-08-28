@@ -9,22 +9,22 @@ set_chat_lang: "Great, {} it is from now on!"
 
 
 pm_start_text: |
-   ────「 Anie] 」────
-   ʜᴇʏ! {}
-   ɪ ᴀᴍ ᴀɴ ᴀɴɪᴍᴇ ᴛʜᴇᴍᴇᴅ ᴀᴅᴠᴀɴᴄᴇ ɢʀᴏᴜp ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ ᴡɪᴛʜ ᴀ ʟᴏᴛ ᴏғ sᴘᴇᴄɪᴀʟɪᴛʏ.
+   ────『 нєℓℓσ вαву 』────
+   ʜᴇʏ! {} 😇
+   ɪ ᴀᴍ ᴀɴ ᴀɴɪᴍᴇ ᴛʜᴇᴍᴇᴅ ᴀᴅᴠᴀɴᴄᴇ ɢʀᴏᴜp ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ ᴡɪᴛʜ ᴀ ʟᴏᴛ ᴏғ sᴘᴇᴄɪᴀʟɪᴛʏ🙃
    ➖➖➖➖➖➖➖➖➖➖➖➖➖
    I have lots of handy features such as:
-   ‣ Warning system
-   ‣ Artificial intelligence
-   ‣ Flood control system
-   ‣ Note keeping system
-   ‣ Filters keeping system
-   ‣ Approvals and much more.
-   ‣ Managed By @Timesisnotwaiting.
+   ‣ Warning system 🙄
+   ‣ Artificial intelligence 😍
+   ‣ Flood control system 🤥
+   ‣ Note keeping system 🤫
+   ‣ Filters keeping system 😉
+   ‣ Approvals and much more 🙃
+   ‣ Managed By @wisula4 👨‍💻
    ➖➖➖➖➖➖➖➖➖➖➖➖➖
-   ➛ᴛʀʏ ᴛʜᴇ /help ʙᴜᴛᴛᴏɴs ʙᴇʟᴏᴡ ᴛᴏ ᴋɴᴏᴡ ᴍʏ ᴀʙɪʟɪᴛɪᴇs ××
+   ➛ᴛʀʏ ᴛʜᴇ /help ʙᴜᴛᴛᴏɴs ʙᴇʟᴏᴡ ᴛᴏ ᴋɴᴏᴡ ᴍʏ ᴄᴏᴍᴍᴀɴᴅꜱ❤️‍🔥
    
-grp_start_text: "Hi,Anie Is Here."
+grp_start_text: "ᴇᴡᴏɴɪ ɪꜱ ʜᴇʀᴇ👀 ᴅᴏ ʏᴏᴜ ɴᴇᴇᴅ ᴀɴʏ ʜᴇʟᴘ✌️"
 
 pm_help_text: |
     • /start: Starts me, can be used to check I'm alive or not.
@@ -32,11 +32,11 @@ pm_help_text: |
     • /donate: Get Details about Donating which help to improve bots speeds and more.
     Click on the buttons below to get documentation about specific modules!
 
-add_bot_to_group_btn: "Add {dispatcher.bot.first_name}"
-support_chat_link_btn: "Support"
-updates_channel_link_btn: "Updates"
-source_btn: "Source code"
-owner_btn: "Owner"
+add_bot_to_group_btn: "ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ👻"
+support_chat_link_btn: "ꜱᴜᴘᴘᴏʀʏ 🤔"
+updates_channel_link_btn: "ᴜᴘᴅᴀᴛᴇꜱ🌝"
+source_btn: "ꜱᴏᴜʀᴄᴇ ᴄᴏᴅᴇ😁"
+owner_btn: "ᴏᴡɴᴇʀ 💞"
 
 admin_help: |
    • `/admins`*:* list of admins in the chat
