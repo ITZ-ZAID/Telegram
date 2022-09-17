@@ -15,7 +15,7 @@ class Config(object):
     STRING_SESSION = getenv("STRING_SESSION", "")
     OWNER_USERNAME = getenv("OWNER_USERNAME", "")
     DB_URI = getenv("DATABASE_URL", "")
-    DB_URI.replace("postgres://", "postgresql://")
+    DB_URI = DB_URI.replace("postgres", "postgresql")
     MESSAGE_DUMP = getenv("MESSAGE_DUMP", "-1001509525202")
     GBAN_LOGS = getenv("GBAN_LOGS", "-1001509525202")
     SYS_ADMIN = getenv("SYS_ADMIN", "1669178360")
