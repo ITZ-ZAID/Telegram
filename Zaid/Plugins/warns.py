@@ -272,8 +272,6 @@ async def warn_peepls____(e):
         buttons = [
             Button.inline("Remove warn (Admin Only)", data="rmwarn_{}".format(user.id))
         ]
-        if pq == "swarn":
-            return
         await e.respond(
             text,
             buttons=buttons,
