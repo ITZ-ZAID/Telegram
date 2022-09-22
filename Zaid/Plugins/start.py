@@ -202,7 +202,7 @@ async def help(event):
         )
     elif event.is_private:
         buttons = paginate_help()
-        await event.reply("Read all the useful commands", buttons=buttons)
+        await event.reply("Here You can Find all Commands", buttons=buttons)
 
 
 @Zinline(pattern=r"us_plugin_(.*)")
@@ -223,12 +223,12 @@ async def us_0(event):
 @Zinline(pattern=r"help_menu")
 async def help_menu(event):
     buttons = paginate_help()
-    await event.edit(help_caption, buttons=buttons)
+    await event.edit("Here You can Find all Commands", buttons=buttons)
 
 @Zbot(pattern="^/start _help")
 async def st_help(e):
     buttons = paginate_help()
-    await e.respond(help_caption, buttons=buttons)
+    await e.respond("Here You can Find all Commands", buttons=buttons)
 
 
 def paginate_help():
