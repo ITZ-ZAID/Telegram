@@ -27,7 +27,30 @@ IMG = ["https://telegra.ph/file/556e5178cd3a00c1b6cf0.png",
 ]
 line = "───────────────────────"
 
-
+plugins = [
+    "Admin",
+    "AFK",
+    "Approval",
+    "AI-Chatbot",
+    "Filters",
+    "Greetings",
+    "Locks",
+    "Stickers",
+    "Rules",
+    "Song",
+    "Reports",
+    "Quotly",
+    "Purges",
+    "Pin",
+    "Misc",
+    "Force-Sub",
+    "Extras",
+    "Bans",
+    "Blocklist",
+    "Antiflood",
+    "CAPTCHA",
+    "Warnings",
+]
 
 @Zbot(pattern="^/start ?(.*)")
 async def start(event):
@@ -180,3 +203,22 @@ async def help(event):
     elif event.is_private:
         buttons = paginate_help()
         await event.reply("Read all the useful commands", buttons=buttons)
+
+
+def paginate_help():
+    helpable_plugins = sorted(plugins)
+    modules = [
+        Button.inline(x, data=f"us_plugin_{x.lower()}") for x in helpable_plugins
+    ]
+    pairs = list(
+        zip(
+            modules[::3],
+            modules[1::3],
+            modules[2::3],
+        )
+    )
+    modulo_page = 0 % 1
+    pairs = pairs[modulo_page * 8 : 8 * (modulo_page + 1)] + [
+        (Button.inline("Close", data="cncll"),)
+    ]
+    return pairs
