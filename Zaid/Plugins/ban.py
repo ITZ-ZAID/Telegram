@@ -508,7 +508,7 @@ async def dkick(event):
     )
 
 
-@Zbot(pattern="^/kick ?(.*)")
+@Zbot(pattern="^/(kick|punch) ?(.*)")
 async def kick(event):
     if (
         event.text.startswith(".kickme")
@@ -690,7 +690,7 @@ Example time values: 4m = 4 minutes, 3h = 3 hours, 6d = 6 days, 5w = 5 weeks."""
     )
 
 
-@Zbot(pattern="^/kickme ?(.*)")
+@Zbot(pattern="^/(kickme|punchme) ?(.*)")
 async def k_me(event):
     if not event.is_group:
         return
@@ -799,3 +799,22 @@ Example time values: 4m = 4 minutes, 3h = 3 hours, 6d = 6 days, 5w = 5 weeks."""
         None,
         True,
     )
+
+
+
+from .. import CMD_HELP
+__help__ = """
+ ❍ /punchme*:* punchs the user who issued the command
+*Admins only:*
+ ❍ /ban or /dban <userhandle>*:* bans a user. (via handle, or reply)
+ ❍ /sban <userhandle>*:* Silently ban a user. Deletes command, Replied message and doesn't reply. (via handle, or reply)
+ ❍ /tban <userhandle> x(m/h/d)*:* bans a user for `x` time. (via handle, or reply). `m` = `minutes`, `h` = `hours`, `d` = `days`.
+ ❍ /unban <userhandle>*:* unbans a user. (via handle, or reply)
+ ❍ /punch <userhandle>*:* Punches a user out of the group, (via handle, or reply)
+ *Admins only:*
+ ❍ /mute or /dmute <userhandle>*:* silences a user. Can also be used as a reply, muting the replied to user.
+ ❍ /tmute <userhandle> x(m/h/d)*:* mutes a user for x time. (via handle, or reply). `m` = `minutes`, `h` = `hours`, `d` = `days`.
+ ❍ /unmute <userhandle>*:* unmutes a user. Can also be used as a reply, muting the replied to user.
+"""
+__name__ = "bans"
+CMD_HELP.update({__name__: [__name__, __help__]})
