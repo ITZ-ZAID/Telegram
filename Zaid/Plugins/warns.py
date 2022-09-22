@@ -270,7 +270,7 @@ async def warn_peepls____(e):
     if not warn:
         text = f'User <a href="tg://user?id={user.id}">{user.first_name}</a> has {num_warns}/{limit} warnings; be careful!{reason}'
         buttons = [
-            Button.inline(translate("Remove warn (Admin Only)", event.chat_id), data="rmwarn_{}".format(user.id))
+            Button.inline("Remove warn (Admin Only)", data="rmwarn_{}".format(user.id))
         ]
         if not pq == "swarn":
             await e.respond(
