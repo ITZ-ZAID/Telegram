@@ -18,4 +18,4 @@ async def stats(event):
     f = get_total_rules()
     g = get_total_nightmode()
     h = get_total_locks()
-    await event.reply(f"✘ Current Stats\n‣ Total Notes: {a}\n‣ Total Commands: {b}\n‣ Total Chats: {c}\n‣ Total Filters: {d}\n‣ Welcome: {e}\n\n‣ Total Rules: {f}\n‣Total Nightmode: {g}\n‣ Total Locks: {h}")
+    await event.reply(f"✘ Current Stats\n‣ Total Notes: {a}\n‣ Total Commands: {b}\n‣ Total Chats: {c}\n‣ Total Filters: {d}\n‣ Welcome: {e}\n‣ Total Rules: {f}\n‣Total Nightmode: {g}\n‣ Total Locks: {h}")
