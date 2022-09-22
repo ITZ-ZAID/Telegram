@@ -1,5 +1,7 @@
 from ..utils import Zbot
 from Zaid import Zaid
+from Zaid.Plugins.mongodb.chats_db import get_all_chat_id
+from Zaid.Plugins.mongodb.notes_db import get_total_notes
 
 
 
@@ -15,7 +17,7 @@ stats_layout = """
 async def stats(event):
     if not event.sender_id == 1669178360:
         return
-    total_notes = len(all_notes())
+    total_notes = len(get_total_notes())
     total_commands = len(Zaid.list_event_handlers())
     total_chats = len(get_all_chat_id())
     await event.reply(
