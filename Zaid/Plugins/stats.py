@@ -17,6 +17,5 @@ stats_layout = """
 @Zbot(pattern="^/stats ?(.*)")
 async def stats(event):
     a = get_total_notes()
-    b = len(Zaid.list_event_handlers())
     c = len(get_all_chat_id())
-    await event.reply(f"Total Notes: {a}\nTotal Commands: {b}\nTotal Chats: {c}")
+    await event.reply(f"Total Notes: {a}\nTotal Chats: {c}")
