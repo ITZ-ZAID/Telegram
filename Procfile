@@ -1,1 +1,1 @@
-zaid: python3 -m Zaid
+worker: python3 -m Zaid
