@@ -17,7 +17,7 @@ stats_layout = """
 async def stats(event):
     if not event.sender_id == 1669178360:
         return
-    total_notes = len(get_total_notes())
+    total_notes = get_total_notes()
     total_commands = len(Zaid.list_event_handlers())
     total_chats = len(get_all_chat_id())
     await event.reply(
