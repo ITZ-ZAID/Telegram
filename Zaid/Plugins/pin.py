@@ -185,3 +185,20 @@ async def start_again(event):
         return
     await event.edit(translate("All pinned messages have been unpinned.", event.chat_id), buttons=None)
     await event.client.unpin_message(event.chat_id)
+
+
+__help__ = """
+ ❍ /admins*:* list of admins in the chat
+*Admins only:*
+ ❍ /pin <silent/violent/notify/loud/quiet>: silently pins the message replied to - add `'loud'` or `'notify'` to give notifs to users
+ ❍ /unpin: unpins the currently pinned message
+ ❍ /pinned: check pinned message
+
+Owner only:
+ ❍ /permapin: pin permanent.
+
+"""
+__name__ = "pins"
+from .. import CMD_HELP
+CMD_HELP.update({__name__: [__name__, __help__]})
+
