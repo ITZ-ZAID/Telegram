@@ -195,19 +195,15 @@ async def _info(e):
             out_str += f"\n\n<b>What others Say:</b> <code>{x_about['about']}</code>"
         if x_full.user.id == OWNER_ID:
             out_str += f"\n\nThis is my Master, he have total power over me!"
-        if (
-            not x_full.user.id in OWNER_ID
-            and not x_full.user.id == BOT_ID
-        ):
-            if gbanned.find_one({"user": x_full.user.id}):
-                x_gbanned = "Yes"
-            else:
-                x_gbanned = "No"
-            if x_full.about:
-                out_str += f"\n\n<b>Gbanned:</b> {x_gbanned}"
-            else:
-                out_str += f"\n<b>Gbanned:</b> {x_gbanned}"
-            out_str += f"\n\n<b>BlackListed:</b> No"
+        if gbanned.find_one({"user": x_full.user.id}):
+            x_gbanned = "Yes"
+        else:
+            x_gbanned = "No"
+        if x_full.about:
+            out_str += f"\n\n<b>Gbanned:</b> {x_gbanned}"
+        else:
+            out_str += f"\n<b>Gbanned:</b> {x_gbanned}"
+        out_str += f"\n\n<b>BlackListed:</b> No"
         await e.reply(out_str, file=x_full.profile_photo, parse_mode="html")
 
 
