@@ -147,6 +147,26 @@ async def _info(e):
             x_user = await e.client.get_entity(x_obj)
         except (TypeError, ValueError) as x:
             return await e.reply(str(x))
+    if isinstance(x_user, User):
+        x_full = await e.client(GetFullUserRequest(x_user.username or x_user.id))
+        out_str = "<b>User Info:</b>"
+        out_str += f"\n<b>First Name:</b> {x_full.user.first_name}"
+        if x_full.user.last_name:
+            out_str += f"\n<b>Last Name:</b> {x_full.user.last_name}"
+        if x_full.user.username:
+            out_str += f"\n<b>Username:</b> @{x_full.user.username}"
+        out_str += f"\n<b>User ID:</b> <code>{x_full.user.id}</code>"
+        out_str += (
+            f"\n<b>PermaLink:</b> <a href='tg://user?id={x_full.user.id}'>link</a>"
+        )
+        if x_full.profile_photo and x_full.profile_photo.dc_id:
+            out_str += f"\n<b>DC ID:</b> {x_full.profile_photo.dc_id}"
+        if x_full.about:
+            out_str += f"\n\n<b>Bio:</b> <code>{x_full.about}</code>"
+        if x_full.user.id == OWNER_ID:
+            out_str += f"\n\nThis is my Master, he have total power over me!"
+        out_str += f"\n\n<b>BlackListed:</b> No"
+        await e.reply(out_str, file=x_full.profile_photo, parse_mode="html")
     if isinstance(x_user, Channel):
         x_channel = await e.client(GetFullChannelRequest(x_user.username or x_user.id))
         out_str = f"<b>Channel Info:</b>"
@@ -174,26 +194,6 @@ async def _info(e):
         if isinstance(file, PhotoEmpty):
             file = None
         await e.reply(out_str, file=file, parse_mode="html")
-    elif isinstance(x_user, User):
-        x_full = await event.client(GetFullUserRequest(x_user.username or x_user.id))
-        out_str = "<b>User Info:</b>"
-        out_str += f"\n<b>First Name:</b> {x_full.user.first_name}"
-        if x_full.user.last_name:
-            out_str += f"\n<b>Last Name:</b> {x_full.user.last_name}"
-        if x_full.user.username:
-            out_str += f"\n<b>Username:</b> @{x_full.user.username}"
-        out_str += f"\n<b>User ID:</b> <code>{x_full.user.id}</code>"
-        out_str += (
-            f"\n<b>PermaLink:</b> <a href='tg://user?id={x_full.user.id}'>link</a>"
-        )
-        if x_full.profile_photo and x_full.profile_photo.dc_id:
-            out_str += f"\n<b>DC ID:</b> {x_full.profile_photo.dc_id}"
-        if x_full.about:
-            out_str += f"\n\n<b>Bio:</b> <code>{x_full.about}</code>"
-        if x_full.user.id == OWNER_ID:
-            out_str += f"\n\nThis is my Master, he have total power over me!"
-        out_str += f"\n\n<b>BlackListed:</b> No"
-        await e.reply(out_str, file=x_full.profile_photo, parse_mode="html")
 
 
 @Zbot(pattern="^/bin ?(.*)")
