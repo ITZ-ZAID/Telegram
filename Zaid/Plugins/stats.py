@@ -4,6 +4,8 @@ from Zaid.Plugins.mongodb.chats_db import get_total_chats
 from Zaid.Plugins.mongodb.notes_db import get_total_notes
 from Zaid.Plugins.mongodb.filters_db import get_total_filters
 from Zaid.Plugins.mongodb.warns_db import get_total_warns
+from Zaid.Plugins.mongodb.welcome_db import get_total_welcome
+
 
 
 
@@ -22,5 +24,5 @@ async def stats(event):
     b = len(Zaid.list_event_handlers())
     c = get_total_chats()
     d = get_total_filters()
-    e = get_total_warns()
+    e = get_total_welcome()
     await event.reply(f"✘ Current Stats\n‣ Total Notes: {a}\n‣ Total Commands: {b}\n‣ Total Chats: {c}\n‣ Total Filters: {d}\n‣ Warned Users: {e}")
