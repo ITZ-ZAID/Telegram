@@ -25,7 +25,7 @@ from telethon.tl.types import (
 )
 
 from config import BOT_ID, OWNER_ID
-from Zaid import Zaid
+from Zaid import Zaid, CMD_HELP
 from ..utils import Zbot, Zinline
 from . import DEVS, SUDO_USERS, db, get_user, human_format
 from .mongodb.couples_db import (
@@ -789,3 +789,33 @@ async def ___stat_chat__(e):
             return
     __stats_format = translate(f"**Total Messages in {e.chat.title}:** `{e.id}`", e.chat_id)
     await e.reply(__stats_format)
+
+
+__name__ = "misc"
+__help__ = """
+Here is the help menu for **Misc** module:
+- /webss `<url>`: generate screenshot of the website.
+- /id `<user/chat/channel/forward>`: get the int id of the given entity.
+- /info `<user/chat/channel>`: gather info about the given entity.
+- /setbio `<text>`: set about bio of another user.
+- /bin `<bin>`: gather info about the given bin.
+- /iban `<iban>`: get info about the provided iban number.
+- /define `<text>`: get definition of the given word from dictionary.
+- /ud `<text>`: get definition from urban dictionary.
+- /ip `<ip address>`: lookup the given ip address
+- /stoi, /itos: Interconvert between Image and Sticker.
+- /carbon `<text/reply>`: create beautiful image of the given text from carbon.now.sh .
+- /couple: choose two random members of the chat as lovers.
+- /tts `<LangCode> <text/reply>`: Text to speech provided by Google.
+- /tr `<LangCode> <text/reply>`: translate between 200+ languages
+Example: `/tr hi Hello`
+- /paste `(h|s|p) <text/reply>`: Paste the text to Haste/Space/Pasty bins.
+- /google `<query>`: perform a google search with the given query.
+- /lyrics `<query>`: Gather the lyrics of the queried song from LyricsGenius.
+- /rmbg `<reply>`: Remove bg of the image using `remove.bg` api.
+- /read `<text/reply>`: Parse the text from the given image.
+- /img `<query>`: Search for images from Google.
+- /tgm or /tgt `<text/reply>`: Generate `telegra.ph` link with given media.
+- /stat: Get Total message count of a chat.
+"""
+CMD_HELP.update({__name__: [__name__, __help__]})
