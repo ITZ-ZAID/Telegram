@@ -2,7 +2,7 @@ import time
 
 from telethon import events
 
-from .. import Zaid
+from .. import Zaid, CMD_HELP
 from config import OWNER_ID
 from . import can_change_info, extract_time
 from . import g_time as get_time
@@ -159,3 +159,25 @@ async def flood_control(fx):
             view_messages=False,
             until_date=time.time() + flmd[1],
         )
+
+
+__help__ = """
+*Antiflood* allows you to take action on users that send more than x messages in a row. Exceeding the set flood \
+will result in restricting that user.
+ This will mute users if they send more than 10 messages in a row, bots are ignored.
+ ❍ /flood*:* Get the current flood control setting
+• *Admins only:*
+ ❍ /setflood <int/'no'/'off'>*:* enables or disables flood control
+ *Example:* `/setflood 10`
+ ❍ /setfloodmode <ban/kick/mute/tban/tmute> <value>*:* Action to perform when user have exceeded flood limit. ban/kick/mute/tmute/tban
+• *Note:*
+ • Value must be filled for tban and tmute!!
+ It can be:
+ `5m` = 5 minutes
+ `6h` = 6 hours
+ `3d` = 3 days
+ `1w` = 1 week
+ """
+
+__name__ = "antiflood"
+CMD_HELP.update({__name__: [__name__, __help__]})
