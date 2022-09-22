@@ -12,7 +12,7 @@ from telethon.errors.rpcerrorlist import (
     UserBlockedError,
     ChatWriteForbiddenError,
 )
-from . import CMD_HELP
+from .. import CMD_HELP
 from google_trans_new.constant import LANGUAGES
 from google_trans_new import google_translator
 translator = google_translator()
