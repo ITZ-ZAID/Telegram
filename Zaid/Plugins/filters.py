@@ -4,6 +4,7 @@ from telegram import Update
 from Zaid import dispatcher
 from telegram.ext import CommandHandler, CallbackQueryHandler
 from telethon import events, types
+from Zaid.Plugins.mongodb.chats_db import is_chat, add_chat
 
 from .. import Zaid
 from config import BOT_ID 
@@ -112,6 +113,8 @@ async def add_filter(event):
 
 @Zaid.on(events.NewMessage())
 async def filter_trigger(event):
+    if not is_chat(event.chat_id)
+        add_chat(event.chat_id)
     if event.sender_id == int(BOT_ID):
         return
     if (
