@@ -267,6 +267,19 @@ async def warn_peepls____(e):
     if reason:
         text = translate("Reason", event.chat_id)
         reason = f"\n<b>{text}:</b>\n{reason}"
+    if not warn:
+        text = f'User <a href="tg://user?id={user.id}">{user.first_name}</a> has {num_warns}/{limit} warnings; be careful!{reason}'
+        buttons = [
+            Button.inline("Remove warn (Admin Only)", data="rmwarn_{}".format(user.id))
+        ]
+        if pq == "swarn":
+            return
+        await e.respond(
+            text,
+            buttons=buttons,
+            parse_mode="html",
+            reply_to=e.reply_to_msg_id or e.id,
+        )
     if warn:
         if strength == "tban":
             await e.client.edit_permissions(
@@ -310,19 +323,6 @@ async def warn_peepls____(e):
             warn_action_notif += rr
         await e.respond(
             warn_action_notif, reply_to=e.reply_to_msg_id or e.id, parse_mode="html"
-        )
-    else:
-        text = f'User <a href="tg://user?id={user.id}">{user.first_name}</a> has {num_warns}/{limit} warnings; be careful!{reason}'
-        buttons = [
-            Button.inline("Remove warn (Admin Only)", data="rmwarn_{}".format(user.id))
-        ]
-        if pq == "swarn":
-            return
-        await e.respond(
-            text,
-            buttons=buttons,
-            parse_mode="html",
-            reply_to=e.reply_to_msg_id or e.id,
         )
 
 
