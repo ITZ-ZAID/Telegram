@@ -33,6 +33,9 @@ DEVS = []
 tbd = []
 DEVS.append(OWNER_ID)
 
+
+CMD_HELP = {}
+
 # DB
 client = MongoClient(MONGO_DB_URI)
 db = client["Melody"]
