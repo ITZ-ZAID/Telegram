@@ -204,11 +204,3 @@ def get_warn_expire(chat_id):
     if _s:
         return _s.get("expire"), _s.get("expiretime")
     return False, 0
-
-
-def get_total_warns():
-    _chats = warns.find({})
-    _total = 0
-    for x in _chats:
-        _total += len(x["chat_id"])
-    return _total
