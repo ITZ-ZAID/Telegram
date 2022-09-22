@@ -154,7 +154,7 @@ async def filter_trigger(event):
                 reply_to=event.id,
             )
 
-
+# Because Replying two times
 def filters(update: Update, _) -> None:
     chat = update.effective_chat
     msg = update.effective_message
