@@ -266,7 +266,7 @@ async def rules_anon(e):
         db.set_rules_button(e.chat_id, "Rules")
 
 
-
+from .. import CMD_HELP
 __name__ = "rules"
 __help__ = """
 Every chat works with different rules; this module will help make those rules clearer!
