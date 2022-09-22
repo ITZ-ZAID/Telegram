@@ -210,5 +210,5 @@ def get_total_warns():
     _chats = warns.find({})
     _total = 0
     for x in _chats:
-        _total += len(x["user_id"])
+        _total += len(x["chat_id"])
     return _total
