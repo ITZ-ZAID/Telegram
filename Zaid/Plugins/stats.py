@@ -2,7 +2,7 @@ from ..utils import Zbot
 from Zaid import Zaid
 from Zaid.Plugins.mongodb.chats_db import get_total_chats
 from Zaid.Plugins.mongodb.notes_db import get_total_notes
-from Zaid.Plugins.mongodb.notes_db import get_total_filters
+from Zaid.Plugins.mongodb.filters_db import get_total_filters
 
 
 
