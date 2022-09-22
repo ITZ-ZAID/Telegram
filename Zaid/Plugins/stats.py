@@ -1,6 +1,6 @@
 from ..utils import Zbot
 from Zaid import Zaid
-from Zaid.Plugins.mongodb.chats_db import get_all_chat_id
+from Zaid.Plugins.mongodb.chats_db import get_total_chats
 from Zaid.Plugins.mongodb.notes_db import get_total_notes
 
 
@@ -18,5 +18,5 @@ stats_layout = """
 async def stats(event):
     a = get_total_notes()
     b = len(Zaid.list_event_handlers())
-    c = get_all_chat_id()
+    c = get_total_chats()
     await event.reply(f"Total Notes: {a}\nTotal Commands: {b}\nTotal Chats: {c}")
