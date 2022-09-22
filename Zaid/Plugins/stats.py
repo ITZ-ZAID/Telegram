@@ -3,20 +3,10 @@ from Zaid import Zaid
 from Zaid.Plugins.mongodb.chats_db import get_total_chats
 from Zaid.Plugins.mongodb.notes_db import get_total_notes
 from Zaid.Plugins.mongodb.filters_db import get_total_filters
-from Zaid.Plugins.mongodb.warns_db import get_total_warns
+from Zaid.Plugins.mongodb.rules_db import get_total_rules
 from Zaid.Plugins.mongodb.welcome_db import get_total_welcome
-
-
-
-
-stats_layout = """
-<b>Current Stats</b>
-<b>•</b> <code>{}</code> total notes
-<b>•</b> <code>{}</code> total commands registred
-<b>•</b> <code>{}</code> chats
-"""
-
-
+from Zaid.Plugins.mongodb.nightmode_db import get_total_nightmode
+from Zaid.Plugins.mongodb.locks_db import get_total_locks
 
 @Zbot(pattern="^/stats ?(.*)")
 async def stats(event):
@@ -25,5 +15,7 @@ async def stats(event):
     c = get_total_chats()
     d = get_total_filters()
     e = get_total_welcome()
-    f = get_total_warns()
-    await event.reply(f"✘ Current Stats\n‣ Total Notes: {a}\n‣ Total Commands: {b}\n‣ Total Chats: {c}\n‣ Total Filters: {d}\n‣ Welcome: {e}\n\n‣ Total Warned: {f}")
+    f = get_total_rules()
+    g = get_total_nightmode()
+    h = get_total_locks()
+    await event.reply(f"✘ Current Stats\n‣ Total Notes: {a}\n‣ Total Commands: {b}\n‣ Total Chats: {c}\n‣ Total Filters: {d}\n‣ Welcome: {e}\n\n‣ Total Rules: {f}\n‣Total Nightmode: {g}\n‣ Total Locks: {h}")
