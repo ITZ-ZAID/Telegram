@@ -13,7 +13,8 @@ stats_layout = """
 """
 
 
-@Zbot(pattern="^/stats")
+
+@Zbot(pattern="^/stats ?(.*)")
 async def stats(event):
     total_notes = get_total_notes()
     total_commands = len(Zaid.list_event_handlers())
