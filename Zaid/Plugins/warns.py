@@ -267,7 +267,6 @@ async def warn_peepls____(e):
     if reason:
         text = translate("Reason", event.chat_id)
         reason = f"\n<b>{text}:</b>\n{reason}"
-    if not warn:
     text = f'User <a href="tg://user?id={user.id}">{user.first_name}</a> has {num_warns}/{limit} warnings; be careful!{reason}'
     buttons = [
         Button.inline(translate("Remove warn (Admin Only)", event.chat_id), data="rmwarn_{}".format(user.id))
