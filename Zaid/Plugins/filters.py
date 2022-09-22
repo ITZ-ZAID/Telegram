@@ -5,7 +5,7 @@ from Zaid import dispatcher
 from telegram.ext import CommandHandler, CallbackQueryHandler
 from telethon import events, types
 
-from .. import Zaid
+from .. import Zaid, CMD_HELP
 from config import BOT_ID 
 from ..utils import Zbot, Zinline
 from . import (
@@ -224,3 +224,22 @@ async def stopallcb(event):
 
 FIKTERS = CommandHandler("filters", filters)
 dispatcher.add_handler(FIKTERS)
+
+
+__name__ = "filters"
+__help__ = """
+Here is the help for **Filters** module:
+**Admin Commands:**
+- /filter `<keyword> <reply/content>`: Everytime someone says "keyword" bot replies "content".
+- /stop `<keyword>`: Stop the bot from replying to "keyword".
+- /stopall: Stop all filters of a chat.
+- /filters: List the active filters of a chat.
+**Examples:**
+- Set filter
+-> `/filter Hi Hello!`
+- Set filter for admins
+-> `/filter Hi Hello! {admin}`
+- set file/image/geo/gif/sticker etc. As filter
+-> `/filter <keyword> <reply to media>`
+"""
+CMD_HELP.update({__name__: [__name__, __help__]})

@@ -447,3 +447,20 @@ async def rm_warn_cb(e):
         parse_mode="html",
     )
     db.remove_warn(r, e.chat_id)
+
+from .. import CMD_HELP
+__name__ = "warns"
+__help__ = """
+ - /dwarn <userid> | <reason> or /warn <reason> in reply to a message: Delete And warn
+ - /swarn: to mute silently
+ - /warn <userid> | <reason> or /warn <reason> in reply to a message: warn a user
+ - /rmwarn: remove the last warn that a user has received
+ - /setwarnlimit: Set limit of warning ⚠️.
+ - /setwarntime: Specific time.
+ - /warns: list the warns that a user has received
+ - /warnings: Get status
+ - /resetwarns: reset all warns that a user has received
+ - /resetallwarns: To Reset all warns
+ - /setwarnmode <kick/ban/mute>: set the warn mode for the chat
+"""
+CMD_HELP.update({__name__: [__name__, __help__]})

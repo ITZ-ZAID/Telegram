@@ -12,6 +12,7 @@ from telethon.errors.rpcerrorlist import (
     UserBlockedError,
     ChatWriteForbiddenError,
 )
+from .. import CMD_HELP
 from google_trans_new.constant import LANGUAGES
 from google_trans_new import google_translator
 translator = google_translator()
@@ -26,7 +27,30 @@ IMG = ["https://telegra.ph/file/556e5178cd3a00c1b6cf0.png",
 ]
 line = "───────────────────────"
 
-
+plugins = [
+    "Admin",
+    "AFK",
+    "Approval",
+    "AI-Chatbot",
+    "Filters",
+    "Greetings",
+    "Locks",
+    "Stickers",
+    "Rules",
+    "Song",
+    "Reports",
+    "Quotly",
+    "Purges",
+    "Pin",
+    "Misc",
+    "Force-Sub",
+    "Extras",
+    "Bans",
+    "Blocklist",
+    "Antiflood",
+    "CAPTCHA",
+    "Warnings",
+]
 
 @Zbot(pattern="^/start ?(.*)")
 async def start(event):
@@ -48,7 +72,7 @@ async def start(event):
              buttons=[
         [Button.url(translate("Add me to your group ➕", event.chat_id), url="t.me/Zaid2_Robot?startgroup=true")],
         [Button.url(translate("Channel 📢", event.chat_id), url="t.me/TheUpdatesChannel"), Button.url(translate("Support 🌎", event.chat_id), url="t.me/thesupportchat")],
-        [Button.inline(translate("Change language 🌐", event.chat_id), data=f"langs")]])
+        [Button.inline(translate("language 🌐", event.chat_id), data=f"langs"), Button.inline(translate("Help ⁉️", event.chat_id), data="help_menu")]])
     if event.is_group:
         IMSG = f"{random.choice(IMG)}"
         await event.client.send_file(event.chat_id,
@@ -163,3 +187,64 @@ async def set_lang(event):
     name = code_lang[match]
     name = name[0].upper() + name[1:]
     await event.edit(f"Language successfully changed to {name} !")
+
+
+
+@Zbot(pattern="^/help ?(.*)")
+async def help(event):
+    if event.is_group:
+        buttons = [
+            [Button.url("❔ Help", "https://t.me/Zaid2_Robot?start=_help")],
+        ]
+        await event.reply(
+            "Contact me in PM to get the list of possible commands.",
+            buttons=buttons,
+        )
+    elif event.is_private:
+        buttons = paginate_help()
+        await event.reply("Here You can Find all Commands", buttons=buttons)
+
+
+@Zinline(pattern=r"us_plugin_(.*)")
+async def us_0(event):
+    pl_name = (event.pattern_match.group(1)).decode()
+    try:
+        pl_help = CMD_HELP[pl_name][1]
+    except KeyError:
+        pl_help = "The help menu for this module will be provided soon!"
+    await event.edit(
+        pl_help,
+        buttons=[
+            Button.inline("Close", data="cncll"),
+            Button.inline("Back", data="help_menu"),
+        ],
+    )
+
+@Zinline(pattern=r"help_menu")
+async def help_menu(event):
+    buttons = paginate_help()
+    await event.edit("Here You can Find all Commands", buttons=buttons)
+
+@Zbot(pattern="^/start _help")
+async def st_help(e):
+    buttons = paginate_help()
+    await e.respond("Here You can Find all Commands", buttons=buttons)
+
+
+def paginate_help():
+    helpable_plugins = sorted(plugins)
+    modules = [
+        Button.inline(x, data=f"us_plugin_{x.lower()}") for x in helpable_plugins
+    ]
+    pairs = list(
+        zip(
+            modules[::3],
+            modules[1::3],
+            modules[2::3],
+        )
+    )
+    modulo_page = 0 % 1
+    pairs = pairs[modulo_page * 8 : 8 * (modulo_page + 1)] + [
+        (Button.inline("Close", data="cncll"),)
+    ]
+    return pairs

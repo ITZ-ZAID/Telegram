@@ -334,3 +334,18 @@ async def Sid(event):
             await event.reply(
                 "Invalid BOT_FILE_ID provided, failed to convert given id to a media."
             )
+
+
+__help__ = """
+*Admin only:*
+ ❍ /nightmode <on/off>: Automatically lock your chat after 23:59 Indian Standard time.
+ ❍ /stickerid : Reply to get Any Sticker Id.
+ ❍ /stt : Reply to a voice message, to get the text out of it.
+ ❍ /jackpot|dice|dart|goal|football|basketball|bowling : Fun Commands.
+ ❍ /math : Calculate anything.
+ ❍ /gps : Get a Location. Ex: /gps New Delhi.
+"""
+
+__name__ = "extras"
+from .. import CMD_HELP
+CMD_HELP.update({__name__: [__name__, __help__]})

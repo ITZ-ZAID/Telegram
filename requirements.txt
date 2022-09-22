@@ -1,5 +1,5 @@
 requests
-telethon
+telethon==1.24.0
 telethon-tgcrypto
 pillow
 pymongo[srv]

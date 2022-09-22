@@ -253,3 +253,18 @@ async def ki(event):
             pass
     await event.edit("cleaning process completed.")
 """
+
+
+
+__help__ = """
+*Admins only:*
+ ❍ /purge : Reply From the message where you want to delete.
+ ❍ /purgefrom: same like purge but different.
+ ❍ /purgeto: same like purgefrom but different little bit.
+ ❍ /spurge: Purge message silently.
+Owner only:
+ ❍ /delall: Delete all the message from your Group.
+"""
+__name__ = "purges"
+from .. import CMD_HELP
+CMD_HELP.update({__name__: [__name__, __help__]})
