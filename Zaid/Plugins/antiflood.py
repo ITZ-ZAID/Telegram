@@ -4,6 +4,7 @@ from telethon import events
 
 from .. import Zaid, CMD_HELP
 from config import OWNER_ID
+from ..utils import Zbot, Zinline
 from . import can_change_info, extract_time
 from . import g_time as get_time
 from .mongodb import antiflood_db as db
