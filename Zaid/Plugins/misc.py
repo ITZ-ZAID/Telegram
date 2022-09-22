@@ -142,7 +142,7 @@ async def get_user(event):
             user = self_user.id
         try:
             user_object = await event.client.get_entity(user)
-            replied_user = await tbot(GetFullUserRequest(user_object.id))
+            replied_user = await event.client(GetFullUserRequest(user_object.id))
         except (TypeError, ValueError) as err:
             await event.reply("Failed to get user: unable to getChatMember: Bad Request: user not found")
             return None
