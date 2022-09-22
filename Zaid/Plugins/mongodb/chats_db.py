@@ -43,8 +43,8 @@ def is_chat(chat_id: int):
 
 
 def get_total_chats():
-    _notes = chats.find({})
+    _chats = chats.find({})
     _total = 0
-    for x in _notes:
+    for x in _chats:
         _total += len(x["notes"])
     return _total
