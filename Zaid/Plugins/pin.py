@@ -198,7 +198,7 @@ Owner only:
  ❍ /permapin: pin permanent.
 
 """
-__name__ = "pins"
+__name__ = "pin"
 from .. import CMD_HELP
 CMD_HELP.update({__name__: [__name__, __help__]})
 
