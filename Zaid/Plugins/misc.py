@@ -174,7 +174,7 @@ async def detail(replied_user, event):
     if is_bio(replied_user.user.id):
          smx = boss[replied_user.user.id]
          caption += f"\n\n<b>What others say:</b>\n{smx}"
-    a = blacklist.find({})
+    a = user_about_x.find({})
     for i in a:
          if user_id == i["user"]:
             caption += "\n\n<b>Blacklisted:</b> Yes"
