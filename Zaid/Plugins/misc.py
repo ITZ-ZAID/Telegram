@@ -129,6 +129,7 @@ async def aa(event):
 
 @Zbot(pattern="^/info ?(.*)")
 async def _info(e):
+    event = e
     if not e.reply_to and not e.pattern_match.group(1):
         if e.sender_id:
             x_user = e.sender
