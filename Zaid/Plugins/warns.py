@@ -267,7 +267,6 @@ async def warn_peepls____(e):
     if reason:
         text = translate("Reason", event.chat_id)
         reason = f"\n<b>{text}:</b>\n{reason}"
-    if not warn:
     sg1 = translate("User", event.chat_id)
     sg2 = translate("has", event.chat_id)
     sq3 = translate("warnings ⚠️; Be careful", event.chat_id)
