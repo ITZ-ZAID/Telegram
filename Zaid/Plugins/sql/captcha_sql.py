@@ -1,3 +1,5 @@
+"""Ruko add karunga"""
+
 import threading
 
 from sqlalchemy import Boolean, Column, Integer, Numeric, UnicodeText
