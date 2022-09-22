@@ -25,4 +25,5 @@ async def stats(event):
     c = get_total_chats()
     d = get_total_filters()
     e = get_total_welcome()
-    await event.reply(f"✘ Current Stats\n‣ Total Notes: {a}\n‣ Total Commands: {b}\n‣ Total Chats: {c}\n‣ Total Filters: {d}\n‣ Warned Users: {e}")
+    f = get_total_warns()
+    await event.reply(f"✘ Current Stats\n‣ Total Notes: {a}\n‣ Total Commands: {b}\n‣ Total Chats: {c}\n‣ Total Filters: {d}\n‣ Welcome: {e}\n\n‣ Total Warned: {f}")
