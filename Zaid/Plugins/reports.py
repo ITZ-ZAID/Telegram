@@ -98,6 +98,7 @@ async def I(event):
     )
 
 
+from .. import CMD_HELP
 __help__ = """
  ❍ /report <reason>*:* reply to a message to report it to admins.
  ❍ @admin*:* reply to a message to report it to admins.
