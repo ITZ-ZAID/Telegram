@@ -3,7 +3,7 @@ from telethon.errors import ChatAdminRequiredError
 from telethon.errors.rpcerrorlist import UserNotParticipantError
 from telethon.tl.functions.channels import GetParticipantRequest
 
-from Zaid impor CMD_HELP, Zaid
+from Zaid import CMD_HELP, Zaid
 from config import BOT_ID, OWNER_ID
 from Zaid.utils import Zbot, Zinline
 
