@@ -484,3 +484,15 @@ async def txtc(event):
             await event.client.edit_permissions(chat_id, event.sender_id, send_messages=True)
         except:
             pass
+
+__help__ = """
+**Welcome**
+ - /captcha <on/off>: Mutes a user on joining and unmutes as he/she solves a image captcha.
+ - /captchamode <button/math/text>: Works on Your Choice.
+ - /captchatime : Enable If you want
+ - /captchakick : Enable It You want to kick when new user failed to solve.
+ - /captchakicktime: Countdown.
+"""
+
+__name__ = "captcha"
+CMD_HELP.update({__name__: [__name__, __help__]})
