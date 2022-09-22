@@ -24,14 +24,14 @@ def rm_user(chat_id: int):
     chats.update_one({"type": "main"}, {"$set": {"chats": c}}, upsert=True)
 
 
-def get_all_chat_id():
+def get_all_user_id():
     _chats = chats.find_one({"type": "main"})
     if _chats:
         return _chats["chats"]
     return None
 
 
-def is_chat(chat_id: int):
+def is_user(chat_id: int):
     _chats = chats.find_one({"type": "main"})
     if not _chats:
         return False
@@ -42,7 +42,7 @@ def is_chat(chat_id: int):
 
 
 
-def get_total_chats():
+def get_total_users():
     _chats = chats.find({})
     _total = 0
     for x in _chats:
