@@ -24,7 +24,7 @@ from telethon.tl.types import (
 )
 
 db = {}
-from .. import Zaid
+from .. import Zaid, CMD_HELP
 from config import OWNER_ID
 from ..utils import Zbot, Zinline
 from . import (
@@ -577,3 +577,24 @@ async def x_description(e):
             await e.reply(translate(f"✨ Successfully updated chat description in {e.chat.title}!", event.chat_id))
     except Exception as x:
         await e.reply(str(x))
+
+
+
+__name__ = "admin"
+__help__ = """
+Help menu for the **Admin** module:
+**Admin Commands:**
+- /promote `<user> <rank>`: Promote a user.
+- /superpromote &&
+- /fullpromote `<user> <rank>`: Promote a user with full rights.
+- /demote `<user>`: Demote a user.
+- /setgtitle `<title>`: Edit the group title.
+- /setgpic `<reply to image>`: Set the group Profile Photo.
+- /setgdesc `<text>`: Edit the group description.
+- /setgsticker `<reply to sticker>`: Set the group sticker pack.
+- /adminlist: List the admins of the chat.
+- /bots: List all the bots of the chat.
+- /kickthefools: Kick participants who were inactive for over a month.
+- /invitelink: Export the chat Invite Link.
+"""
+CMD_HELP.update({__name__: [__name__, __help__]})
