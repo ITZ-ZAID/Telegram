@@ -6,5 +6,6 @@ COPY requirements.txt .
 
 RUN pip3 install wheel
 RUN pip3 install --no-cache-dir -U -r requirements.txt
-COPY start /start
-CMD ["/bin/bash", "/start"]
+WORKDIR /app
+COPY . .
+CMD python3 -m Zaid
