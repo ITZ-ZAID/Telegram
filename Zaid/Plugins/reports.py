@@ -96,3 +96,19 @@ async def I(event):
         parse_mode="html",
         reply_to=event.reply_to_msg_id or event.id,
     )
+
+
+__help__ = """
+ ❍ /report <reason>*:* reply to a message to report it to admins.
+ ❍ @admin*:* reply to a message to report it to admins.
+*NOTE:* Neither of these will get triggered if used by admins.
+*Admins only:*
+ ❍ /reports <on/off>*:* change report setting, or view current status.
+   • If done in pm, toggles your status.
+   • If in group, toggles that groups's status.
+"""
+
+__name__ = "reports"
+
+
+CMD_HELP.update({__name__: [__name__, __help__]})
