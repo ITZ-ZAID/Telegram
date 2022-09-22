@@ -19,4 +19,4 @@ async def stats(event):
     a = get_total_notes()
     b = len(Zaid.list_event_handlers())
     c = get_total_chats()
-    await event.reply(f"Total Notes: {a}\nTotal Commands: {b}\nTotal Chats: {c}")
+    await event.reply(f"✘ Current Stats\n‣ Total Notes: {a}\n‣ Total Commands: {b}\n‣ Total Chats: {c}")
