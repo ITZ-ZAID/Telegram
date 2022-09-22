@@ -8,47 +8,28 @@
     "multi",
     "godfather",
     "anie",
-    "management"
+    "management",
+    "zaidrobot"
   ],
   "env": {
-    "REPO_URL": {
-      "description": "URL of the REPO, If You Have edited Repo.. Else Leave ! Don't Change",
-      "value": "https://github.com/ITZ-ZAID/Telegram"
-    },
-    "TOKEN": {
+    "BOT_TOKEN": {
       "description": "Bot Token from @botfather..",
       "value": ""
     },
-    "DATABASE_URL": {
+    "ELEPHANT_SQL": {
       "description": "Database Url from elephantsql.com ..",
       "value": "postgresql:ur url"
     },
-    "SUDO_USERS": {
-      "description": "Dev Access Of Your Bot (Id) Go to @Zaid2_Robot And Type /id",
+    "BOT_ID": {
+      "description": "Fill There your bot id",
       "value": ""
-    },
-    "DEV_USERS": {
-      "description": "Dev Access Of Your Bot (Id) Go to @Zaid2_Robot And Type /id..",
-      "value": ""
-    },
-    "GBAN_LOGS": {
-      "description": "Forward Your Channel Message to @Zaid2_Robot To Get Your Channel ID..",
-      "value": "-100"
-    },
-    "MESSAGE_DUMP": {
-      "description": "Forward Your Channel Message to @Zaid2_Robot To Get Your Channel ID..",
-      "value": "-100"
     },
     "OWNER_ID": {
       "description": "Your Id, Go To @Zaid2_Robot Pm and Type /id..",
       "value": ""
     },
-    "OWNER_USERNAME": {
-      "description": "Your Telegram Username..",
-      "value": ""
-    },
-    "STRING_SESSION": {
-      "description": "A Telethon String Session Of Dummy Account @StarkStringGenBot..",
+    "MONGO_DB_URI": {
+      "description": "An Mongo Database from mongodb.com",
       "value": ""
     }
   },
