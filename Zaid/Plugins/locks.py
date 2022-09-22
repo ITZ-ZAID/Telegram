@@ -26,7 +26,7 @@ from telethon.tl.types import (
     User,
 )
 
-from .. import  Zaid
+from .. import  Zaid, CMD_HELP
 from config import BOT_ID
 from . import DEVS
 from ..utils import Zbot
@@ -386,3 +386,24 @@ async def album(e):
     if "album" in locked:
         if not await is_admin(e.chat_id, e.sender_id):
             await e.delete()
+
+
+
+__name__ = "locks"
+__help__ = """
+Here is the help for **Locks** module:
+The locks module allows you to lock away some common items in the telegram world; the bot will automatically delete them!
+**Admin commands:**
+-> /lock <item(s)>: Lock one or more items. Now, only admins can use this type!
+-> /unlock <item(s)>: Unlock one or more items. Everyone can use this type again!
+-> /locks: List currently locked items.
+-> /lockwarns <yes/no/on/off>: Enabled or disable whether a user should be warned when using a locked item.
+-> /locktypes: Show the list of all lockable items.
+**Examples:**
+- Lock stickers with:
+-> /lock sticker
+- You can lock/unlock multiple items by chaining them:
+-> /lock sticker photo gif video
+"""
+
+CMD_HELP.update({__name__: [__name__, __help__]})
