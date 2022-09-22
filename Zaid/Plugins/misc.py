@@ -194,14 +194,8 @@ async def _info(e):
             out_str += f"\n\n<b>What others Say:</b> <code>{x_about['about']}</code>"
         if x_full.user.id == OWNER_ID:
             out_str += f"\n\nThis is my Master, he have total power over me!"
-        elif x_full.user.id in DEVS:
-            out_str += f"\n\n<b>Status:</b> Commited(Dev)."
-        elif x_full.user.id in SUDO_USERS:
-            out_str += f"\n\n<b>Status:</b> Single(sudo)."
         if (
-            not x_full.user.id in DEVS
-            and not x_full.user.id in SUDO_USERS
-            and not x_full.user.id == OWNER_ID
+            not x_full.user.id in OWNER_ID
             and not x_full.user.id == BOT_ID
         ):
             if gbanned.find_one({"user": x_full.user.id}):
