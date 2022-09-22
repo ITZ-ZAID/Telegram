@@ -264,3 +264,19 @@ async def rules_anon(e):
     elif mode == "resetrulesbutton":
         await e.edit(translate("Reset the rules button name to default", event.chat_id))
         db.set_rules_button(e.chat_id, "Rules")
+
+
+
+__name__ = "rules"
+__help__ = """
+Every chat works with different rules; this module will help make those rules clearer!
+**User commands:**
+- /rules: Check the current chat rules.
+**Admin commands:**
+- /setrules <text>: Set the rules for this chat. Supports markdown, buttons, fillings, etc.
+- /privaterules <yes/no/on/off>: Enable/disable whether the rules should be sent in private.
+- /resetrules: Reset the chat rules to default.
+- /setrulesbutton: Set the rules button name when using {rules}.
+- /resetrulesbutton: Reset the rules button name from {rules} to default.
+"""
+CMD_HELP.update({__name__: [__name__, __help__]})
