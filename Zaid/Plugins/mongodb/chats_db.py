@@ -46,5 +46,5 @@ def get_total_chats():
     _chats = chats.find({})
     _total = 0
     for x in _chats:
-        _total += len(x["notes"])
+        _total += len(x["chats"])
     return _total
