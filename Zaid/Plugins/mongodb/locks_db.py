@@ -55,3 +55,11 @@ def lock_all(chat_id):
 
 def unlock_all(chat_id):
     locks.update_one({"chat_id": chat_id}, {"$set": {"locked": []}}, upsert=True)
+
+
+def get_total_locks():
+    _chats = locks.find({})
+    _total = 0
+    for x in _chats:
+        _total += len(x["locked"])
+    return _total
