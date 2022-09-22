@@ -3,7 +3,7 @@ import datetime
 from telethon import Button, events, types
 
 import Zaid.Plugins.mongodb.notes_db as db
-from Zaid import Zaid
+from Zaid import Zaid, CMD_HELP
 from Zaid.utils import Zbot, Zinline
 from .language import translate
 from . import (
