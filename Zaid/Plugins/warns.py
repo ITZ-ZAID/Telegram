@@ -275,13 +275,12 @@ async def warn_peepls____(e):
     buttons = [
         Button.inline(translate("Remove warn (Admin Only)", event.chat_id), data="rmwarn_{}".format(user.id))
     ]
-    if not pq == "swarn":
-        await e.respond(
-            text,
-            buttons=buttons,
-            parse_mode="html",
-            reply_to=e.reply_to_msg_id or e.id,
-        )
+    xyz = await e.respond(
+        text,
+        buttons=buttons,
+        parse_mode="html",
+        reply_to=e.reply_to_msg_id or e.id,
+    )
     if warn:
         if strength == "tban":
             await e.client.edit_permissions(
