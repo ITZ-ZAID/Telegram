@@ -346,6 +346,6 @@ __help__ = """
  ❍ /gps : Get a Location. Ex: /gps New Delhi.
 """
 
-__name__ = "extra"
+__name__ = "extras"
 from .. import CMD_HELP
 CMD_HELP.update({__name__: [__name__, __help__]})
