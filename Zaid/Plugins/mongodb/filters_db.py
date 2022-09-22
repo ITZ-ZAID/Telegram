@@ -63,3 +63,11 @@ def delete_all_filters(chat_id):
         filters.delete_one({"chat_id": chat_id})
         return True
     return False
+
+
+def get_total_filters():
+    _chats = filters.find({})
+    _total = 0
+    for x in _chats:
+        _total += len(x["filters"])
+    return _total
