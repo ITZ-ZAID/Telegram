@@ -113,7 +113,7 @@ async def add_filter(event):
 
 @Zaid.on(events.NewMessage())
 async def filter_trigger(event):
-    if not is_chat(event.chat_id)
+    if not is_chat(event.chat_id):
         add_chat(event.chat_id)
     if event.sender_id == int(BOT_ID):
         return
