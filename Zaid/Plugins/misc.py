@@ -183,8 +183,8 @@ async def detail(replied_user, event):
          if user_id == i["user"]:
            caption += "\n\n<b>Globally Banned:</b> Yes"
     return caption
- except Exception:
-        print("lel")
+ except Exception as e:
+        print(e)
 
 
 
