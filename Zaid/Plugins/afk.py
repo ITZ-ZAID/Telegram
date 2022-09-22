@@ -5,7 +5,7 @@ import time
 
 from telethon.tl.types import MessageEntityMention, MessageEntityMentionName, User
 
-from . import CMD_HELP
+from .. import CMD_HELP
 from .. import Zaid
 from ..utils import Zbot
 from . import get_readable_time
