@@ -12,6 +12,7 @@ from telethon.errors.rpcerrorlist import (
     UserBlockedError,
     ChatWriteForbiddenError,
 )
+from . import CMD_HELP
 from google_trans_new.constant import LANGUAGES
 from google_trans_new import google_translator
 translator = google_translator()
@@ -163,3 +164,19 @@ async def set_lang(event):
     name = code_lang[match]
     name = name[0].upper() + name[1:]
     await event.edit(f"Language successfully changed to {name} !")
+
+
+
+@Zbot(pattern="^/help ?(.*)")
+async def help(event):
+    if event.is_group:
+        buttons = [
+            [Button.url("❔ Help", "https://t.me/Zaid2_Robot?start=_help")],
+        ]
+        await event.reply(
+            "Contact me in PM to get the list of possible commands.",
+            buttons=buttons,
+        )
+    elif event.is_private:
+        buttons = paginate_help()
+        await event.reply("Read all the useful commands", buttons=buttons)
