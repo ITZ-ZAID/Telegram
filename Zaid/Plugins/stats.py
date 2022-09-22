@@ -3,6 +3,7 @@ from Zaid import Zaid
 from Zaid.Plugins.mongodb.chats_db import get_total_chats
 from Zaid.Plugins.mongodb.notes_db import get_total_notes
 from Zaid.Plugins.mongodb.filters_db import get_total_filters
+from Zaid.Plugins.mongodb.warns_db import get_total_warns
 
 
 
@@ -21,4 +22,5 @@ async def stats(event):
     b = len(Zaid.list_event_handlers())
     c = get_total_chats()
     d = get_total_filters()
-    await event.reply(f"✘ Current Stats\n‣ Total Notes: {a}\n‣ Total Commands: {b}\n‣ Total Chats: {c}\n‣ Total Filters: {d}")
+    e = get_total_warns()
+    await event.reply(f"✘ Current Stats\n‣ Total Notes: {a}\n‣ Total Commands: {b}\n‣ Total Chats: {c}\n‣ Total Filters: {d}\n‣ Warned Users: {e}")
