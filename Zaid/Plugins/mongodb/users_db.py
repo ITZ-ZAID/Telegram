@@ -3,7 +3,7 @@ from . import db
 chats = db.users
 
 
-def add_chat(chat_id: int):
+def add_user(chat_id: int):
     _chats = chats.find_one({"type": "main"})
     if _chats:
         c = _chats["chats"]
@@ -13,7 +13,7 @@ def add_chat(chat_id: int):
     chats.update_one({"type": "main"}, {"$set": {"chats": c}}, upsert=True)
 
 
-def rm_chat(chat_id: int):
+def rm_user(chat_id: int):
     _chats = chats.find_one({"type": "main"})
     if _chats:
         c = _chats["chats"]
