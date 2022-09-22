@@ -1,7 +1,7 @@
 from random import randint, shuffle
 
 from telethon import Button
-
+from .. import CMD_HELP
 import Zaid.Plugins.sql.captcha_sql as sql
 from Zaid.utils import Zbot, Zinline
 
