@@ -205,6 +205,32 @@ async def help(event):
         await event.reply("Read all the useful commands", buttons=buttons)
 
 
+@Zinline(pattern=r"us_plugin_(.*)")
+async def us_0(event):
+    pl_name = (event.pattern_match.group(1)).decode()
+    try:
+        pl_help = CMD_HELP[pl_name][1]
+    except KeyError:
+        pl_help = "The help menu for this module will be provided soon!"
+    await event.edit(
+        pl_help,
+        buttons=[
+            Button.inline("Close", data="cncll"),
+            Button.inline("Back", data="help_menu"),
+        ],
+    )
+
+@Zinline(pattern=r"help_menu")
+async def help_menu(event):
+    buttons = paginate_help()
+    await event.edit(help_caption, buttons=buttons)
+
+@Zbot(pattern="^/start _help")
+async def st_help(e):
+    buttons = paginate_help()
+    await e.respond(help_caption, buttons=buttons)
+
+
 def paginate_help():
     helpable_plugins = sorted(plugins)
     modules = [
