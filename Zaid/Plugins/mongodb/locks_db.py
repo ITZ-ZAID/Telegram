@@ -61,5 +61,5 @@ def get_total_locks():
     _chats = locks.find({})
     _total = 0
     for x in _chats:
-        _total += len(x["chat_id"])
+        _total += len(x["locked"])
     return _total
