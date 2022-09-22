@@ -347,4 +347,5 @@ __help__ = """
 """
 
 __name__ = "extra"
+from .. import CMD_HELP
 CMD_HELP.update({__name__: [__name__, __help__]})
