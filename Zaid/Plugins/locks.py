@@ -45,6 +45,7 @@ from . import (
 from .language import translate
 
 approve_d = database.approve_d
+from Zaid.Plugins.mongodb.chats_db import is_chat, add_chat
 
 
 @Zbot(pattern="^/lock ?(.*)")
@@ -205,6 +206,8 @@ async def unlock_item(event):
 async def locks(event):
     if event.is_private:
         return
+    if not is_chat(event.chat_id):
+        add_chat(event.chat_id)
     if not event.from_id:
         return
     if not isinstance(event.sender, User):
