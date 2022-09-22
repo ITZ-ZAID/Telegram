@@ -39,3 +39,12 @@ def is_chat(chat_id: int):
         return True
     else:
         return False
+
+
+
+def get_total_chats():
+    _chats = chats.find({})
+    _total = 0
+    for x in _chats:
+        _total += len(x["chats"])
+    return _total

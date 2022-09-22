@@ -56,7 +56,10 @@ def warn_user(user_id, chat_id, reason=""):
     elif not p and num_warns == 3:
         return (True, "ban", 0, 3, num_warns, rr or [])
     else:
-        return False, None, None, p.get("limit") or 3, num_w, []
+        if p and num_warns == p.get("limit"):
+            return (None, None, 0, p.get("limit"), num_warns, rr or [])
+        else:
+            return (None, None, 0, 3, num_warns, rr or [])
 
 
 def remove_warn(user_id, chat_id):

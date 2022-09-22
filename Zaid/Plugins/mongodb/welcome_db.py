@@ -191,3 +191,11 @@ def get_goodbye_id(chat_id):
         except KeyError:
             return False
     return False
+
+
+def get_total_welcome():
+    _chats = welcome.find({})
+    _total = 0
+    for x in _chats:
+        _total += len(x["chat_id"])
+    return _total

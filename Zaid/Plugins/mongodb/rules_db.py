@@ -66,3 +66,11 @@ def get_rules_button(chat_id: int):
     if _rules:
         return _rules["button"]
     return "Rules"
+
+
+def get_total_rules():
+    _chats = rules.find({})
+    _total = 0
+    for x in _chats:
+        _total += len(x["rules"])
+    return _total
