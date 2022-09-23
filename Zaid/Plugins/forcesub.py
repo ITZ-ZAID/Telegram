@@ -106,7 +106,7 @@ async def fsub_n(e):
         ]
         txt = f'<b><a href="tg://user?id={e.sender_id}">{e.sender.first_name}</a></b>, you have <b>not subscribed</b> to our <b><a href="t.me/{channel}">Channel</a></b> yet❗.Please <b><a href="t.me/{channel}">Join</a></b> and <b>press the button below</b> to unmute yourself.'
         await e.reply(txt, buttons=buttons, parse_mode="html", link_preview=False)
-        await event.client.edit_permissions(e.chat_id, e.sender_id, send_messages=False)
+        await e.client.edit_permissions(e.chat_id, e.sender_id, send_messages=False)
 
 
 @Zinline(pattern=r"fs(\_(.*))")
