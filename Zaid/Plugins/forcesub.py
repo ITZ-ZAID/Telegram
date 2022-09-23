@@ -26,7 +26,7 @@ async def fsub(event):
     if event.is_private:
         return
     if event.is_group:
-        perm = await tbot.get_permissions(event.chat_id, event.sender_id)
+        perm = await event.client.get_permissions(event.chat_id, event.sender_id)
         if not perm.is_admin:
             return await event.reply("You need to be an admin to do this.")
         if not perm.is_creator:
@@ -56,7 +56,7 @@ async def fsub(event):
         db.disapprove(event.chat_id)
     else:
         try:
-            channel_entity = await tbot.get_entity(channel)
+            channel_entity = await event.client.get_entity(channel)
         except:
             return await event.reply(
                 "❗<b>Invalid channel Username provided.</b>", parse_mode="html"
