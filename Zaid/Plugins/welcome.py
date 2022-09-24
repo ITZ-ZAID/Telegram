@@ -264,7 +264,7 @@ Promote me as administrator in your group otherwise I will not function properly
     welcome_text = ""
     if sql.get_mode(chat_id) == True:
         style = sql.get_style(chat_id)
-        es = translate("Click here to prove human", event.chat_id)
+        es = translate("Click here to prove human", chat_id)
         if style in ["math", "text"]:
             custom_welcome = (
                 custom_welcome
