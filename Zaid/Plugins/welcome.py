@@ -284,7 +284,7 @@ Promote me as administrator in your group otherwise I will not function properly
             username=username,
         )
     if sql.get_mode(chat_id) == True:
-        from .CAPTCHA import captcha_to_welcome
+        from .captcha import captcha_to_welcome
 
         return await captcha_to_welcome(event, welcome_text, file, buttons, chat_id)
     await Zaid.send_message(
