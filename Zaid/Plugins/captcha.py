@@ -343,10 +343,10 @@ async def txtc(event):
     option = cb_data[1]
     ans = cb_data[2]
     if option != ans:
-        captcha_pic, character, wrong = generate_captcha()
+        captcha_pic, character, solution = generate_captcha()
         ans = []
         ans.append(character)
-        for x in wrong:
+        for x in solution:
             ans.append(x)
         shuffle(ans)
         btns = []
