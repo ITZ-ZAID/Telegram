@@ -4,6 +4,7 @@ from telethon import Button
 from .. import CMD_HELP
 import Zaid.Plugins.sql.captcha_sql as sql
 from Zaid.utils import Zbot, Zinline
+from Zaid import Zaid
 
 from . import can_change_info, db, extract_time, g_time, gen_captcha, generate_captcha
 
@@ -260,7 +261,7 @@ async def captcha_to_welcome(event, welcome_text, file, buttons, chat_id):
     if buttons == None:
         buttons = []
     try:
-        await tbot.edit_permissions(chat_id, event.user_id, send_messages=False)
+        await Zaid.edit_permissions(chat_id, event.user_id, send_messages=False)
     except:
         pass
     if style == "button":
@@ -272,7 +273,7 @@ async def captcha_to_welcome(event, welcome_text, file, buttons, chat_id):
                 )
             ]
         )
-    await event.client.send_message(
+    await Zaid.send_message(
         chat_id, welcome_text, file=file, buttons=buttons, parse_mode="html"
     )
 
