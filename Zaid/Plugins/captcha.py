@@ -432,7 +432,7 @@ async def txtc(event):
     option = cb_data[1]
     ans = cb_data[2]
     if option != ans:
-        captcha_pic, solution = gen_captcha("math")
+        captcha_pic, character, solution = gen_captcha("math")
         ans = []
         ans.append(solution)
         for x in range(8):
