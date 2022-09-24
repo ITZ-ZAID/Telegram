@@ -290,6 +290,7 @@ async def dcfd_fed(event):
     except:
         pass
     await event.answer("Verified.")
+    await event.delete()
 
 
 @Zbot(pattern="^/start captcha_(.*)")
