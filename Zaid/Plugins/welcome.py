@@ -643,7 +643,7 @@ Here is the help for **Greetings** module:
 - /resetgoodbye: Check whether you have a goodbye note in the chat.
 - /cleangoodbye `<on/off>`: Clean previous goodbye message before farewelling a new user
 **Available variables for formatting greeting message:**
-`{mention}`, `{title}`, `{count}`, `{firstname}`, `{fullname}`, `{username}`, `{chatid}`, `{lastname}`, `{id}`, `{chatname}`
+`{first_name}`, `{last_name}`, `{mention}`, `{chat_id}`, `{full_name}`, `{username}`, `{id}`, `{title}`
 """
 
 CMD_HELP.update({__name__: [__name__, __help__]})
