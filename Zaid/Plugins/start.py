@@ -57,22 +57,33 @@ async def start(event):
     hi = translate("Hello", event.chat_id)
     if event.is_private:
        IMSG = f"{random.choice(IMG)}"
-       hj = translate("✘ I am an group management bot with some fun extra ;)", event.chat_id)
-       hj2 = translate("✘ I can do a Verity of things, most common of em are:", event.chat_id)
-       hj3 = translate("‣ Restrict users with ban permission.", event.chat_id)
-       hj4 = translate("‣ Greet users with media + text and buttons, with proper formatting.", event.chat_id)
-       hj5 = translate("‣ Warn users according to the options set and restrict them accordingly.", event.chat_id)
-       hj6 = translate("‣ Save notes and filters with proper formatting and reply markup.", event.chat_id)
-       hj7 = translate("‣ I can play music in your groups voice chat", event.chat_id)
-       hj8 = translate("‣ I have many features which you like", event.chat_id)
-       hj9 = translate("to change the bot language", event.chat_id)
-       hj10 = translate("There's even more! This is just the tip of the iceberg. Do note i need to be promoted with proper admin permission to perform from. else won't be able to perform as said.", event.chat_id)
+       # remove # to enable translater in pm
+       #hj = translate("✘ I am an group management bot with some fun extra ;)", event.chat_id)
+       #hj2 = translate("✘ I can do a Verity of things, most common of em are:", event.chat_id)
+       #hj3 = translate("‣ Restrict users with ban permission.", event.chat_id)
+       #hj4 = translate("‣ Greet users with media + text and buttons, with proper formatting.", event.chat_id)
+       #hj5 = translate("‣ Warn users according to the options set and restrict them accordingly.", event.chat_id)
+       #hj6 = translate("‣ Save notes and filters with proper formatting and reply markup.", event.chat_id)
+       #hj7 = translate("‣ I can play music in your groups voice chat", event.chat_id)
+       #hj8 = translate("‣ I have many features which you like", event.chat_id)
+       #hj9 = translate("to change the bot language", event.chat_id)
+       #hj10 = translate("There's even more! This is just the tip of the iceberg. Do note i need to be promoted with proper admin permission to perform from. else won't be able to perform as said.", event.chat_id)
+       hj = "✘ I am an group management bot with some fun extra ;)"
+       hj2 = "✘ I can do a Verity of things, most common of em are:"
+       hj3 = "‣ Restrict users with ban permission."
+       hj4 = "‣ Greet users with media + text and buttons, with proper formatting."
+       hj5 = "‣ Warn users according to the options set and restrict them accordingly."
+       hj6 = "‣ Save notes and filters with proper formatting and reply markup."
+       hj7 = "‣ I can play music in your groups voice chat"
+       hj8 = "‣ I have many features which you like"
+       hj9 = "to change the bot language"
+       hj10 = "There's even more! This is just the tip of the iceberg. Do note i need to be promoted with proper admin permission to perform from. else won't be able to perform as said."
        await event.reply(
              f"{hi} {event.sender.first_name}\n{line}\n{hj}\n{hj2}\n{hj3}\n{hj4}\n{hj5}\n{hj6}\n{hj7}\n{hj8}\n‣ /setlang {hj9}\n{line}\n{hj10}", 
              buttons=[
-        [Button.url(translate("Add me to your group ➕", event.chat_id), url="t.me/Zaid2_Robot?startgroup=true")],
-        [Button.url(translate("Channel 📢", event.chat_id), url="t.me/TheUpdatesChannel"), Button.url(translate("Support 🌎", event.chat_id), url="t.me/thesupportchat")],
-        [Button.inline(translate("language 🌐", event.chat_id), data=f"langs"), Button.inline(translate("Help ⁉️", event.chat_id), data="help_menu")]])
+        [Button.url("Add me to your group ➕"), url="t.me/Zaid2_Robot?startgroup=true")],
+        [Button.url("Channel 📢", url="t.me/TheUpdatesChannel"), Button.url("Support 🌎", url="t.me/thesupportchat")],
+        [Button.inline("language 🌐"), data=f"langs"), Button.inline("Help ⁉️", data="help_menu")]])
     if event.is_group:
         IMSG = f"{random.choice(IMG)}"
         await event.client.send_file(event.chat_id,
