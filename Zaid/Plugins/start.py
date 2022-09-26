@@ -83,7 +83,7 @@ async def start(event):
              buttons=[
         [Button.url("Add me to your group ➕", url="t.me/Zaid2_Robot?startgroup=true")],
         [Button.url("Channel 📢", url="t.me/TheUpdatesChannel"), Button.url("Support 🌎", url="t.me/thesupportchat")],
-        [Button.inline("language 🌐"), data=f"langs"), Button.inline("Help ⁉️", data="help_menu")]])
+        [Button.inline("language 🌐", data=f"langs"), Button.inline("Help ⁉️", data="help_menu")]])
     if event.is_group:
         IMSG = f"{random.choice(IMG)}"
         await event.client.send_file(event.chat_id,
