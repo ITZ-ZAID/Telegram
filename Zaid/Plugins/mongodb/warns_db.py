@@ -163,6 +163,14 @@ def get_warn_limit(chat_id):
     return 3
 
 
+
+def get_limit(chat_id):
+    _s = settings.find_one({"chat_id": chat_id})
+    if _s:
+        return _s.get("limit")
+    return 3
+
+
 def get_warn_settings(chat_id):
     _s = settings.find_one({"chat_id": chat_id})
     if _s:
