@@ -81,7 +81,7 @@ async def start(event):
        await event.reply(
              f"{hi} {event.sender.first_name}\n{line}\n{hj}\n{hj2}\n{hj3}\n{hj4}\n{hj5}\n{hj6}\n{hj7}\n{hj8}\n‣ /setlang {hj9}\n{line}\n{hj10}", 
              buttons=[
-        [Button.url("Add me to your group ➕"), url="t.me/Zaid2_Robot?startgroup=true")],
+        [Button.url("Add me to your group ➕", url="t.me/Zaid2_Robot?startgroup=true")],
         [Button.url("Channel 📢", url="t.me/TheUpdatesChannel"), Button.url("Support 🌎", url="t.me/thesupportchat")],
         [Button.inline("language 🌐"), data=f"langs"), Button.inline("Help ⁉️", data="help_menu")]])
     if event.is_group:
