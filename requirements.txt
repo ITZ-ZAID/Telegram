@@ -4,7 +4,7 @@ telethon-tgcrypto
 pillow
 pymongo[srv]
 multicolorcaptcha
-git+https://github.com/1danish-00/google_trans_new.git
+git+https://github.com/MariaConsueloit/google-trans-new.git
 bing_image_urls
 geniuses
 bs4
