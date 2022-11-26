@@ -38,16 +38,6 @@ python3 -m Telegram # start the bot.
 
 #
 
-<p align="center">𝐌𝐚𝐝𝐞 𝐁𝐲</p>
-
-<p align="center">
-    <a href="https://t.me/Timesisnotwaiting"> <img src="https://img.shields.io/badge/Anie-Master-ff69b4" /> </a>
-</p>
-<a href="https://t.me/Timesisnotwaiting"><img src="https://img.shields.io/badge/Iƚȥ%20Zαιԃ-gold?&style=for-the-badge&logo=telegram" width=600px></a></p>
-
-
-#
-
 <p align="center">𝐒𝐮𝐩𝐩𝐨𝐫𝐭 𝐆𝐫𝐨𝐮𝐩</p>
 
 <p align="center">
@@ -70,22 +60,6 @@ python3 -m Telegram # start the bot.
 
 <p align="center"><a href="https://t.me/StringSession_GeneratorBot"> <img src="https://img.shields.io/badge/String%20Session-black?style=for-the-badge&logo=replit" width="220" height="38.45"/></a></p>
  
-#
-
-<p align="center">𝐅𝐢𝐧𝐝 𝐀𝐧𝐢𝐞 𝐑𝐨𝐛𝐨𝐭 𝐎𝐧 𝐓𝐞𝐥𝐞𝐠𝐫𝐚𝐦</p>
-
-<p align="center">
-    <a href="https://t.me/Anierobot_bot"><img src="https://img.shields.io/badge/Best-Bot-ff69b4" /></a>
-    <a href="https://t.me/Anierobot_bot"><img src="https://img.shields.io/badge/Telegram-𝐀𝐧𝐢𝐞%20𝐑𝐨𝐛𝐨𝐭-gold?&style=flat-square?&logo=telegram" width=600px></a></p>
-</p>
-
-#
-
-<p align="center">𝐒𝐩𝐞𝐜𝐢𝐚𝐥 𝐓𝐡𝐚𝐧𝐤𝐬 ----> </p>
-
-<p align="center"><a href="https://t.me/Timesisnotwaiting"><img src="https://img.shields.io/badge/ᴛᴇʟᴇɢʀᴀᴍ-𝐙𝐚𝐢𝐝-black?&style=for-the-badge&logo=telegram" width="220" height="38.45"></a></p>
-<p align="center"><a href="https://t.me/Shubhanshutya"><img src="https://img.shields.io/badge/ᴛᴇʟᴇɢʀᴀᴍ-𝐒𝐡𝐮𝐛𝐡𝐚𝐧𝐬𝐡𝐮-black?&style=for-the-badge&logo=telegram" width="220" height="38.45"></a></p>
-
 #
 
 
