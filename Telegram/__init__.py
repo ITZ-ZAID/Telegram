@@ -160,7 +160,7 @@ else:
 try:
     ubot2.start()
 except BaseException:
-    print("Userbot Error ! Have you added a STRING_SESSION in deploying??")
+    print("WARNING ⚠️ ! Have you added a STRING_SESSION in deploying?? Some modules are affect")
     pass
 
 dispatcher = updater.dispatcher
