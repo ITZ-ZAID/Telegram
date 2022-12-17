@@ -29,7 +29,7 @@ telethon==1.24.0
 ujson
 pycryptodome
 base58
-py-tgcalls==.0.9.1
+py-tgcalls==0.9.1
 pytimeparse
 git+https://github.com/Itz-fork/py-trans.git
 python-dotenv 
