@@ -23,7 +23,7 @@ from telethon.tl import types
 from telethon.utils import get_display_name
 from telethon.tl.functions.users import GetFullUserRequest
 from youtubesearchpython import VideosSearch
-
+from config import Config 
  
 fotoplay = "https://telegra.ph/file/b6402152be44d90836339.jpg"
 ngantri = "https://telegra.ph/file/b6402152be44d90836339.jpg"
