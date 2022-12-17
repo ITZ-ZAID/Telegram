@@ -14,7 +14,7 @@ from telethon import TelegramClient
 from telethon.sessions import StringSession
 from telethon.sessions import MemorySession
 from config import Config
-
+from pytgcalls import PyTgCalls
 StartTime = time.time()
 
 
@@ -147,6 +147,7 @@ API_HASH = '4e984ea35f854762dcde906dce426c2d'
 API_ID = '6435225'
 STRING_SESSION = ZInit.STRING_SESSION
 WORKERS = 8
+ASSISTANT_ID = ZInit.ASSISTANT_ID
 
 from Telegram.modules.sql import SESSION
 
@@ -157,8 +158,10 @@ if STRING_SESSION:
 else: 
    ubot2 = None
 
+call_py = PyTgCalls(ubot2)
 try:
     ubot2.start()
+    call_py.start()
 except BaseException:
     print("WARNING ⚠️ ! Have you added a STRING_SESSION in deploying?? Some modules are affect")
     pass
