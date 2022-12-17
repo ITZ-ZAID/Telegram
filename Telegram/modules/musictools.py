@@ -41,7 +41,7 @@ from Telegram.helpers.queues import (
 )
 from telethon import Button, events
 
-
+from Telegram.events import register
 from Telegram.helpers.thumbnail import gen_thumb
 from Telegram.helpers.joiner import AssistantAdd
 
@@ -133,7 +133,7 @@ btnn =[
 
 
 #play
-@Zaid.on(events.NewMessage(pattern="^[?!/]play"))
+@register(pattern="^/play ?(.*)")
 @AssistantAdd
 async def play(event):
     title = ' '.join(event.text[5:])
@@ -232,7 +232,7 @@ async def play(event):
 
 
 #end
-@Zaid.on(events.NewMessage(pattern="^[/?!]end"))
+@register(pattern="^/end ?(.*)")
 @is_admin
 async def vc_end(event, perm):
     chat_id = event.chat_id
