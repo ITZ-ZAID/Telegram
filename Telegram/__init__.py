@@ -158,6 +158,7 @@ if STRING_SESSION:
 else: 
    ubot2 = None
 
+client = ubot2
 call_py = PyTgCalls(ubot2)
 try:
     ubot2.start()
@@ -170,7 +171,6 @@ dispatcher = updater.dispatcher
 
 
 
-# Load at end to ensure all prev variables have been set
 from Telegram.modules.helper_funcs.handlers import CustomCommandHandler
 
 if CUSTOM_CMD and len(CUSTOM_CMD) >= 1:
