@@ -40,7 +40,7 @@ from Telegram.helpers.queues import (
     active,
 )
 from telethon import Button, events
-from Config import Config
+
 
 from Telegram.helpers.thumbnail import gen_thumb
 from Telegram.helpers.joiner import AssistantAdd
@@ -253,9 +253,6 @@ async def vc_end(event, perm):
 @Zaid.on(events.NewMessage(pattern="^[?!/]vplay"))
 @AssistantAdd
 async def vplay(event):
-    if Config.HEROKU_MODE == "ENABLE":
-        await event.reply("__Currently Heroku Mode is ENABLED so You Can't Stream Video because Video Streaming Cause of Banning Your Heroku Account__.")
-        return
     title = ' '.join(event.text[6:])
     replied = await event.get_reply_message()
     sender = await event.get_sender()
