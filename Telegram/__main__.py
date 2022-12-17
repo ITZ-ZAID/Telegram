@@ -146,7 +146,7 @@ def start(update: Update, context: CallbackContext):  # sourcery no-metrics
                     [ 
                         [
                             InlineKeyboardButton(
-                                text=gs(chat.id, "add_bot_to_group_btn"),
+                                text=gs(chat.id, "add_bot_to_group_btn").format(context.bot.first_name),
                                 url="t.me/{}?startgroup=true".format(
                                     context.bot.username
                                 ),
@@ -241,7 +241,7 @@ def start(update: Update, context: CallbackContext):  # sourcery no-metrics
                     [
                         [
                             InlineKeyboardButton(
-                                text=gs(chat.id, "add_bot_to_group_btn"),
+                                text=gs(chat.id, "add_bot_to_group_btn").format(context.bot.first_name),
                                 url="t.me/{}?startgroup=true".format(
                                     context.bot.username
                                 ),
