@@ -165,7 +165,7 @@ try:
     call_py.start()
 except BaseException:
     print("WARNING ⚠️ ! Have you added a STRING_SESSION in deploying?? Some modules are affect")
-    pass
+    sys.exit(1)
 
 dispatcher = updater.dispatcher
 
