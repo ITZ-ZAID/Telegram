@@ -705,12 +705,11 @@ def main():
             updater.bot.set_webhook(url=URL + TOKEN)
 
     else:
-        log.info(f"Bot started, Using long polling. | BOT: [@{dispatcher.bot.username}]")
+        log.info(f"Using long polling. | BOT: [@{dispatcher.bot.username}]")
         AnieINIT.bot_id = dispatcher.bot.id
         AnieINIT.bot_username = dispatcher.bot.username
         AnieINIT.bot_name = dispatcher.bot.first_name
-        updater.start_polling(timeout=15, read_latency=4, allowed_updates=Update.ALL_TYPES,
-                              drop_pending_updates=ZInit.DROP_UPDATES)
+        updater.start_polling(timeout=15, read_latency=4, allowed_updates=Update.ALL_TYPES, drop_pending_updates=KInit.DROP_UPDATES)
     if len(argv) not in (1, 3, 4):
         telethn.disconnect()
     else:
@@ -721,4 +720,4 @@ def main():
 if __name__ == "__main__":
     log.info("[TELEGRAM] Successfully loaded modules: " + str(ALL_MODULES))
     telethn.start(bot_token=TOKEN)
-    threading.Thread(target=main).start()
+    main()
