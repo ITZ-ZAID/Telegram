@@ -31,3 +31,6 @@ py-tgcalls==.0.9.1
 pytimeparse
 git+https://github.com/Itz-fork/py-trans.git
 python-dotenv 
+numpy
+youtube-search-python
+yt-dlp
