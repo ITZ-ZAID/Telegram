@@ -23,8 +23,7 @@ from telethon.tl.functions.messages import ExportChatInviteRequest
 def AssistantAdd(mystic):
     async def wrapper(event):
         try:
-            for ids in ASSISTANT_ID:
-               await event.client(GetParticipantRequest(int(event.chat_id), int(ids)))
+            await event.client(GetParticipantRequest(int(event.chat_id), int(ASSISTANT_ID)))
         except UserNotParticipantError:
             if event.is_group:
                 try:
