@@ -121,12 +121,6 @@ async def skip_current_song(chat_id: int):
     pop_an_item(chat_id)
     return [songname, link, type]
 
-
-@Zaid.on(events.callbackquery.CallbackQuery(data="cls"))
-async def _(event):
-
-     await event.delete()
-
 btnn =[
     [Button.url("sᴜᴘᴘᴏʀᴛ ⚙️", url=f"t.me/{Config.SUPPORT}"), Button.url("cʜᴀɴɴᴇʟ 🇮🇳", url=f"t.me/{Config.CHANNEL}")],
     [Button.inline("cʟᴏꜱᴇ 🗑️", data="cls")]]
