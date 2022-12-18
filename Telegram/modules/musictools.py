@@ -127,7 +127,7 @@ btnn =[
 
 
 #play
-@register(pattern="^/play ?(.*)")
+@register(pattern="^[/?!.]play ?(.*)")
 @AssistantAdd
 async def play(event):
     title = ' '.join(event.text[5:])
@@ -226,7 +226,7 @@ async def play(event):
 
 
 #end
-@register(pattern="^/end ?(.*)")
+@register(pattern="^[/?!.]end ?(.*)")
 @is_admin
 async def vc_end(event, perm):
     chat_id = event.chat_id
@@ -244,7 +244,7 @@ async def vc_end(event, perm):
 
 
 
-@Zaid.on(events.NewMessage(pattern="^[?!/]vplay"))
+@Zaid.on(events.NewMessage(pattern="^[?!/.]vplay"))
 @AssistantAdd
 async def vplay(event):
     title = ' '.join(event.text[6:])
@@ -407,7 +407,7 @@ async def vplay(event):
 
 
 #playlist
-@Zaid.on(events.NewMessage(pattern="^[?!/]playlist"))
+@Zaid.on(events.NewMessage(pattern="^[?!/.]playlist"))
 @is_admin
 async def vc_playlist(event, perm):
     chat_id = event.chat_id
@@ -437,7 +437,7 @@ async def vc_playlist(event, perm):
 
 
 #leavevc
-@Zaid.on(events.NewMessage(pattern="^[?!/]leavevc"))
+@Zaid.on(events.NewMessage(pattern="^[?!/.]leavevc"))
 @is_admin
 async def leavevc(event, perm):
     xnxx = await event.reply("Processing")
@@ -454,7 +454,7 @@ async def leavevc(event, perm):
 
 
 
-@Zaid.on(events.NewMessage(pattern="^[?!/]skip"))
+@Zaid.on(events.NewMessage(pattern="^[?!/.]skip"))
 @is_admin
 async def vc_skip(event, perm):
     chat_id = event.chat_id
@@ -483,7 +483,7 @@ async def vc_skip(event, perm):
             await event.reply(DELQUE)
 
 
-@Zaid.on(events.NewMessage(pattern="^[?!/]pause"))
+@Zaid.on(events.NewMessage(pattern="^[?!/.]pause"))
 @is_admin
 async def vc_pause(event, perm):
     chat_id = event.chat_id
@@ -498,7 +498,7 @@ async def vc_pause(event, perm):
 
 
 
-@Zaid.on(events.NewMessage(pattern="^[?!/]resume"))
+@Zaid.on(events.NewMessage(pattern="^[?!/.]resume"))
 @is_admin
 async def vc_resume(event, perm):
     chat_id = event.chat_id
