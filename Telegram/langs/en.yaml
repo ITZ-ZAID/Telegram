@@ -9,7 +9,7 @@ set_chat_lang: "Great, {} it is from now on!"
 
 
 pm_start_text: |
-   ────「 Anie] 」────
+   ────「 {} ] 」────
    ʜᴇʏ! {}
    ɪ ᴀᴍ ᴀɴ ᴀɴɪᴍᴇ ᴛʜᴇᴍᴇᴅ ᴀᴅᴠᴀɴᴄᴇ ɢʀᴏᴜp ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ ᴡɪᴛʜ ᴀ ʟᴏᴛ ᴏғ sᴘᴇᴄɪᴀʟɪᴛʏ.
    ➖➖➖➖➖➖➖➖➖➖➖➖➖
@@ -20,11 +20,11 @@ pm_start_text: |
    ‣ Note keeping system
    ‣ Filters keeping system
    ‣ Approvals and much more.
-   ‣ Managed By @Timesisnotwaiting.
+   ‣ Managed By @{}.
    ➖➖➖➖➖➖➖➖➖➖➖➖➖
    ➛ᴛʀʏ ᴛʜᴇ /help ʙᴜᴛᴛᴏɴs ʙᴇʟᴏᴡ ᴛᴏ ᴋɴᴏᴡ ᴍʏ ᴀʙɪʟɪᴛɪᴇs ××
    
-grp_start_text: "Hi,Anie Is Here."
+grp_start_text: "Hi, I'm Alive."
 
 pm_help_text: |
     • /start: Starts me, can be used to check I'm alive or not.
