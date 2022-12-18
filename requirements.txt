@@ -1,3 +1,5 @@
+aiofile
+aiofiles
 aiohttp>=2.2.5
 alphabet_detector
 beautifulsoup4
@@ -23,10 +25,14 @@ requests
 spamwatch
 speedtest-cli
 sqlalchemy==1.4.11
-telethon==1.16.4
+telethon==1.24.0
 ujson
 pycryptodome
 base58
+py-tgcalls==0.9.1
 pytimeparse
 git+https://github.com/Itz-fork/py-trans.git
 python-dotenv 
+numpy
+youtube-search-python
+yt-dlp

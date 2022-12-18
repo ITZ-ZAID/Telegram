@@ -11,7 +11,8 @@ class Config(object):
     APP_ID = getenv("API_ID", "6435225")
     API_HASH = getenv("API_HASH", "4e984ea35f854762dcde906dce426c2d")
     TOKEN = getenv("TOKEN", "")
-    OWNER_ID = getenv("OWNER_ID")
+    OWNER_ID = getenv("OWNER_ID", "")
+    ASSISTANT_ID = getenv("ASSISTANT_ID", "")
     STRING_SESSION = getenv("STRING_SESSION", "")
     OWNER_USERNAME = getenv("OWNER_USERNAME", "")
     DB_URI = getenv("DATABASE_URL", "")
@@ -34,6 +35,10 @@ class Config(object):
     BAN_STICKER = getenv("BAN_STICKER", "")
     ALLOW_EXCL = True
     CUSTOM_CMD = False
+    CHANNEL = getenv("CHANNEL", "TheUpdatesChannel")
+    SUPPORT = getenv("SUPPORT", "TheSupportChat")
+    START_IMG = os.environ.get("START_IMG", "https://telegra.ph/file/35a7b5d9f1f2605c9c0d3.png")
+    CMD_IMG = os.environ.get("CMD_IMG", "https://telegra.ph/file/66518ed54301654f0b126.png")
     CASH_API_KEY = getenv("CASH_API_KEY", "https://www.alphavantage.co/support/#api-key")
     TIME_API_KEY = getenv("TIME_API_KEY", "https://timezonedb.com/api")
     WALL_API = getenv("WALL_API", "https://wall.alphacoders.com/api.php")

@@ -29,6 +29,7 @@ from Telegram import (
     telethn,
     AnieINIT
 )
+from config import SUPPORT, CHANNEL
 # needed to dynamically load modules
 # NOTE: Module order is not guaranteed, specify that in the config file!
 from Telegram.modules import ALL_MODULES
@@ -146,7 +147,7 @@ def start(update: Update, context: CallbackContext):  # sourcery no-metrics
                     [ 
                         [
                             InlineKeyboardButton(
-                                text=gs(chat.id, "add_bot_to_group_btn"),
+                                text=gs(chat.id, "add_bot_to_group_btn").format(context.bot.first_name),
                                 url="t.me/{}?startgroup=true".format(
                                     context.bot.username
                                 ),
@@ -165,7 +166,7 @@ def start(update: Update, context: CallbackContext):  # sourcery no-metrics
                         [
                             InlineKeyboardButton(
                                 text=gs(chat.id, "support_chat_link_btn"),
-                                url='https://t.me/TheSupportChat',
+                                url='https://t.me/{SUPPORT}',
                             ),
                             InlineKeyboardButton(
                                 text="Help",
@@ -173,7 +174,7 @@ def start(update: Update, context: CallbackContext):  # sourcery no-metrics
                             ),
                             InlineKeyboardButton(
                                 text=gs(chat.id, "updates_channel_link_btn"),
-                                url="https://t.me/TheUpdatesChannel",
+                                url="https://t.me/{CHANNEL}",
                             ),
                         ],
                     ]
@@ -241,7 +242,7 @@ def start(update: Update, context: CallbackContext):  # sourcery no-metrics
                     [
                         [
                             InlineKeyboardButton(
-                                text=gs(chat.id, "add_bot_to_group_btn"),
+                                text=gs(chat.id, "add_bot_to_group_btn").format(context.bot.first_name),
                                 url="t.me/{}?startgroup=true".format(
                                     context.bot.username
                                 ),
@@ -260,7 +261,7 @@ def start(update: Update, context: CallbackContext):  # sourcery no-metrics
                         [
                             InlineKeyboardButton(
                                 text=gs(chat.id, "support_chat_link_btn"),
-                                url='https://t.me/TheSupportChat',
+                                url='https://t.me/{SUPPORT}',
                             ),
                             InlineKeyboardButton(
                                 text="Help",
@@ -268,7 +269,7 @@ def start(update: Update, context: CallbackContext):  # sourcery no-metrics
                             ),
                             InlineKeyboardButton(
                                 text=gs(chat.id, "updates_channel_link_btn"),
-                                url="https://t.me/TheUpdatesChannel",
+                                url="https://t.me/{CHANNEL}",
                             ),
                         ],
                     ]
@@ -705,12 +706,11 @@ def main():
             updater.bot.set_webhook(url=URL + TOKEN)
 
     else:
-        log.info(f"Bot started, Using long polling. | BOT: [@{dispatcher.bot.username}]")
+        log.info(f"Using long polling. | BOT: [@{dispatcher.bot.username}]")
         AnieINIT.bot_id = dispatcher.bot.id
         AnieINIT.bot_username = dispatcher.bot.username
         AnieINIT.bot_name = dispatcher.bot.first_name
-        updater.start_polling(timeout=15, read_latency=4, allowed_updates=Update.ALL_TYPES,
-                              drop_pending_updates=ZInit.DROP_UPDATES)
+        updater.start_polling(timeout=15, read_latency=4, allowed_updates=Update.ALL_TYPES, drop_pending_updates=ZInit.DROP_UPDATES)
     if len(argv) not in (1, 3, 4):
         telethn.disconnect()
     else:
@@ -721,4 +721,4 @@ def main():
 if __name__ == "__main__":
     log.info("[TELEGRAM] Successfully loaded modules: " + str(ALL_MODULES))
     telethn.start(bot_token=TOKEN)
-    threading.Thread(target=main).start()
+    main()
