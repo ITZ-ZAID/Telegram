@@ -31,6 +31,10 @@
       "description": "Dev Access Of Your Bot (Id) Go to @Zaid2_Robot And Type /id..",
       "value": ""
     },
+    "ASSISTANT_ID": {
+      "description": "enter I'd of which uh have used to string (Id) Go to @Zaid2_Robot And Type /id..",
+      "value": ""
+    },
     "GBAN_LOGS": {
       "description": "Forward Your Channel Message to @Zaid2_Robot To Get Your Channel ID..",
       "value": "-100"
