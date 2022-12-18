@@ -29,7 +29,10 @@ from Telegram import (
     telethn,
     AnieINIT
 )
-from config import SUPPORT, CHANNEL
+from config import Config
+CHANNEL = Config.CHANNEL
+SUPPORT = Config.SUPPORT
+
 # needed to dynamically load modules
 # NOTE: Module order is not guaranteed, specify that in the config file!
 from Telegram.modules import ALL_MODULES
