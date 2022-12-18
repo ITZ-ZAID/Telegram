@@ -13,7 +13,7 @@ class Config(object):
     TOKEN = getenv("TOKEN", "")
     OWNER_ID = getenv("OWNER_ID", "")
     ASSISTANT_ID = getenv("ASSISTANT_ID", "")
-    STRING_SESSION = getenv("STRING_SESSION", "")
+    STRING_SESSION = getenv("STRING_SESSION", "") #telethon
     OWNER_USERNAME = getenv("OWNER_USERNAME", "")
     DB_URI = getenv("DATABASE_URL", "")
     DB_URI = DB_URI.replace("postgres", "postgresql")
