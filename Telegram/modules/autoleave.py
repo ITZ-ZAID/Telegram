@@ -1,6 +1,6 @@
 import asyncio
 from Telegram import call_py, client
-from Config import Config
+from config import Config
 from telethon.tl.functions.channels import LeaveChannelRequest
 
 AUTO_LEAVE_TIME = Config.AUTO_LEAVE_TIME
