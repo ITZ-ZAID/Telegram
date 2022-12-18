@@ -35,4 +35,4 @@ async def leave_from_inactive_call():
                     pass
 
 
-await asyncio.create_task(leave_from_inactive_call())
+asyncio.create_task(leave_from_inactive_call())
