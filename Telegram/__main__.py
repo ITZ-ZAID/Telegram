@@ -141,8 +141,9 @@ def start(update: Update, context: CallbackContext):  # sourcery no-metrics
             first_name = update.effective_user.first_name
             update.effective_message.edit_text(
                 text=gs(chat.id, "pm_start_text").format(
-                    escape_markdown(first_name),
                     escape_markdown(context.bot.first_name),
+                    escape_markdown(first_name),
+                    escape_markdown(OWNER_USERNAME),
                     OWNER_ID,
                 ),
                 parse_mode=ParseMode.MARKDOWN,
@@ -236,8 +237,9 @@ def start(update: Update, context: CallbackContext):  # sourcery no-metrics
             first_name = update.effective_user.first_name
             update.effective_message.reply_text(
                 text=gs(chat.id, "pm_start_text").format(
-                    escape_markdown(first_name),
                     escape_markdown(context.bot.first_name),
+                    escape_markdown(first_name),
+                    escape_markdown(OWNER_USERNAME),
                     OWNER_ID,
                 ),
                 parse_mode=ParseMode.MARKDOWN,
