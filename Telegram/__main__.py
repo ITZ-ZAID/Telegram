@@ -29,7 +29,10 @@ from Telegram import (
     telethn,
     AnieINIT
 )
-from config import SUPPORT, CHANNEL
+from config import Config
+CHANNEL = Config.CHANNEL
+SUPPORT = Config.SUPPORT
+
 # needed to dynamically load modules
 # NOTE: Module order is not guaranteed, specify that in the config file!
 from Telegram.modules import ALL_MODULES
@@ -166,7 +169,7 @@ def start(update: Update, context: CallbackContext):  # sourcery no-metrics
                         [
                             InlineKeyboardButton(
                                 text=gs(chat.id, "support_chat_link_btn"),
-                                url='https://t.me/{SUPPORT}',
+                                url=f'https://t.me/{SUPPORT}',
                             ),
                             InlineKeyboardButton(
                                 text="Help",
@@ -174,7 +177,7 @@ def start(update: Update, context: CallbackContext):  # sourcery no-metrics
                             ),
                             InlineKeyboardButton(
                                 text=gs(chat.id, "updates_channel_link_btn"),
-                                url="https://t.me/{CHANNEL}",
+                                url=f"https://t.me/{CHANNEL}",
                             ),
                         ],
                     ]
@@ -261,7 +264,7 @@ def start(update: Update, context: CallbackContext):  # sourcery no-metrics
                         [
                             InlineKeyboardButton(
                                 text=gs(chat.id, "support_chat_link_btn"),
-                                url='https://t.me/{SUPPORT}',
+                                url=f'https://t.me/{SUPPORT}',
                             ),
                             InlineKeyboardButton(
                                 text="Help",
@@ -269,7 +272,7 @@ def start(update: Update, context: CallbackContext):  # sourcery no-metrics
                             ),
                             InlineKeyboardButton(
                                 text=gs(chat.id, "updates_channel_link_btn"),
-                                url="https://t.me/{CHANNEL}",
+                                url=f"https://t.me/{CHANNEL}",
                             ),
                         ],
                     ]
