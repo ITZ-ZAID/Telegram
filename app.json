@@ -1,69 +1,67 @@
 {
-  "name": "Telegram Bot",
-  "description": "A Telegram Management Bot Based On Telethon",
-  "keywords": [
-    "telegram",
-    "open",
-    "source",
-    "multi",
-    "godfather",
-    "anie",
-    "management"
-  ],
-  "env": {
-    "REPO_URL": {
-      "description": "URL of the REPO, If You Have edited Repo.. Else Leave ! Don't Change",
-      "value": "https://github.com/ITZ-ZAID/Telegram"
-    },
-    "TOKEN": {
-      "description": "Bot Token from @botfather..",
-      "value": ""
-    },
-    "DATABASE_URL": {
-      "description": "Database Url from elephantsql.com ..",
-      "value": "postgresql:ur url"
-    },
-    "SUDO_USERS": {
-      "description": "Dev Access Of Your Bot (Id) Go to @Zaid2_Robot And Type /id",
-      "value": ""
-    },
-    "DEV_USERS": {
-      "description": "Dev Access Of Your Bot (Id) Go to @Zaid2_Robot And Type /id..",
-      "value": ""
-    },
-    "ASSISTANT_ID": {
-      "description": "enter I'd of which uh have used to string (Id) Go to @Zaid2_Robot And Type /id..",
-      "value": ""
-    },
-    "GBAN_LOGS": {
-      "description": "Forward Your Channel Message to @Zaid2_Robot To Get Your Channel ID..",
-      "value": "-100"
-    },
-    "MESSAGE_DUMP": {
-      "description": "Forward Your Channel Message to @Zaid2_Robot To Get Your Channel ID..",
-      "value": "-100"
-    },
-    "OWNER_ID": {
-      "description": "Your Id, Go To @Zaid2_Robot Pm and Type /id..",
-      "value": ""
-    },
-    "OWNER_USERNAME": {
-      "description": "Your Telegram Username..",
-      "value": ""
-    },
-    "STRING_SESSION": {
-      "description": "A Telethon String Session Of Dummy Account @StarkStringGenBot..",
-      "value": ""
+    "name": "Telegram",
+    "description": "an awesome music+ management source code.",
+    "keywords": ["Zaid", "telegram", "Zaid-Vc-Player", "music", "voice chat", "telegram", "Yukki", "Yukki Music", "Private Music", "telethon"],
+    "repository": "https://github.com/ITZ-ZAID/Telegram",
+  "stack": "container",
+    "env": {
+        "STRING_SESSION": {
+            "description": "fill with the telethon session string from https://replit.com/@Itz-zaid/Generator",
+            "required": true
+        },
+        "REPO_URL": {
+            "description": "URL of the REPO, If You Have edited Repo.. Else Leave ! Don't Change",
+            "value": "https://github.com/ITZ-ZAID/Telegram"
+        },
+        "OWNER_USERNAME": {
+            "description": "your profile username without@!",
+            "required": true,
+            "value": ""
+        },
+        "ASSISTANT_ID": {
+            "description": "enter I'd of which uh have used to string (Id) Go to @Zaid2_Robot And Type /id..",
+            "value": ""
+        },
+        "SUPPORT": {
+            "description": "Fill there your group username else leave",
+            "required": false,
+            "value": "TheSupportChat"
+        },
+        "CHANNEL": {
+            "description": "Fill there your Channel username else leave",
+            "required": false,
+            "value": "TheUpdatesChannel"
+        },
+        "DATABASE_URL": {
+            "description": "Fill database from elephantsql.com",
+            "required": true,
+            "value": ""
+        },
+        "OWNER_ID": {
+            "description": "Your Id, Go To @Zaid2_Robot Pm and Type /id..",
+            "value": ""
+        },
+        "DEV_USERS": {
+            "description": "Dev Access Of Your Bot (Id) Go to @Zaid2_Robot And Type /id..",
+            "value": ""
+        },
+        "SUDO_USERS": {
+            "description": "Access Of Your Bot (Id) Go to @Zaid2_Robot And Type /id..",
+            "value": ""
+        },
+        "GBAN_LOGS": {
+            "description": "Forward Your Channel Message to @Zaid2_Robot To Get Your Channel ID..",
+            "value": "-100"
+        },
+        "MESSAGE_DUMP": {
+            "description": "Forward Your Channel Message to @Zaid2_Robot To Get Your Channel ID..",
+            "value": "-100"
+        },
+        "TOKEN": {
+            "description": "fill with your bot token get from @BotFather on telegram",
+            "required": true,
+            "value": ""
+        }
+
     }
-  },
-  "addons": [
-  ],
-  "buildpacks": [
-    {
-      "url": "heroku/python"
-    },
-    {
-      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
-    }
-  ]
-}
+  }
