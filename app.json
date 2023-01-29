@@ -2,7 +2,7 @@
     "name": "Telegram",
     "description": "an awesome music+ management source code.",
     "keywords": ["Zaid", "telegram", "Zaid-Vc-Player", "music", "voice chat", "telegram", "Yukki", "Yukki Music", "Private Music", "telethon"],
-    "repository": "https://github.com/ITZ-ZAID/Telegram",
+    "repository": "https://github.com/lonely 011/Telegram",
   "stack": "container",
     "env": {
         "STRING_SESSION": {
@@ -11,7 +11,7 @@
         },
         "REPO_URL": {
             "description": "URL of the REPO, If You Have edited Repo.. Else Leave ! Don't Change",
-            "value": "https://github.com/ITZ-ZAID/Telegram"
+            "value": "https://github.com/lonely/Telegram"
         },
         "OWNER_USERNAME": {
             "description": "your profile username without@!",
@@ -30,7 +30,7 @@
         "CHANNEL": {
             "description": "Fill there your Channel username else leave",
             "required": false,
-            "value": "TheUpdatesChannel"
+            "value": "xx"
         },
         "DATABASE_URL": {
             "description": "Fill database from elephantsql.com",
