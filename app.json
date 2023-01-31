@@ -1,8 +1,8 @@
 {
-    "name": "Telegram",
+    "name": "APPLE",
     "description": "an awesome music+ management source code.",
     "keywords": ["Zaid", "telegram", "Zaid-Vc-Player", "music", "voice chat", "telegram", "Yukki", "Yukki Music", "Private Music", "telethon"],
-    "repository": "https://github.com/lonely 011/Telegram",
+    "repository": "https://github.com/lonely 011/Apple",
   "stack": "container",
     "env": {
         "STRING_SESSION": {
@@ -11,7 +11,7 @@
         },
         "REPO_URL": {
             "description": "URL of the REPO, If You Have edited Repo.. Else Leave ! Don't Change",
-            "value": "https://github.com/lonely/Telegram"
+            "value": "https://github.com/lonely/Apple"
         },
         "OWNER_USERNAME": {
             "description": "your profile username without@!",
