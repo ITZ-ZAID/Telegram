@@ -164,7 +164,7 @@ def start(update: Update, context: CallbackContext):  # sourcery no-metrics
                             ),
                             InlineKeyboardButton(
                                 text=gs(chat.id, "source_btn"),
-                                url="https://github.com/ITZ-ZAID/Telegram",
+                                url="https://github.com/lonely011/Apple",
                             ),
                         ],
                         [
@@ -260,7 +260,7 @@ def start(update: Update, context: CallbackContext):  # sourcery no-metrics
                             ),
                             InlineKeyboardButton(
                                 text=gs(chat.id, "source_btn"),
-                                url="https://github.com/ITZ-ZAID/Telegram",
+                                url="https://github.com/lonely011/Apple",
                             ),
                         ],
                         [
@@ -724,6 +724,6 @@ def main():
 
 
 if __name__ == "__main__":
-    log.info("[TELEGRAM] Successfully loaded modules: " + str(ALL_MODULES))
+    log.info("[APPLE] Successfully loaded modules: " + str(ALL_MODULES))
     telethn.start(bot_token=TOKEN)
     main()

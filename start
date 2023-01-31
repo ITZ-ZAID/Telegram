@@ -2,4 +2,4 @@
     
 git clone $REPO_URL Repo
 cd Repo
-python3 -m Telegram
+python3 -m Apple
