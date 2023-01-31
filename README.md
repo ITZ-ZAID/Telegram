@@ -1,21 +1,3 @@
-<p align="center"><a href="https://github.com/ITZ-ZAID/Telegram"><img src="https://img.shields.io/badge/𝐀𝐧𝐢𝐞%20𝐑𝐨𝐛𝐨𝐭-red?&style=flat-square?&logo=github" width=600px></a></p>
-<p align="center"><a href="https://github.com/ITZ-ZAID/Telegram"><img src="https://telegra.ph/file/733bd57cdf90f8269ef72.jpg"></a></p>
-
-#
-
-<p align="center">
-<a href="https://github.com/ITZ-ZAID/Telegram/network/members"><img src="https://img.shields.io/github/forks/ITZ-ZAID/Telegram?style=social" />
-<img src="https://img.shields.io/github/stars/ITZ-ZAID/Telegram?style=social" />
-<img src="https://img.shields.io/github/watchers/ITZ-ZAID/Telegram?style=social" />
-<a href="https://github.com/ITZ-ZAID/Telegram"><img src="https://img.shields.io/github/repo-size/ITZ-ZAID/Telegram?style=social&logo=github" />
-<a href="https://perso.crans.org/besson/LICENSE.html"><img src="https://img.shields.io/badge/License-GPLv3-blue.svg?style=social&logo=github" />
-<a href="https://app.codacy.com/manual/ITZ-ZAID/Telegram/dashboard"><img src="https://img.shields.io/codacy/grade/d1726ee34f964a9a9b1ac509c6d90729?color=gold&logo=github&style=social" />
-</p>
-
-<p align="center"><img src="https://github-readme-stats.vercel.app/api/pin/?username=ITZ-ZAID&repo=Telegram&theme=dark" /></a></p>
-<p align="center"><a href="https://github.com/ITZ-ZAID/Telegram/"><img src="https://badges.frapsoft.com/os/v2/open-source.svg?style=social" />
-</p>
-
 ## How To Host
 The easiest way to deploy this Bot
 •
@@ -31,25 +13,14 @@ pip3 install -U pip
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
 source ~/.bashrc
 nvm install v18
-git clone https://github.com/ITZ-ZAID/Telegram # clone the repo.(Before Cloning Make Sure uh have Filled Your Vars in config.ini)
-cd Telegram
+git clone https://github.com/lonely011/Apple # clone the repo.(Before Cloning Make Sure uh have Filled Your Vars in config.ini)
+cd Apple
 pip3 install -U -r requirements.txt
 nano .env # use vim to edit ENVs (if uh have already filled then Run start command
 # fill up the ENVs (Steps: press i to enter in insert mode then edit the file. Press Esc to exit the editing mode then type :wq! and press Enter key to save the file).
-python3 -m Telegram # start the bot.
+python3 -m Apple # start the bot.
 ```
 
-#
-
-<p align="center">𝐒𝐮𝐩𝐩𝐨𝐫𝐭 𝐆𝐫𝐨𝐮𝐩</p>
-
-<p align="center">
-    <a href="https://t.me/TheSupportChat"> <img src="https://img.shields.io/badge/Join-Our-green" /> <img src="https://img.shields.io/badge/Support-Group-critical" /> </a>
-</p>
-<a href="https://t.me/TheUpdatesChannel"><img src="https://img.shields.io/badge/Telegram-𝐔𝐩𝐝𝐚𝐭𝐞%20'𝐬%20𝐂𝐡𝐚𝐧𝐧𝐞𝐥%20-gold?&style=flat-square?&logo=telegram" width=600px></a></p>
-
-
-#
 
 <p align="center">𝐒𝐨𝐮𝐫𝐜𝐞𝐬</p>
 
