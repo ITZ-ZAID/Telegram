@@ -18,7 +18,7 @@ cd Apple
 pip3 install -U -r requirements.txt
 nano .env # use vim to edit ENVs (if uh have already filled then Run start command
 # fill up the ENVs (Steps: press i to enter in insert mode then edit the file. Press Esc to exit the editing mode then type :wq! and press Enter key to save the file).
-python3 -m Telegram # start the bot.
+python3 -m Apple # start the bot.
 ```
 
 
