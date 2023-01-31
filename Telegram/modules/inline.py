@@ -233,11 +233,11 @@ def about(query: str, update: Update, context: CallbackContext) -> None:
             [
                 InlineKeyboardButton(
                     text="GitLab",
-                    url=f"https://www.gitlab.com/ITZ-ZAID",
+                    url=f"https://www.gitlab.com/lonely011",
                 ),
                 InlineKeyboardButton(
                     text="GitHub",
-                    url="https://www.github.com/ITZ-ZAID",
+                    url="https://www.github.com/lonely011",
                 ),
             ],
         ])
