@@ -8,17 +8,17 @@ if os.path.exists("local.env"):
 load_dotenv()
 class Config(object):
     log = True
-    APP_ID = getenv("API_ID", "6435225")
-    API_HASH = getenv("API_HASH", "4e984ea35f854762dcde906dce426c2d")
-    TOKEN = getenv("TOKEN", "")
-    OWNER_ID = getenv("OWNER_ID", "")
-    ASSISTANT_ID = getenv("ASSISTANT_ID", "")
-    STRING_SESSION = getenv("STRING_SESSION", "") #telethon
-    OWNER_USERNAME = getenv("OWNER_USERNAME", "")
-    DB_URI = getenv("DATABASE_URL", "")
+    APP_ID = getenv("API_ID", "28875022")
+    API_HASH = getenv("API_HASH", "5b42749c8464a36077e1ab4a12de1eb8")
+    TOKEN = getenv("TOKEN", "6140840920:AAF878Muh6rMeC9wkQkoKjAzXUIyNvH6JRs")
+    OWNER_ID = getenv("OWNER_ID", "5937212945")
+    ASSISTANT_ID = getenv("ASSISTANT_ID", "5937212945")
+    STRING_SESSION = getenv("STRING_SESSION", "1BJWap1sBu4JqDsex-C1BDua0-3TVUtPNYa1Vjy5NWWM1-zD4kFEfs660Eia9hE7d137KJmifBwRqUyImfOZtw9UddEYp9t3u4mcGG5ZUYTButIkK_rlPcaumlxXpzuic3sq2ZWt6i91EvazMAjllt3c6Yw3N4vPDFxag0-xVLB2vNcirBh9OmTiz9KR3MtKrlF02Q_0NIaflbdudzhjB-h22dX_wPFyyXjxFl8M0RAn2U8VkM9rpcae7DFRsAUZyCGysIaffqb6iusu5W-wZr_YHAZr1X6h9gvkdSlP8O6RwiIORL_9y3bj9F1uBrLj2FDfs3rnYA9JfKNTJbBjV3pq1qklC_Bg=") #telethon
+    OWNER_USERNAME = getenv("OWNER_USERNAME", "cxzsaewm")
+    DB_URI = getenv("DATABASE_URL", "mongodb+srv://BS:<password>@cluster0.hjawjqk.mongodb.net/?retryWrites=true&w=majority")
     DB_URI = DB_URI.replace("postgres", "postgresql")
     MESSAGE_DUMP = getenv("MESSAGE_DUMP", "-1001509525202")
-    GBAN_LOGS = getenv("GBAN_LOGS", "-1001509525202")
+    GBAN_LOGS = getenv("GBAN_LOGS", "-1001847260423")
     SYS_ADMIN = getenv("SYS_ADMIN", "1669178360")
     DEV_USERS = getenv("DEV_USERS", "1669178360")
     LOAD = getenv("LOAD")
